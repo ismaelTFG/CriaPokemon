@@ -12,6 +12,21 @@
         android:theme="@style/Theme.CriaPokemon"
         tools:targetApi="31">
         <activity
+            android:name=".ObjetosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PokedexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CriarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CajaActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
