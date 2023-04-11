@@ -1,0 +1,4 @@
+1*bulbasaur*_1*planta*veneno*
+2*charmander*_1*fuego*fuego*
+3*squirtle*_1*agua*agua*
+1_1*fusion*_1_1*planta*planta*
