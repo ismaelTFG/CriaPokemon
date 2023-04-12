@@ -41,4 +41,10 @@ class CajaServiceImpl(context: Context): CajaService {
 
     }
 
+    override fun update(caja: Caja) {
+
+        return db.updateCaja(caja, db.writableDatabase)
+
+    }
+
 }

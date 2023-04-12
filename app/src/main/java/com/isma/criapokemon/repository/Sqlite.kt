@@ -12,7 +12,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
     override fun onCreate(db: SQLiteDatabase) {
 
         db.execSQL("CREATE TABLE pokemon (id TEXT PRIMARY KEY, name TEXT, img TEXT, tipo1 TEXT, tipo2 TEXT)")
-        db.execSQL("CREATE TABLE caja (id INTEGER PRIMARY KEY, apodo TEXT, id_pokemon TEXT, nivel INTEGER, exp INTEGER, FOREIGN KEY (id_pokemon) REFERENCES pokemon(id))")
+        db.execSQL("CREATE TABLE caja (id INTEGER PRIMARY KEY, apodo TEXT, id_pokemon TEXT, nivel INTEGER, genero INTEGER, FOREIGN KEY (id_pokemon) REFERENCES pokemon(id))")
 
     }
 
@@ -82,7 +82,10 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
             while (!resultado.isAfterLast){
 
-                val caja = Caja(resultado.getInt(0), resultado.getString(1), findByIdPokemon(resultado.getString(2), db), resultado.getInt(3), resultado.getInt(4))
+                val caja = Caja(resultado.getInt(0), resultado.getString(1), findByIdPokemon(resultado.getString(2), db))
+
+                caja.setNivel(resultado.getInt(3))
+                caja.setMacho(resultado.getInt(4))
 
                 lista.add(caja)
                 resultado.moveToNext()
@@ -107,7 +110,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
             }
         }
 
-        return Caja(0, "", Pokemon("", "", "", "", ""), 0, 0)
+        return Caja(0, "", Pokemon("", "", "", "", ""))
 
     }
 
@@ -118,10 +121,21 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         add.put("id", caja.id)
         add.put("apodo", caja.apodo)
         add.put("id_pokemon", caja.pokemon.id)
-        add.put("nivel", caja.nivel)
-        add.put("exp", caja.exp)
+        add.put("nivel", caja.getNivel())
+        add.put("genero", caja.getGenero())
 
         db.insert("caja", null, add)
+
+    }
+
+    fun updateCaja (caja: Caja, db: SQLiteDatabase){
+
+        val add = ContentValues()
+
+        add.put("apodo", caja.apodo)
+        add.put("nivel", caja.getNivel())
+
+        db.update("caja", add, "id=${caja.id}", null)
 
     }
 

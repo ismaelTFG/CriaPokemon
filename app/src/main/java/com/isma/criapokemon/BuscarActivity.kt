@@ -32,12 +32,12 @@ class BuscarActivity : AppCompatActivity() {
         val buscar5 = findViewById<ImageButton>(R.id.buscar5)
         val buscar6 = findViewById<ImageButton>(R.id.buscar6)
 
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", ""), 0, 0))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", ""), 0, 0))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", ""), 0, 0))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", ""), 0, 0))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", ""), 0, 0))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", ""), 0, 0))
+        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
+        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
+        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
+        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
+        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
+        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
 
         buscar1.setOnClickListener {
 
@@ -78,6 +78,7 @@ class BuscarActivity : AppCompatActivity() {
         val inflater = layoutInflater
         val dialogLayout = inflater.inflate(R.layout.spinner_pokemons, null)
         val spinner = dialogLayout.findViewById<Spinner>(R.id.spinnerpokemons)
+
         spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, cajaService.viewPokemon())
         builder.setTitle("Elige un pokemon")
         builder.setView(dialogLayout)

@@ -25,19 +25,19 @@ class InicialesActivity : AppCompatActivity() {
 
     fun bulbasaur(view: View){
 
-        ventada(Caja(1,"bulbasaur", pokemonService.findById("1"), 0, 0))
+        ventada(Caja(1,"bulbasaur", pokemonService.findById("1")))
 
     }
 
     fun charmarder(view: View){
 
-        ventada(Caja(1, "Charmander", pokemonService.findById("2"), 0, 0))
+        ventada(Caja(1, "Charmander", pokemonService.findById("2")))
 
     }
 
     fun squirtle(view: View){
 
-        ventada(Caja(1, "Squirtle", pokemonService.findById("3"), 0, 0))
+        ventada(Caja(1, "Squirtle", pokemonService.findById("3")))
 
     }
 
