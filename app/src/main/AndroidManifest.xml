@@ -12,6 +12,9 @@
         android:theme="@style/Theme.CriaPokemon"
         tools:targetApi="31">
         <activity
+            android:name=".RecompensasActivity"
+            android:exported="false" />
+        <activity
             android:name=".InicialesActivity"
             android:exported="false" />
         <activity

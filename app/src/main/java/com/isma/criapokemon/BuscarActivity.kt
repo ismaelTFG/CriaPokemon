@@ -3,7 +3,11 @@ package com.isma.criapokemon
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.app.AlertDialog
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.BitmapFactory
+import android.preference.PreferenceManager
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ImageButton
@@ -11,13 +15,21 @@ import android.widget.Spinner
 import android.widget.Toast
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
+import com.isma.criapokemon.service.EquipoService
+import com.isma.criapokemon.service.impl.BusquedaServiceImpl
 import com.isma.criapokemon.service.impl.CajaServiceImpl
+import com.isma.criapokemon.service.impl.EquipoServiceImpl
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+import java.util.Date
 
 class BuscarActivity : AppCompatActivity() {
 
     private var equipo = ArrayList<Caja>()
     private val cajaService = CajaServiceImpl(this)
+    private val equipoService = EquipoServiceImpl(this)
+    private val busquedaService = BusquedaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,12 +44,14 @@ class BuscarActivity : AppCompatActivity() {
         val buscar5 = findViewById<ImageButton>(R.id.buscar5)
         val buscar6 = findViewById<ImageButton>(R.id.buscar6)
 
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
-        equipo.add(Caja(0, "", Pokemon("", "", "", "", "")))
+        equipo = equipoService.findAll()
+
+        img(equipo[0].pokemon, buscar1)
+        img(equipo[1].pokemon, buscar2)
+        img(equipo[2].pokemon, buscar3)
+        img(equipo[3].pokemon, buscar4)
+        img(equipo[4].pokemon, buscar5)
+        img(equipo[5].pokemon, buscar6)
 
         buscar1.setOnClickListener {
 
@@ -97,10 +111,8 @@ class BuscarActivity : AppCompatActivity() {
 
             if (!rep){
 
-                val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(selecionado.pokemon.img))
-
                 equipo[numero] = selecionado
-                boton.setImageBitmap(bmp)
+                img(selecionado.pokemon, boton)
                 Toast.makeText(this, "Seleccionaste a "+selecionado.apodo, Toast.LENGTH_LONG).show()
 
             }else{
@@ -116,9 +128,29 @@ class BuscarActivity : AppCompatActivity() {
 
     }
 
+    fun buscar(view: View){
+
+        val fecha = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+
+        busquedaService.update(fecha.toString(), true)
+
+        equipoService.update(equipo)
+        finish()
+        startActivity(Intent(this, RecompensasActivity::class.java))
+
+    }
+
     fun salir(view: View){
 
         finish()
+
+    }
+
+    private fun img(pokemon: Pokemon, boton: ImageButton){
+
+        val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img))
+
+        boton.setImageBitmap(bmp)
 
     }
 
