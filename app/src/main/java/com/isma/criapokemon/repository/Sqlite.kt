@@ -61,10 +61,10 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         val lista = findAllPokemon(db)
         var pokemon = Pokemon("", "", "", "", "")
 
-        for(a in lista){
-            if(a.id == id){
+        for(i in lista){
+            if(i.id == id){
 
-                pokemon = a
+                pokemon = i
 
             }
         }
@@ -92,6 +92,22 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         }
 
         return lista
+
+    }
+
+    fun findByApodoCaja (apodo: String, db: SQLiteDatabase): Caja{
+
+        val lista = findAllCaja(db)
+
+        for (i in lista){
+            if (i.apodo == apodo){
+
+                return i
+
+            }
+        }
+
+        return Caja(0, "", Pokemon("", "", "", "", ""), 0, 0)
 
     }
 
