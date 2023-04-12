@@ -35,4 +35,10 @@ class CajaServiceImpl(context: Context): CajaService {
 
     }
 
+    override fun findByApodo(apodo: String): Caja {
+
+        return db.findByApodoCaja(apodo, db.writableDatabase)
+
+    }
+
 }
