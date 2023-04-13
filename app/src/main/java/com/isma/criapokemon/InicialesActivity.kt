@@ -31,13 +31,13 @@ class InicialesActivity : AppCompatActivity() {
 
     fun charmarder(view: View){
 
-        ventada(Caja(1, "Charmander", pokemonService.findById("2")))
+        ventada(Caja(1, "Charmander", pokemonService.findById("4")))
 
     }
 
     fun squirtle(view: View){
 
-        ventada(Caja(1, "Squirtle", pokemonService.findById("3")))
+        ventada(Caja(1, "Squirtle", pokemonService.findById("7")))
 
     }
 
