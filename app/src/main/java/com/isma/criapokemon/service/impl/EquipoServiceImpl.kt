@@ -25,4 +25,17 @@ class EquipoServiceImpl(context: Context): EquipoService {
 
     }
 
+    override fun subidaNivel() {
+
+        val lista = findAll()
+
+        for (i in lista){
+
+            i.setNivel(i.getNivel()+1)
+            db.updateCaja(i, db.writableDatabase)
+
+        }
+
+    }
+
 }

@@ -6,5 +6,6 @@ interface EquipoService {
 
     fun findAll(): ArrayList<Caja>
     fun update(equipo: ArrayList<Caja>)
+    fun subidaNivel()
 
 }

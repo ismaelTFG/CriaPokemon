@@ -23,7 +23,7 @@
 23*ekans*_23*veneno*veneno*
 24*arbok*_24*veneno*veneno*
 25*pikachu*_25*electrico*electrico*
-26*pikachu*_26*electrico*electrico*
+26*raichu*_26*electrico*electrico*
 27*sandshrew*_27*tierra*tierra*
 28*sandslash*_28*tierra*tierra*
 29*nidoran f*_29*veneno*veneno*

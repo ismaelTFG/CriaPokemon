@@ -8,6 +8,7 @@ import android.widget.Button
 import com.isma.criapokemon.service.impl.BusquedaServiceImpl
 import com.isma.criapokemon.service.impl.CajaServiceImpl
 import com.isma.criapokemon.service.impl.PokemonServiceImpl
+import com.isma.criapokemon.service.impl.RecompensasServiceImpl
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
     private val pokemonService = PokemonServiceImpl(this)
     private val cajaService = CajaServiceImpl(this)
     private val busquedaService = BusquedaServiceImpl(this)
+    private val recompensasService = RecompensasServiceImpl(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -24,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         if (pokemonService.listAll().size == 0){
 
             pokemonService.add()
+
+        }
+
+        if (recompensasService.listAll().size == 0){
+
+            recompensasService.add()
 
         }
 

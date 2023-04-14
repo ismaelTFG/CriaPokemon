@@ -3,11 +3,8 @@ package com.isma.criapokemon
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.app.AlertDialog
-import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.graphics.BitmapFactory
-import android.preference.PreferenceManager
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.ImageButton
@@ -15,14 +12,12 @@ import android.widget.Spinner
 import android.widget.Toast
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
-import com.isma.criapokemon.service.EquipoService
 import com.isma.criapokemon.service.impl.BusquedaServiceImpl
 import com.isma.criapokemon.service.impl.CajaServiceImpl
 import com.isma.criapokemon.service.impl.EquipoServiceImpl
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.util.Date
 
 class BuscarActivity : AppCompatActivity() {
 

@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
+import com.isma.criapokemon.entity.Recompensas
 
 class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1) {
 
@@ -15,6 +16,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         db.execSQL("CREATE TABLE caja (id INTEGER PRIMARY KEY, apodo TEXT, id_pokemon TEXT, nivel INTEGER, genero INTEGER, FOREIGN KEY (id_pokemon) REFERENCES pokemon(id))")
         db.execSQL("CREATE TABLE equipo (id INTEGER PRIMARY KEY, id_caja INTEGER)")
         db.execSQL("CREATE TABLE busqueda (id INTEGER PRIMARY KEY, hora TEXT, buscando INTEGER)")
+        db.execSQL("CREATE TABLE recompensas (id INTEGER PRIMARY KEY, porcentaje INTEGER)")
 
         addBusqueda(db)
         for (i in 1..6){
@@ -230,6 +232,37 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         add.put("buscando", buscando)
 
         db.update("busqueda", add, "id=1", null)
+
+    }
+
+    fun addRecompensas (id: Int, porcentaje: Int, db: SQLiteDatabase){
+
+        val add = ContentValues()
+
+        add.put("id", id)
+        add.put("porcentaje", porcentaje)
+
+        db.insert("recompensas", null, add)
+
+    }
+
+    fun findAllRecompensas (db: SQLiteDatabase): ArrayList<Recompensas>{
+
+        val resultado = db.rawQuery("SELECT * FROM recompensas", null)
+        val lista = ArrayList<Recompensas>()
+
+        if (resultado!!.moveToFirst()){
+
+            while (!resultado.isAfterLast){
+
+                lista.add(Recompensas(findByIdPokemon(""+resultado.getInt(0), db), resultado.getInt(1)))
+                resultado.moveToNext()
+
+            }
+
+        }
+
+        return lista
 
     }
 
