@@ -86,7 +86,48 @@ class CajaActivity : AppCompatActivity() {
             builder.show()
 
         }
+        anterior.setOnClickListener {
 
+            if (numero == 0){
+
+                numero = cajas.size -1
+                mostrado = cajas[numero]
+                apodoView.setText(mostrado.apodo)
+                descripcion.setText(mostrado.toString())
+                img.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.pokemon.img)))
+
+            }else{
+
+                numero--
+                mostrado = cajas[numero]
+                apodoView.setText(mostrado.apodo)
+                descripcion.setText(mostrado.toString())
+                img.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.pokemon.img)))
+
+            }
+
+        }
+        siguiente.setOnClickListener {
+
+            if (numero == (cajas.size - 1)){
+
+                numero = 0
+                mostrado = cajas[numero]
+                apodoView.setText(mostrado.apodo)
+                descripcion.setText(mostrado.toString())
+                img.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.pokemon.img)))
+
+            }else{
+
+                numero++
+                mostrado = cajas[numero]
+                apodoView.setText(mostrado.apodo)
+                descripcion.setText(mostrado.toString())
+                img.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.pokemon.img)))
+
+            }
+
+        }
 
     }
 
