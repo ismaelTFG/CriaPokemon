@@ -10,7 +10,8 @@ class Pokemon(
     val name: String,
     val img: String,
     val tipoUno: String,
-    val tipoDos: String) {
+    val tipoDos: String,
+    val evolucion: String) {
 
     fun toString(context: Context, id: String): String {
 

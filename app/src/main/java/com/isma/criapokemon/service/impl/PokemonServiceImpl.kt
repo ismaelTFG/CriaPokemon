@@ -29,7 +29,7 @@ class PokemonServiceImpl(context: Context): PokemonService {
 
             val text = line.split("*")
 
-            db.addPokemon(Pokemon(text[0], text[1], text[2], text[3], text[4]), db.writableDatabase)
+            db.addPokemon(Pokemon(text[0], text[1], text[2], text[3], text[4], text[5]), db.writableDatabase)
 
             line = br.readLine()
 

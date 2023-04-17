@@ -3,7 +3,7 @@ package com.isma.criapokemon.entity
 class Caja(
     var id: Int,
     var apodo: String,
-    var pokemon: Pokemon,) {
+    var pokemon: Pokemon) {
 
 
     private var nivel = 1

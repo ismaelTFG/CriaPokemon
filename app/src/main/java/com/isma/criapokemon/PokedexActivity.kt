@@ -19,7 +19,7 @@ class PokedexActivity : AppCompatActivity() {
     private val pokemonService = PokemonServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private var numero = 0
-    private var mostrado = Pokemon("", "", "", "", "")
+    private var mostrado = Pokemon("", "", "", "", "", "")
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
