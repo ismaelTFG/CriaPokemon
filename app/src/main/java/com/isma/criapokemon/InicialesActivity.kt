@@ -9,11 +9,13 @@ import android.view.View
 import android.widget.Toast
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.service.impl.CajaServiceImpl
+import com.isma.criapokemon.service.impl.PokedexServiceImpl
 import com.isma.criapokemon.service.impl.PokemonServiceImpl
 
 class InicialesActivity : AppCompatActivity() {
 
     private val pokemonService = PokemonServiceImpl(this)
+    private val pokedexService = PokedexServiceImpl(this)
     private val cajaService = CajaServiceImpl(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +48,7 @@ class InicialesActivity : AppCompatActivity() {
         val dialog = AlertDialog.Builder(this).setPositiveButton("si", DialogInterface.OnClickListener { dialogInterface, i ->
 
             cajaService.add(caja)
+            pokedexService.visible(caja.pokemon.id)
             startActivity(Intent(this, MainActivity::class.java))
             finish()
 

@@ -40,7 +40,7 @@ class PokemonServiceImpl(context: Context): PokemonService {
 
     }
 
-    override fun    findById(id: String): Pokemon {
+    override fun findById(id: String): Pokemon {
 
          return db.findByIdPokemon(id, db.writableDatabase)
 
