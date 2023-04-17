@@ -30,10 +30,12 @@ class EquipoServiceImpl(context: Context): EquipoService {
         val lista = findAll()
 
         for (i in lista){
+            if (i.getNivel() < 100){
 
-            i.setNivel(i.getNivel()+1)
-            db.updateCaja(i, db.writableDatabase)
+                i.setNivel(i.getNivel()+1)
+                db.updateCaja(i, db.writableDatabase)
 
+            }
         }
 
     }

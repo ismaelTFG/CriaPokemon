@@ -16,7 +16,7 @@ class CajaActivity : AppCompatActivity() {
     private val cajaService = CajaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private var numero = 0
-    private var mostrado = Caja(0, "", Pokemon("", "", "", "", ""))
+    private var mostrado = Caja(0, "", Pokemon("", "", "", "", "", ""))
 
     override fun onCreate(savedInstanceState: Bundle?) {
 

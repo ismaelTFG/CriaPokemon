@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private val busquedaService = BusquedaServiceImpl(this)
     private val recompensasService = RecompensasServiceImpl(this)
     private val pokedexService = PokedexServiceImpl(this)
+    private val objetoService = ObjetoServiceImpl(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -42,6 +43,12 @@ class MainActivity : AppCompatActivity() {
         if (recompensasService.listAll().size == 0){
 
             recompensasService.add()
+
+        }
+
+        if (objetoService.listAll().size == 0){
+
+            objetoService.add()
 
         }
 

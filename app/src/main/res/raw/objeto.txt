@@ -1,0 +1,18 @@
+1*piedra trueno*30
+2*piedra lunar*15
+3*piedra fuego*30
+4*piedra hoja*30
+5*piedra solar*15
+6*piedra agua*30
+7*roca del rey*10
+8*revestimiento metalico*20
+9*protector*10
+10*escama dragon*20
+11*electrizador*10
+12*magmatizador*10
+13*piedra dia*20
+14*piedra noche*20
+15*piedra hielo*30
+16*mejora*10
+17*disco extraño*10
+18*piedra oval*15

@@ -2,7 +2,7 @@ package com.isma.criapokemon
 
 
 import android.annotation.SuppressLint
-import android.graphics.Bitmap
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +12,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.isma.criapokemon.entity.Caja
+import com.isma.criapokemon.entity.Objeto
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.entity.Recompensas
 import com.isma.criapokemon.service.impl.*
@@ -27,7 +28,7 @@ class RecompensasActivity : AppCompatActivity() {
     val equipoService = EquipoServiceImpl(this)
     val pokedexService = PokedexServiceImpl(this)
     val variablesImgPokemons = VariablesImgPokemons()
-    var recompensa = Recompensas(Pokemon("", "", "", "", ""), 0)
+    var recompensa = Recompensas(Pokemon("", "", "", "", "", ""), 0)
     var contador = 0
 
     @SuppressLint("MissingInflatedId")
@@ -63,7 +64,6 @@ class RecompensasActivity : AppCompatActivity() {
             val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(recompensa.pokemon.img))
 
             equipoService.subidaNivel()
-            busquedaService.update("", false)
             img.setImageBitmap(bmp)
             texto.setText(recompensa.pokemon.name)
             recojer.setOnClickListener {
@@ -91,7 +91,7 @@ class RecompensasActivity : AppCompatActivity() {
         val actual = LocalDateTime.now()
         val iniciada = LocalDateTime.parse(busquedaService.hora())
         val diferencia = ChronoUnit.MINUTES.between(iniciada, actual)
-        val recompensasTotales = (diferencia / 5).toInt()
+        val recompensasTotales = (diferencia / 10).toInt()
         val lista = recompensasService.listAll()
 
         if (recompensasTotales > 0){
@@ -136,6 +136,7 @@ class RecompensasActivity : AppCompatActivity() {
         }else{
 
             finish()
+            startActivity(Intent(this, RecompensasObjetosActivity::class.java))
 
         }
 
