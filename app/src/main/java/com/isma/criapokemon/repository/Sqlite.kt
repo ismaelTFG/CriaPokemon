@@ -17,6 +17,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         db.execSQL("CREATE TABLE equipo (id INTEGER PRIMARY KEY, id_caja INTEGER)")
         db.execSQL("CREATE TABLE busqueda (id INTEGER PRIMARY KEY, hora TEXT, buscando INTEGER)")
         db.execSQL("CREATE TABLE recompensas (id INTEGER PRIMARY KEY, porcentaje INTEGER)")
+        db.execSQL("CREATE TABLE pokedex (id TEXT PRIMARY KEY, visible INTEGER)")
 
         addBusqueda(db)
         for (i in 1..6){
@@ -263,6 +264,55 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         }
 
         return lista
+
+    }
+
+    fun addPokedex (id: String, db: SQLiteDatabase){
+
+        val add = ContentValues()
+
+        add.put("id", id)
+        add.put("visible", 0)
+
+        db.insert("pokedex", null, add)
+
+    }
+
+    fun findAllPokedex (db: SQLiteDatabase): ArrayList<Boolean>{
+
+        val resultado = db.rawQuery("SELECT * FROM pokedex", null)
+        val lista = ArrayList<Boolean>()
+
+        if (resultado!!.moveToFirst()){
+
+            while (!resultado.isAfterLast){
+
+                if (resultado.getInt(1) == 0){
+
+                    lista.add(false)
+
+                }else{
+
+                    lista.add(true)
+
+                }
+                resultado.moveToNext()
+
+            }
+
+        }
+
+        return lista
+
+    }
+
+    fun visiblePokedex (id: String, db: SQLiteDatabase){
+
+        val add = ContentValues()
+
+        add.put("visible", 1)
+
+        db.update("pokedex", add, "id=$id", null)
 
     }
 

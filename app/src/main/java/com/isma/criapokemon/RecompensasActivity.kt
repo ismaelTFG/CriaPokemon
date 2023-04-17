@@ -14,10 +14,7 @@ import android.widget.Toast
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.entity.Recompensas
-import com.isma.criapokemon.service.impl.BusquedaServiceImpl
-import com.isma.criapokemon.service.impl.CajaServiceImpl
-import com.isma.criapokemon.service.impl.EquipoServiceImpl
-import com.isma.criapokemon.service.impl.RecompensasServiceImpl
+import com.isma.criapokemon.service.impl.*
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 import java.time.LocalDateTime
 import java.time.temporal.ChronoUnit
@@ -28,6 +25,7 @@ class RecompensasActivity : AppCompatActivity() {
     val recompensasService = RecompensasServiceImpl(this)
     val cajaService = CajaServiceImpl(this)
     val equipoService = EquipoServiceImpl(this)
+    val pokedexService = PokedexServiceImpl(this)
     val variablesImgPokemons = VariablesImgPokemons()
     var recompensa = Recompensas(Pokemon("", "", "", "", ""), 0)
     var contador = 0
@@ -71,6 +69,7 @@ class RecompensasActivity : AppCompatActivity() {
             recojer.setOnClickListener {
 
                 cajaService.add(Caja(cajaService.findAll().size+2, recompensa.pokemon.name, recompensa.pokemon))
+                pokedexService.visible(recompensa.pokemon.id)
                 Toast.makeText(this, "has guardado a "+recompensa.pokemon.name, Toast.LENGTH_SHORT).show()
                 fin(recompensas, img, texto)
 
