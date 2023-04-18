@@ -56,7 +56,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
             while (!resultado.isAfterLast){
 
-                val pokemon = Pokemon(resultado.getString(0), resultado.getString(1), resultado.getString(2), resultado.getString(3), resultado.getString(4), resultado.getString(4))
+                val pokemon = Pokemon(resultado.getString(0), resultado.getString(1), resultado.getString(2), resultado.getString(3), resultado.getString(4), resultado.getString(5))
 
                 lista.add(pokemon)
                 resultado.moveToNext()
@@ -146,6 +146,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         val add = ContentValues()
 
         add.put("apodo", caja.apodo)
+        add.put("id_pokemon", caja.pokemon.id)
         add.put("nivel", caja.getNivel())
 
         db.update("caja", add, "id=${caja.id}", null)
@@ -413,11 +414,12 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     }
 
-    fun updateMochila (mochila: Mochila, db: SQLiteDatabase){
+    fun updateMochila (mochila: Mochila, cantidad: Int, db: SQLiteDatabase){
 
         val add = ContentValues()
+        val numero = mochila.cantidad + cantidad
 
-        add.put("cantida", mochila.cantidad + 1)
+        add.put("cantidad", numero)
 
         db.update("mochila", add, "id=${mochila.id}", null)
 
