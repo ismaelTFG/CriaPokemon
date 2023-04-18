@@ -20,7 +20,7 @@ class MochilaServiceImpl(context: Context): MochilaService {
 
         }else{
 
-            db.updateMochila(mochila, db.writableDatabase)
+            db.updateMochila(mochila,1,  db.writableDatabase)
 
         }
 

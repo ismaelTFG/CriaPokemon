@@ -85,7 +85,7 @@ class PokedexActivity : AppCompatActivity() {
 
         if (visible[numero]){
 
-            nombre.setText(mostrado.id+mostrado.name)
+            nombre.setText(mostrado.id+" "+mostrado.name)
             descripcion.setText(mostrado.toString(this, mostrado.id))
             pokemon.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.img)))
 
