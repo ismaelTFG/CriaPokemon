@@ -425,7 +425,7 @@ class VariablesImgPokemons {
                 return R.drawable._139
             }
             "_140" -> {
-                return R.drawable._40
+                return R.drawable._140
             }
             "_141" -> {
                 return R.drawable._141

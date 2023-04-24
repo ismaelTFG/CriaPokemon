@@ -181,4 +181,1175 @@
 471*glaceon*_471*hielo*hielo*no
 474*porygon-z*_474*normal*normal*no
 700*sylveon*_700*hada*hada*no
-1_4*fusion*_1_4*planta*planta*no
+1_4*bulbander f*_1_4*planta*fuego*16=2_5
+1_7*bulbartle f*_1_7*planta*agua*16=2_8
+1_29*bulbaran f*_1_29*planta*veneno*16=2_30
+1_32*bulbaran m*_1_32*planta*veneno*16=2_33
+1_43*bulbaish*_1_43*planta*veneno*18=2_44
+1_46*bulbaras*_1_46*planta*bicho*20=2_47
+1_69*bulbasprout*_1_69*planta*veneno*18=2_70
+1_79*bulbapoke*_1_79*planta*agua*26=2_80,roca del rey=2_199
+1_102*bulbacute*_1_102*planta*psiquico*16=2_102
+1_104*cubosaur*_1_104*planta*tierra*22=2_105
+1_108*bulbatung*_1_108*planta*normal*16=2_463
+1_111*bulbahorn*_1_111*planta*roca*29=2_112
+1_114*bulbagela*_1_114*planta*veneno*16=2_465
+1_115*bulbakhan*_1_115*planta*normal*16=2_115
+1_131*bulbapras*_1_131*planta*agua*16=2_131
+1_446*bulbalax*_1_446*planta*normal*13=2_143
+2_5*ivyleon*_2_5*planta*fuego*34=3_6
+2_8*ivyrtle*_2_8*planta*agua*34=3_9
+2_30*ivyrina*_2_30*planta*veneno*piedra lunar=3_31
+2_33*ivyrino*_2_33*planta*veneno*piedra lunar=3_34
+2_44*ivyoom*_2_44*planta*veneno*piedra hoja=3_45,piedra solar=3_182
+2_47*ivysect*_2_47*planta*bicho*32=3_47
+2_70*ivybell*_2_70*planta*veneno*piedra hoja=3_71
+2_80*ivybro*_2_80*planta*agua*32=3_80
+2_102*ivycute*_2_102*planta*psiquico*piedra hoja=3_103
+2_105*marosaur*_2_105*planta*tierra*32=3_105
+2_112*ivydon*_2_112*planta*roca*protector=3_464
+2_115*ivykhan*_2_115*planta*normal*32=3_115
+2_131*ivypras*_2_131*planta*agua*32=3_131
+2_143*ivylax*_2_143*planta*normal*32=3_143
+2_199*ivyking*_2_199*planta*psiquico*32=3_199
+2_463*ivylicky*_2_463*planta*normal*32=3_463
+2_465*ivygrowth*_2_465*planta*veneno*32=3_465
+3_6*venuzard*_3_6*planta*fuego*no
+3_9*venutoise*_3_9*planta*agua*no
+3_31*venuqueen*_3_31*planta*veneno*no
+3_34*venuking*_3_34*planta*veneno*no
+3_45*venuplume*_3_45*planta*veneno*no
+3_47*venusect*_3_47*planta*bicho*no
+3_71*venubel*_3_71*planta*veneno*no
+3_80*venubro*_3_80*planta*agua*no
+3_103*venutor*_3_103*planta*psiquico*no
+3_105*venuwak*_3_105*planta*tierra*no
+3_115*venuKhan*_3_115*planta*normal*no
+3_131*venupras*_3_131*planta*agua*no
+3_143*venulax*_3_143*planta*normal*no
+3_182*venussom*_3_182*planta*veneno*no
+3_199*slowsaur*_3_199*planta*psiquico*no
+3_463*venulicky*_3_463*planta*normal*no
+3_464*venuperior*_3_464*planta*roca*no
+3_465*venugrowth*_3_465*planta*veneno*no
+4_7*charmantle*_4_7*fuego*agua*16=5_8
+4_23*charmanans*_4_23*fuego*veneno*19=5_24
+4_29*charmanran f*_4_29*fuego*veneno*16=5_30
+4_32*charmanran m*_4_32*fuego*veneno*16=5_33
+4_79*charmanpoke*_4_79*fuego*agua*26=5_80,roca del rey=5_199
+4_104*charmane*_4_104*fuego*tierra*22=5_105
+4_108*charmantung*_4_108*fuego*normal*16=5_463
+4_111*charmanhorn*_4_111*fuego*tierra*29=5_112
+4_115*charmankhan*_4_115*fuego*normal*16=5_115
+4_116*charmansea*_4_116*fuego*agua*24=5_117
+4_129*maginder*_4_129*fuego*agua*18=5_130
+4_131*charmanpras*_4_131*fuego*agua*18=5_131
+4_147*charmantini*_4_147*fuego*dragon*23=5_148
+4_446*charmanlax*_4_446*fuego*normal*13=5_143
+5_8*charmertle*_5_8*fuego*agua*36=6_9
+5_24*charmebok*_5_24*fuego*veneno*36=6_24
+5_30*charmerina*_5_30*fuego*veneno*piedra lunar=6_31
+5_33*charmerino*_5_33*fuego*veneno*piedra lunar=6_34
+5_80*charmebro*_5_80*fuego*agua*36=6_80
+5_105*charmewak*_5_105*fuego*tierra*36=6_105
+5_112*charmedon*_5_112*fuego*tierra*protector=6_464
+5_115*charmekhan*_5_115*fuego*normal*36=6_115
+5_117*charmedra*_5_117*fuego*agua*escama dragon=6_230
+5_130*gyaraleon*_5_130*fuego*agua*36=6_130
+5_131*charmepras*_5_131*fuego*agua*36=6_131
+5_143*charmelax*_5_143*fuego*normal*36=6_143
+5_148*charmenair*_5_148*fuego*dragon*45=6_149
+5_199*charmeking*_5_199*fuego*psiquico*36=6_199
+5_463*charmelicky*_5_463*fuego*normal*36=6_463
+6_9*charitoise*_6_9*fuego*agua*no
+6_24*charibok*_6_24*fuego*veneno*no
+6_31*chariqueen*_6_31*fuego*veneno*no
+6_34*chariking*_6_34*fuego*veneno*no
+6_80*charibro*_6_80*fuego*agua*no
+6_105*chariwak*_6_105*fuego*tierra*no
+6_115*charikhan*_6_115*fuego*normal*no
+6_130*gyarazard*_6_130*fuego*agua*no
+6_131*charipras*_6_131*fuego*agua*no
+6_143*charilax*_6_143*fuego*normal*no
+6_149*charinite*_6_149*fuego*dragon*no
+6_199*slowzard*_6_199*fuego*psiquico*no
+6_230*charidra*_6_230*fuego*dragon*no
+6_463*charilicky*_6_463*fuego*normal*no
+6_464*chariperior*_6_464*fuego*tierra*no
+7_29*squiran f*_7_29*agua*veneno*16=8_30
+7_32*squiran m*_7_32*agua*veneno*16=8_33
+7_54*squirduck*_7_54*agua*agua*24=8_55
+7_60*squirwag*_7_60*agua*agua*20=8_61
+7_79*squirpoke*_7_79*agua*psiquico*26=8_80,roca del rey=8_199
+7_86*squirel*_7_86*agua*agua*25=8_87
+7_104*squirbone*_7_104*agua*tierra*22=8_105
+7_108*squirtung*_7_108*agua*normal*16=8_463
+7_111*squirhorn*_7_111*agua*tierra*16=8_112
+7_115*squirkhan*_7_115*agua*normal*16=8_115
+7_116*squirsea*_7_116*agua*agua*24=8_117
+7_131*squirpras*_7_131*agua*hielo*16=8_131
+7_138*squiryte*_7_138*agua*roca*28=8_139
+7_140*squirbuto*_7_140*agua*roca*28=8_141
+7_147*squirtini*_7_147*agua*dragon*23=8_148
+7_446*squirlax*_7_446*agua*normal*13=8_143
+8_30*wartorina*_8_30*agua*veneno*piedra lunar=9_31
+8_33*wartorino*_8_33*agua*veneno*piedra lunar=9_34
+8_55*wartorduck*_8_55*agua*agua*36=9_55
+8_61*wartorwhirl*_8_61*agua*agua*piedra agua=9_62,roca del rey=9_186
+8_80*wartorbro*_8_80*agua*psiquico*36=9_80
+8_86*wartorgong*_8_86*agua*hielo*36=9_86
+8_105*wartorwak*_8_105*agua*tierra*36=9_105
+8_112*wartordon*_8_112*agua*tierra*36=9_464
+8_115*wartorkhan*_8_115*agua*normal*36=9_115
+8_117*wartordra*_8_117*agua*agua*escama dragon=9_230
+8_131*wartorpras*_8_131*agua*hielo*36=9_131
+8_139*wartorstar*_8_139*agua*roca*36=9_139
+8_141*wartortops*_8_141*agua*roca*36=9_141
+8_143*wartorlax*_8_143*agua*normal*36=9_143
+8_148*wartornair*_8_148*agua*dragon*45=9_149
+8_199*wartorking*_8_199*agua*agua*36=9_199
+8_463*wartorlicky*_8_463*agua*normal*36=9_463
+9_31*blasqueen*_9_31*agua*veneno*no
+9_34*blasking*_9_34*agua*veneno*no
+9_55*blasduck*_9_55*agua*agua*no
+9_62*blaswrath*_9_62*agua*lucha*no
+9_80*blasbro*_9_80*agua*psiquico*no
+9_86*blasgong*_9_86*agua*hielo*no
+9_105*blaswak*_9_105*agua*tierra*no
+9_115*blaskhan*_9_115*agua*normal*no
+9_131*blaspras*_9_131*agua*hielo*no
+9_139*blastar*_9_139*agua*roca*no
+9_141*blastops*_9_141*agua*roca*no
+9_143*blaslax*_9_143*agua*normal*no
+9_149*blasnite*_9_149*agua*dragon*no
+9_186*blastoed*_9_186*agua*agua*no
+9_199*slowtoise*_9_199*agua*psiquico*no
+9_230*blasdra*_9_230*agua*dragon*no
+9_463*blaslicky*_9_463*agua*normal*no
+9_464*blasperior*_9_464*agua*tierra*no
+10_13*caterdle*_10_13*bicho*veneno*7=11_14
+10_46*cateras*_10_46*bicho*planta*15=11_47
+10_48*caternat*_10_48*bicho*veneno*19=11_49
+10_123*caterther*_10_123*bicho*volador*revestimiento metalico=11_212
+10_127*catersir*_10_127*bicho*bicho*7=11_127
+11_14*metauna*_11_14*bicho*veneno*10=12_15
+11_47*metasect*_11_47*bicho*planta*20=12_47
+11_49*metamoth*_11_49*bicho*veneno*24=12_49
+11_127*metasir*_11_127*bicho*bicho*10=12_127
+11_212*metazor*_11_212*bicho*acero*10=12_212
+12_15*butterdrill*_12_15*bicho*veneno*no
+12_47*buttersect*_12_47*bicho*planta*no
+12_49*buttermoth*_12_49*bicho*veneno*no
+12_127*buttersir*_12_127*bicho*volador*no
+12_212*butterzor*_12_212*bicho*acero*no
+13_46*weeras*_13_46*bicho*planta*15=14_47
+13_48*weenat*_13_48*bicho*veneno*19=14_49
+13_123*weether*_13_123*bicho*volador*revestimiento metalico=14_212
+13_127*weesir*_13_127*bicho*veneno*7=14_127
+14_47*kakusect*_14_47*bicho*planta*20=15_47
+14_49*kakumoth*_14_49*bicho*veneno*24=15_49
+14_127*kakusir*_14_127*bicho*veneno*10=15_127
+14_212*kakuzor*_14_212*bicho*acero*10=15_212
+15_47*beesect*_15_47*bicho*planta*no
+15_49*beemoth*_15_49*bicho*veneno*no
+15_127*beesir*_15_127*bicho*veneno*no
+15_212*beezor*_15_212*bicho*acero*no
+16_21*speagey*_16_21*normal*volador*19=17_22
+16_41*zutgey*_16_41*volador*veneno*20=17_42
+16_83*fargey*_16_83*normal*volador*18=17_83
+16_84*dogey*_16_84*normal*volador*24=17_85
+16_142*aerogey*_16_142*volador*roca*18=17_142
+17_22*feageotto*_17_22*normal*volador*36=18_22
+17_42*golgeotto*_17_42*volador*veneno*34=18_169
+17_83*fargeotto*_17_83*normal*volador*36=18_83
+17_85*dogeotto*_17_85*normal*volador*36=18_85
+17_142*aerogeotto*_17_142*volador*roca*36=18_142
+18_22*feageot*_18_22*normal*volador*no
+18_83*fargeot*_18_83*normal*volador*no
+18_85*dogeot*_18_85*normal*volador*no
+18_142*aerogeot*_18_142*volador*roca*no
+18_169*crogeot*_18_169*volador*veneno*no
+19_23*rattans*_19_111*normal*veneno*21=20_24
+19_27*rattashrew*_19_27*normal*tierra*21=20_28
+19_29*rattaran f*_19_29*normal*veneno*18=20_30
+19_32*rattaran m*_19_32*normal*veneno*18=20_33
+19_37*rattapix*_19_37*normal*fuego*piedra fuego=20_38
+19_50*rattaglett*_19_50*normal*tierra*23=20_51
+19_52*rattawth*_19_52*normal*normal*23=20_53
+19_54*rattaduck*_19_54*normal*agua*26=20_55
+19_56*rattakey*_19_56*normal*lucha*24=20_57
+19_58*rattalithe*_19_58*normal*fuego*piedra fuego=20_59
+19_77*rattanyta*_19_77*normal*fuego*30=20_78
+19_83*rattatch'd*_19_83*normal*volador*20=20_83
+19_86*rattael*_19_86*normal*agua*27=20_87
+19_111*rattahorn*_19_111*normal*tierra*31=20_112
+19_128*rattaros*_19_128*normal*normal*20=20_128
+19_133*rattavee*_19_133*normal*normal*piedra agua=20_134,piedra trueno=20_135,piedra fuego=20_136,piedra dia=20_196,piedra noche=20_197,piedra hoja=20_470,piedra hielo=20_471,25=20_700
+19_172*rattachu*_19_172*normal*electrico*15=20_25
+20_24*ratibok*_20_24*normal*veneno*no
+20_25*ratichu*_20_25*normal*electrico*piedra trueno=20_26
+20_26*raicate*_20_26*normal*electrico*no
+20_28*ratilash*_20_28*normal*tierra*no
+20_30*ratirina*_20_30*normal*veneno*piedra lunar=20_31
+20_31*ratiqueen*_20_31*normal*veneno*no
+20_33*ratirino*_20_33*normal*veneno*piedra lunar=20_34
+20_34*ratiking*_20_34*normal*veneno*no
+20_38*ratitales*_20_38*normal*fuego*no
+20_51*ratitrio*_20_51*normal*tierra*no
+20_53*ratisian*_20_53*normal*normal*no
+20_55*ratiduck*_20_55*normal*agua*no
+20_57*ratiape*_20_57*normal*lucha*no
+20_59*ratinine*_20_59*normal*fuego*no
+20_78*ratidash*_20_78*normal*fuego*no
+20_83*ratitch'd*_20_83*normal*volador*no
+20_87*ratigong*_20_87*normal*agua*no
+20_112*ratidon*_20_112*normal*tierra*protector=20_464
+20_128*ratiros*_20_128*normal*normal*no
+20_134*vaporcate*_20_134*normal*agua*no
+20_135*joltecate*_20_135*normal*electrico*no
+20_136*flarecate*_20_136*normal*fuego*no
+20_196*especate*_20_196*normal*psiquico*no
+20_197*umbrecate*_20_197*normal*siniestro*no
+20_470*leafecate*_20_470*normal*planta*no
+20_471*glacecate*_20_471*normal*hielo*no
+20_464*ratiperior*_20_464*normal*tierra*no
+20_700*sylvecate*_20_700*normal*hada*no
+21_41*zurow*_21_41*volador*veneno*21=22_42
+21_83*speatch'd*_21_83*normal*volador*20=22_83
+21_84*speaduo*_21_84*normal*volador*25=22_84
+21_142*speadactyl*_21_142*normal*volador*20=22_142
+22_42*golrow*_22_42*volador*veneno*31=22_169
+22_83*fearch'd*_22_83*normal*volador*no
+22_84*feadrio*_22_84*normal*volador*no
+22_142*feadactyl*_22_142*normal*volador*no
+22_169*crorow*_22_169*volador*veneno*no
+23_27*ekashrew*_23_27*veneno*tierra*22=24_28
+23_29*ekaran f*_23_29*veneno*tierra*19=24_30
+23_32*ekaran m*_23_32*veneno*tierra*19=24_33
+23_37*ekapix*_23_37*veneno*fuego*piedra fuego=24_38
+23_50*ekaglett*_23_50*veneno*tierra*24=24_51
+23_52*moewans*_23_52*veneno*normal*25=24_53
+23_54*psyans*_23_54*veneno*agua*27=24_55
+23_56*manans*_23_56*veneno*lucha*27=24_57
+23_58*growans*_23_58*veneno*fuego*piedra fuego=24_59
+23_77*ponyans*_23_77*veneno*fuego*31=24_78
+23_83*farfans*_23_83*veneno*volador*22=24_83
+23_86*seans*_23_86*veneno*agua*28=24_87
+23_111*ekahorn*_23_111*veneno*roca*31=24_112
+23_116*horans*_23_116*veneno*agua*26=24_117
+23_128*tauans*_23_128*veneno*normal*22=24_128
+23_129*magians*_23_129*veneno*agua*21=24_130
+23_133*eevans*_23_133*veneno*normal*piedra agua=24_134,piedra trueno=24_135,piedra fuego=24_136,piedra dia=24_196,piedra noche=24_197,piedra hoja=24_470,piedra hielo=24_471,26=24_700
+23_147*ekatini*_23_147*veneno*dragon*26=24_148
+23_172*pians*_23_172*veneno*electrico*16=24_25
+24_25*pikabok*_24_25*veneno*electrico*piedra trueno=24_26
+24_26*raibok*_24_26*veneno*electrico*no
+24_28*arlash*_24_28*veneno*tierra*no
+24_30*arina*_24_30*veneno*tierra*piedra lunar=24_31
+24_31*arqueen*_24_31*veneno*tierra*no
+24_33*arino*_24_33*veneno*tierra*piedra lunar=24_34
+24_34*arking*_24_34*veneno*tierra*no
+24_38*artales*_24_38*veneno*fuego*no
+24_51*artrio*_24_51*veneno*tierra*no
+24_53*perbok*_24_53*veneno*normal*no
+24_55*golbok*_24_55*veneno*agua*no
+24_57*primebok*_24_57*veneno*lucha*no
+24_59*arcabok*_24_59*veneno*fuego*no
+24_78*rapibok*_24_78*veneno*fuego*no
+24_83*farfbok*_24_83*veneno*volador*no
+24_87*dewbok*_24_87*veneno*agua*no
+24_112*ardon*_24_112*veneno*roca*protector=24_464
+24_117*seabok*_24_117*veneno*agua*escama dragon=24_230
+24_128*taubok*_24_128*veneno*normal*no
+24_130*gyarabok*_24_130*veneno*agua*no
+24_134*vaporbok*_24_134*veneno*agua*no
+24_135*joltbok*_24_135*veneno*electrico*no
+24_136*flarebok*_24_136*veneno*fuego*no
+24_148*argonair*_24_148*veneno*dragon*55=24_149
+24_149*argonite*_24_149*veneno*dragon*no
+24_196*espebok*_24_196*veneno*psiquico*no
+24_197*umbrebok*_24_197*veneno*siniestro*no
+24_230*kingbok*_24_230*veneno*dragon*no
+24_464*arperior*_24_464*veneno*roca*no
+24_470*leafbok*_24_470*veneno*planta*no
+24_471*glacebok*_24_471*veneno*hielo*no
+24_700*sylvebok*_24_700*veneno*hada*no
+25_28*pikalash*_25_28*electrico*tierra*piedra trueno=26_28
+25_30*pikarina*_25_30*electrico*veneno*piedra lunar=26_31
+25_33*pikarino*_25_33*electrico*veneno*piedra lunar=26_34
+25_35*pikafairy*_25_35*electrico*hada*piedra lunar=26_36
+25_38*pikatales*_25_38*electrico*fuego*piedra trueno=26_38
+25_39*pikapuff*_25_39*electrico*hada*piedra lunar=26_40
+25_51*pikatrio*_25_51*electrico*tierra*piedra trueno=26_51
+25_53*pikasian*_25_53*electrico*normal*piedra trueno=26_53
+25_55*pikaduck*_25_55*electrico*agua*piedra trueno=26_55
+25_57*pikape*_25_57*electrico*lucha*piedra trueno=26_57
+25_59*pikanine*_25_59*electrico*fuego*piedra trueno=26_59
+25_78*pikadash*_25_78*electrico*fuego*piedra trueno=26_78
+25_83*pikatch'd*_25_83*electrico*volador*piedra trueno=26_83
+25_87*pikagong*_25_87*electrico*agua*piedra trueno=26_87
+25_112*pikadon*_25_112*electrico*roca*protector=26_464
+25_113*pikasey*_25_113*electrico*normal*piedra trueno=26_242
+25_128*pikaros*_25_128*electrico*normal*piedra trueno=26_128
+25_134*pikavapor*_25_134*electrico*agua*piedra trueno=26_134
+25_135*pikajolt*_25_135*electrico*electrico*piedra trueno=26_135
+25_136*pikaflare*_25_136*electrico*fuego*piedra trueno=26_136
+25_196*pikaespe*_25_196*electrico*psiquico*piedra trueno=26_196
+25_197*pikaumbre*_25_197*electrico*siniestro*piedra trueno=26_197
+25_470*pikaleaf*_25_470*electrico*planta*piedra trueno=26_470
+25_471*pikaglace*_25_471*electrico*hielo*piedra trueno=26_471
+25_700*pikasylve*_25_700*electrico*hada*piedra trueno=26_700
+26_28*railash*_26_28*electrico*tierra*no
+26_31*raiqueen*_26_31*electrico*veneno*no
+26_34*raiking*_26_34*electrico*veneno*no
+26_36*raifable*_26_36*electrico*hada*no
+26_38*raitales*_26_38*electrico*fuego*no
+26_40*raituff*_26_40*electrico*hada*no
+26_51*raitrio*_26_51*electrico*tierra*no
+26_53*raisian*_26_53*electrico*normal*no
+26_55*raiduck*_26_55*electrico*agua*no
+26_57*raiape*_26_57*electrico*lucha*no
+26_59*rainine*_26_59*electrico*fuego*no
+26_78*raidash*_26_78*electrico*fuego*no
+26_83*raitch'd*_26_83*electrico*volador*no
+26_87*raigong*_26_87*electrico*agua*no
+26_128*rairos*_26_128*electrico*normal*no
+26_134*raivapor*_26_134*electrico*agua*no
+26_135*raijolt*_26_135*electrico*electrico*no
+26_136*raiflare*_26_136*electrico*fuego*no
+26_196*raiflare*_26_196*electrico*psiquico*no
+26_197*raiumbre*_26_197*electrico*siniestro*no
+26_242*raisey*_26_242*electrico*normal*no
+26_464*raiperior*_26_464*electrico*roca*no
+26_470*raileaf*_26_470*electrico*planta*no
+26_471*raiglace*_26_471*electrico*hielo*no
+26_700*raisylve*_26_700*electrico*hada*no
+27_29*sandran f*_27_29*tierra*veneno*19=28_30
+27_32*sandran m*_27_32*tierra*veneno*19=28_33
+27_37*sandpix*_27_37*tierra*fuego*piedra fuego=28_38
+27_50*sandglett*_27_50*tierra*tierra*24=28_51
+27_52*sandwth*_27_52*tierra*normal*25=28_53
+27_54*psyshrew*_27_54*tierra*agua*27=28_55
+27_56*sandkey*_27_56*tierra*lucha*25=28_57
+27_58*sandlithe*_27_58*tierra*fuego*piedra fuego=28_59
+27_77*sandnyta*_27_77*tierra*fuego*31=28_78
+27_83*sandtch'd*_27_83*tierra*volador*22=28_83
+27_86*sandel*_27_86*tierra*agua*28=28_87
+27_111*sandhorn*_27_111*tierra*roca*32=28_112
+27_128*taushrew*_27_128*tierra*normal*22=28_128
+27_133*eevshrew*_27_133*tierra*normal*piedra agua=28_134,piedra trueno=28_135,piedra fuego=28_136,piedra dia=28_196,piedra noche=28_197,piedra hoja=28_470,piedra hielo=28_471,26=28_700
+27_172*pishrew*_27_133*tierra*electrico*16=25_28
+28_30*sandrina*_28_30*tierra*veneno*piedra lunar=28_31
+28_31*sandqueen*_28_31*tierra*veneno*no
+28_33*sandrino*_28_33*tierra*veneno*piedra lunar=28_34
+28_34*sandking*_28_34*tierra*veneno*no
+28_38*sandtales*_28_38*tierra*fuego*no
+28_51*sandtrio*_28_51*tierra*tierra*no
+28_53*sandsian*_28_53*tierra*normal*no
+28_55*golash*_28_55*tierra*agua*no
+28_57*sandape*_28_57*tierra*lucha*no
+28_59*sandnine*_28_59*tierra*fuego*no
+28_78*sandash*_28_78*tierra*fuego*no
+28_83*farfelash*_28_83*tierra*volador*no
+28_87*sandgong*_28_87*tierra*agua*no
+28_112*sanddon*_28_112*tierra*roca*protector=28_464
+28_128*taulash*_28_128*tierra*normal*no
+28_134*vaporlash*_28_134*tierra*agua*no
+28_135*joltlash*_28_135*tierra*electrico*no
+28_136*flarelash*_28_136*tierra*fuego*no
+28_196*espelash*_28_196*tierra*psiquico*no
+28_197*umbrelash*_28_197*tierra*siniestro*no
+28_470*leaflash*_28_470*tierra*planta*no
+28_471*glacelash*_28_471*tierra*hielo*no
+28_464*sandperiro*_28_464*tierra*roca*no
+28_700*sylvelash*_28_700*tierra*hada*no
+29_32*nidoran*_29_32*veneno*veneno*16=30_33
+29_37*vulran f*_29_37*veneno*fuego*piedra fuego=30_38
+29_50*diran f*_29_50*veneno*tierra*21=30_51
+29_52*meowran f*_29_52*veneno*normal*22=30_53
+29_54*psyran f*_29_54*veneno*agua*24=30_55
+29_56*manran f*_29_56*veneno*lucha*22=30_57
+29_58*growran f*_29_56*veneno*fuego*piedra fuego=30_59
+29_77*ponyran f*_29_77*veneno*fuego*28=30_78
+29_79*slowran f*_29_79*veneno*agua*26=30_80,roca del rey=30_199
+29_83*farferan f*_29_83*veneno*volador*16=30_83
+29_86*seran f*_29_86*veneno*agua*25=30_87
+29_104*cuboran f*_29_104*veneno*tierra*22=30_105
+29_108*lickiran f*_29_108*veneno*normal*16=30_463
+29_111*rhyran f*_29_111*veneno*roca*29=30_112
+29_115*kangasran f*_29_115*veneno*normal*16=30_115
+29_128*tauran f*_29_128*veneno*normal*16=30_128
+29_131*laran f*_29_131*veneno*agua*16=30_131
+29_133*eevran f*_29_133*veneno*normal*piedra agua=30_134,piedra trueno=30_135,piedra fuego=30_136,piedra dia=30_196,piedra noche=30_197,piedra hoja=30_470,piedra hielo=30_471,23=30_700
+29_172*piran f*_29_172*veneno*electrico*13=25_30
+29_446*munchran f*_29_446*veneno*normal*13=30_143
+30_33*nidorine*_30_33*veneno*veneno*piedra lunar=31_34
+30_38*ninerina*_30_38*veneno*fuego*piedra lunar=31_38
+30_51*dugrina*_30_51*veneno*tierra*piedra lunar=31_51
+30_53*persirina*_30_53*veneno*normal*piedra lunar=31_53
+30_55*golrina*_30_55*veneno*agua*piedra lunar=31_55
+30_57*primerina*_30_57*veneno*lucha*piedra lunar=31_57
+30_59*arcarina*_30_59*veneno*fuego*piedra lunar=31_59
+30_78*rapirina*_30_78*veneno*fuego*piedra lunar=31_78
+30_80*nidosis*_30_80*veneno*agua*piedra lunar=31_80
+30_83*farferina*_30_83*veneno*volador*piedra lunar=31_83
+30_87*dewrina*_30_87*veneno*agua*piedra lunar=31_87
+30_105*marorina*_30_105*veneno*tierra*piedra lunar=31_105
+30_112*rhyrina*_30_112*veneno*roca*protector=31_464
+30_115*kangasrina*_30_115*veneno*normal*piedra lunar=31_115
+30_128*taurina*_30_128*veneno*normal*piedra lunar=31_128
+30_131*larina*_30_131*veneno*agua*piedra lunar=31_131
+30_134*vaporina*_30_134*veneno*agua*piedra lunar=31_134
+30_135*joltrina*_30_135*veneno*electrico*piedra lunar=31_135
+30_136*flarina*_30_136*veneno*fuego*piedra lunar=31_136
+30_143*snorina*_30_143*veneno*normal*piedra lunar=31_143
+30_196*esperina*_30_196*veneno*psiquico*piedra lunar=31_196
+30_197*umbrina*_30_197*veneno*siniestro*piedra lunar=31_197
+30_199*slowrina*_30_199*veneno*psiquico*piedra lunar=31_199
+30_463*lickirina*_30_463*veneno*normal*piedra lunar=31_463
+30_470*leafrina*_30_470*veneno*planta*piedra lunar=31_470
+30_471*glacerina*_30_471*veneno*hielo*piedra lunar=31_471
+30_700*sylverina*_30_700*veneno*hada*piedra lunar=31_471
+31_34*nidoreal*_31_34*veneno*tierra*no
+31_38*ninequeen*_31_38*veneno*fuego*no
+31_51*dugqueen*_31_51*veneno*tierra*no
+31_53*persiqueen*_31_53*veneno*normal*no
+31_55*golqueen*_31_55*veneno*agua*no
+31_57*primequeen*_31_57*veneno*lucha*no
+31_59*arcaqueen*_31_59*veneno*fuego*no
+31_78*rapiqueen*_31_78*veneno*fuego*no
+31_80*slowsisqueen*_31_80*veneno*agua*no
+31_83*farfequeen*_31_83*veneno*volador*no
+31_87*dewqueen*_31_87*veneno*agua*no
+31_105*maroqueen*_31_105*veneno*tierra*no
+31_115*kangasqueen*_31_115*veneno*normal*no
+31_128*tauqueen*_31_128*veneno*normal*no
+31_131*laqueen*_31_131*veneno*agua*no
+31_134*vaporqueen*_31_134*veneno*agua*no
+31_135*joltqueen*_31_135*veneno*electrico*no
+31_136*flarequeen*_31_136*veneno*fuego*no
+31_143*snorqueen*_31_143*veneno*normal*no
+31_196*espequeen*_31_196*veneno*psiquico*no
+31_197*umbrequeen*_31_197*veneno*siniestro*no
+31_199*slowqueen*_31_199*veneno*psiquico*no
+31_463*lickiqueen*_31_463*veneno*normal*no
+31_464*rhyqueen*_31_464*veneno*roca*no
+31_470*leafqueen*_31_470*veneno*planta*no
+31_471*glacequeen*_31_471*veneno*hielo*no
+31_700*sylvequeen*_31_700*veneno*hada*no
+32_37*vulran m*_32_37*veneno*fuego*piedra fuego=33_38
+32_50*diran m*_32_50*veneno*tierra*21=33_51
+32_52*meowran m*_32_52*veneno*normal*22=33_53
+32_54*psyran m*_32_54*veneno*agua*24=33_55
+32_56*manran m*_32_56*veneno*lucha*22=33_57
+32_58*growran m*_32_56*veneno*fuego*piedra fuego=33_59
+32_77*ponyran m*_32_77*veneno*fuego*28=33_78
+32_79*slowran m*_32_79*veneno*agua*26=33_80,roca del rey=33_199
+32_83*farferan m*_32_83*veneno*volador*16=33_83
+32_86*seran m*_32_86*veneno*agua*25=33_87
+32_104*cuboran m*_32_104*veneno*tierra*22=33_105
+32_108*lickiran m*_32_108*veneno*normal*16=33_463
+32_111*rhyran m*_32_111*veneno*roca*29=33_112
+32_115*kangasran m*_32_115*veneno*normal*16=33_115
+32_128*tauran m*_32_128*veneno*normal*16=33_128
+32_131*laran m*_32_131*veneno*agua*16=33_131
+32_133*eevran m*_32_133*veneno*normal*piedra agua=33_134,piedra trueno=33_135,piedra fuego=33_136,piedra dia=33_196,piedra noche=33_197,piedra hoja=33_470,piedra hielo=33_471,23=33_700
+32_172*piran m*_32_172*veneno*electrico*13=25_33
+32_446*munchran m*_32_446*veneno*normal*13=33_143
+33_38*ninerino*_33_38*veneno*fuego*piedra lunar=34_38
+33_51*dugrino*_33_51*veneno*tierra*piedra lunar=34_51
+33_53*persirino*_33_53*veneno*normal*piedra lunar=34_53
+33_55*golrino*_33_55*veneno*agua*piedra lunar=34_55
+33_57*primerino*_33_57*veneno*lucha*piedra lunar=34_57
+33_59*arcarino*_33_59*veneno*fuego*piedra lunar=34_59
+33_78*rapirino*_33_78*veneno*fuego*piedra lunar=34_78
+33_80*nidobro*_33_80*veneno*agua*piedra lunar=34_80
+33_83*farferino*_33_83*veneno*volador*piedra lunar=34_83
+33_87*dewrino*_33_87*veneno*agua*piedra lunar=34_87
+33_105*marorino*_33_105*veneno*tierra*piedra lunar=34_105
+33_112*rhyrino*_33_112*veneno*roca*protector=34_464
+33_115*kangasrino*_33_115*veneno*normal*piedra lunar=34_115
+33_128*taurino*_33_128*veneno*normal*piedra lunar=34_128
+33_131*larino*_33_131*veneno*agua*piedra lunar=34_131
+33_134*vaporino*_33_134*veneno*agua*piedra lunar=34_134
+33_135*joltrino*_33_135*veneno*electrico*piedra lunar=34_135
+33_136*flarino*_33_136*veneno*fuego*piedra lunar=34_136
+33_143*snorino*_33_143*veneno*normal*piedra lunar=34_143
+33_196*esperino*_33_196*veneno*psiquico*piedra lunar=34_196
+33_197*umbrino*_33_197*veneno*siniestro*piedra lunar=34_197
+33_199*slowrino*_33_199*veneno*psiquico*piedra lunar=34_199
+33_463*lickirino*_33_463*veneno*normal*piedra lunar=34_463
+33_470*leafrino*_33_470*veneno*planta*piedra lunar=34_470
+33_471*glacerino*_33_471*veneno*hielo*piedra lunar=34_471
+33_700*sylverino*_33_700*veneno*hada*piedra lunar=34_471
+34_38*nineking*_34_38*veneno*fuego*no
+34_51*dugking*_34_51*veneno*tierra*no
+34_53*persiking*_34_53*veneno*normal*no
+34_55*golking*_34_55*veneno*agua*no
+34_57*primeking*_34_57*veneno*lucha*no
+34_59*arcaking*_34_59*veneno*fuego*no
+34_78*rapiking*_34_78*veneno*fuego*no
+34_80*slowbroking*_34_80*veneno*agua*no
+34_83*farfeking*_34_83*veneno*volador*no
+34_87*dewking*_34_87*veneno*agua*no
+34_105*maroking*_34_105*veneno*tierra*no
+34_115*kangasking*_34_115*veneno*normal*no
+34_128*tauking*_34_128*veneno*normal*no
+34_131*laking*_34_131*veneno*agua*no
+34_134*vaporking*_34_134*veneno*agua*no
+34_135*joltking*_34_135*veneno*electrico*no
+34_136*flareking*_34_136*veneno*fuego*no
+34_143*snorking*_34_143*veneno*normal*no
+34_196*espeking*_34_196*veneno*psiquico*no
+34_197*umbreking*_34_197*veneno*siniestro*no
+34_199*nidoslowking*_34_199*veneno*psiquico*no
+34_463*lickiking*_34_463*veneno*normal*no
+34_464*rhyking*_34_464*veneno*roca*no
+34_470*leafking*_34_470*veneno*planta*no
+34_471*glaceking*_34_471*veneno*hielo*no
+34_700*sylveking*_34_700*veneno*hada*no
+35_39*clefapuff*_35_113*normal*hada*piedra lunar=36_40
+35_113*chanfairy*_35_113*normal*hada*piedra lunar=36_242
+36_40*clefatuff*_36_40*normal*hada*no
+36_242*blifable*_36_242*normal*hada*no
+37_50*vulglett*_37_50*fuego*tierra*piedra fuego=38_51
+37_52*meowpix*_37_52*fuego*normal*piedra fuego=38_53
+37_54*vulduck*_37_54*fuego*agua*piedra fuego=38_55
+37_56*vulkey*_37_56*fuego*lucha*piedra fuego=38_57
+37_58*vulithe*_37_58*fuego*fuego*piedra fuego=38_59
+37_77*vulnyta*_37_77*fuego*fuego*piedra fuego=38_78
+37_83*vultch'd*_37_83*fuego*volador*piedra fuego=38_83
+37_86*vulel*_37_86*fuego*agua*piedra fuego=38_87
+37_111*vulhorn*_37_111*fuego*tierra*piedra fuego=38_112
+37_128*vulros*_37_128*fuego*normal*piedra fuego=38_128
+37_133*eevpux*_37_133*fuego*normal*piedra agua=38_134,piedra trueno=38_135,piedra fuego=38_136,piedra dia=38_196,piedra noche=38_197,piedra hoja=38_470,piedra hielo=38_471,23=38_700
+37_172*pipux*_37_172*fuego*electrico*piedra fuego=25_38
+38_51*ninetrio*_38_51*fuego*tierra*no
+38_53*persitales*_38_53*fuego*normal*no
+38_55*nineduck*_38_55*fuego*agua*no
+38_57*nineape*_38_57*fuego*lucha*no
+38_59*ninenine*_38_59*fuego*fuego*no
+38_78*ninedash*_38_78*fuego*fuego*no
+38_83*ninetch'd*_38_83*fuego*volador*no
+38_87*ninegong*_38_87*fuego*agua*no
+38_112*ninedon*_38_112*fuego*tierra*protector=38_464
+38_128*nineros*_38_128*fuego*normal*no
+38_134*vaportales*_38_134*fuego*agua*no
+38_135*joltales*_38_135*fuego*electrico*no
+38_136*flaretales*_38_136*fuego*fuego*no
+38_196*espetales*_38_196*fuego*psiquico*no
+38_197*umbretales*_38_197*fuego*siniestro*no
+38_464*nineperior*_38_464*fuego*tierra*no
+38_470*leaftales*_38_470*fuego*planta*no
+38_471*glacetales*_38_471*fuego*hielo*no
+38_700*sylvetales*_38_700*fuego*hada*no
+39_113*chanpuff*_39_113*normal*hada*piedra lunar=40_242
+40_242*blistuff*_40_242*normal*hada*no
+41_83*zutch'd*_41_83*veneno*volador*22=42_83
+41_84*zuduo*_41_84*veneno*volador*26=42_85
+41_142*zudactyl*_41_142*veneno*volador*22=42_142
+42_83*goltch'd*_42_83*veneno*volador*32=83_169
+42_85*goldrio*_42_85*veneno*volador*36=85_169
+42_142*goldactyl*_42_142*veneno*volador*32=142_169
+42_142*goldactyl*_42_142*veneno*volador*32=142_169
+43_46*oddiras*_43_46*planta*bicho*22=44_47
+43_69*oddisprout*_43_69*planta*veneno*21=44_70
+43_102*oddicute*_43_102*planta*psiquico*piedra hoja=44_103
+43_114*oddigela*_43_114*planta*veneno*21=44_465
+44_47*glosect*_44_47*planta*bicho*piedra hoja=45_47,piedra solar=47_182
+44_70*glopinbell*_44_70*planta*veneno*piedra hoja=45_71,piedra solar=71_182
+44_103*glotor*_44_103*planta*psiquico*piedra hoja=45_103,piedra solar=103_182
+44_465*glogrowth*_44_465*planta*veneno*piedra hoja=45_465,piedra solar=182_465
+45_47*vilesect*_45_47*planta*bicho*no
+45_71*viletreebel*_45_71*planta*veneno*no
+45_103*viletor*_45_103*planta*psiquico*no
+45_465*vilegrowth*_45_465*planta*veneno*no
+46_48*panat*_46_48*bicho*veneno*27=47_49
+46_69*pasprout*_46_69*bicho*planta*22=47_70
+46_102*pacute*_46_102*bicho*psiquico*piedra hoja=47_103
+46_114*pagela*_46_114*bicho*planta*24=47_465
+46_123*pather*_46_123*bicho*volador*revestimiento metalico=47_212
+46_127*pasir*_46_127*bicho*planta*24=47_127
+47_49*paramoth*_47_49*bicho*veneno*no
+47_70*parapinbell*_47_70*bicho*planta*piedra hoja=47_71
+47_71*paratreebel*_47_71*bicho*planta*no
+47_103*parator*_47_103*bicho*psiquico*no
+47_127*parasir*_47_127*bicho*planta*no
+47_182*bellosect*_47_182*planta*bicho*no
+47_212*parazor*_47_212*bicho*acero*no
+47_465*paragrowth*_47_465*bicho*planta*no
+48_123*venother*_48_123*bicho*veneno*revestimiento metalico=48_212
+48_127*pinat*_48_127*bicho*veneno*31=48_127
+49_127*pinmoth*_49_127*bicho*veneno*no
+49_212*venozor*_49_212*bicho*acero*no
+50_52*meowglett*_50_52*tierra*normal*27=51_53
+50_54*psyglett*_50_54*tierra*agua*29=51_55
+50_56*manglett*_50_56*tierra*lucha*27=51_57
+50_58*growglett*_50_58*tierra*fuego*piedra fuego=51_59
+50_77*ponyglett*_50_77*tierra*fuego*33=51_78
+50_83*farfeglett*_50_83*tierra*volador*26=51_83
+50_86*seglett*_50_86*tierra*agua*26=51_87
+50_111*dihorn*_50_111*tierra*roca*34=51_112
+50_128*diros*_50_128*tierra*normal*26=51_128
+50_133*eevglett*_50_133*tierra*normal*piedra agua=51_134,piedra trueno=51_135,piedra fuego=51_136,piedra dia=51_196,piedra noche=51_197,piedra hoja=51_470,piedra hielo=51_471,28=51_700
+50_172*piglett*_50_172*tierra*electrico*18=25_51
+51_53*persitrio*_51_53*tierra*normal*no
+51_55*goltrio*_51_55*tierra*agua*no
+51_57*primetrio*_51_57*tierra*lucha*no
+51_59*arcatrio*_51_59*tierra*fuego*no
+51_78*rapitrio*_51_78*tierra*fuego*no
+51_83*farfetrio*_51_83*tierra*volador*no
+51_87*dewtrio*_51_87*tierra*agua*no
+51_112*dugdon*_51_112*tierra*roca*protector=51_464
+51_128*dugros*_51_128*tierra*normal*no
+51_134*vaportrio*_51_134*tierra*agua*no
+51_135*joltrio*_51_135*tierra*electrico*no
+51_136*flaretrio*_51_136*tierra*fuego*no
+51_196*espetrio*_51_196*tierra*psiquico*no
+51_197*umbretrio*_51_197*tierra*siniestro*no
+51_464*dugperior*_51_464*tierra*roca*no
+51_470*leaftrio*_51_470*tierra*planta*no
+51_471*glacetrio*_51_471*tierra*hielo*no
+51_700*sylvetrio*_51_700*tierra*hada*no
+52_54*meowduck*_52_54*normal*agua*30=53_55
+52_56*meowkey*_52_56*normal*lucha*28=53_57
+52_58*meowlithe*_52_58*normal*fuego*piedra fuego=53_59
+52_77*meownyta*_52_77*normal*fuego*38=53_78
+52_83*meowtch'd*_52_83*normal*volador*28=53_83
+52_86*meowel*_52_86*normal*agua*31=53_87
+52_111*meowhorn*_52_111*normal*tierra*35=53_112
+52_128*meowros*_52_128*normal*normal*28=53_128
+52_133*eevth*_52_133*normal*normal*piedra agua=53_134,piedra trueno=53_135,piedra fuego=53_136,piedra dia=53_196,piedra noche=53_197,piedra hoja=53_470,piedra hielo=53_471,29=53_700
+52_172*pith*_52_172*normal*electrico*19=25_53
+53_55*persiduck*_53_55*normal*agua*no
+53_57*persiape*_53_57*normal*lucha*no
+53_59*persinine*_53_59*normal*fuego*no
+53_78*persidash*_53_78*normal*fuego*no
+53_83*persitch'd*_53_83*normal*volador*no
+53_87*persigong*_53_86*normal*agua*no
+53_112*persidon*_53_112*normal*tierra*protector=53_464
+53_128*persiros*_53_128*normal*normal*no
+53_134*vaporan*_53_134*normal*agua*no
+53_135*joltan*_53_135*normal*electrico*no
+53_136*flaran*_53_136*normal*fuego*no
+53_196*espan*_53_196*normal*psiquico*no
+53_197*umbran*_53_197*normal*siniestro*no
+53_464*persiperior*_53_464*normal*tierra*no
+53_470*leafan*_53_470*normal*planta*no
+53_471*glacan*_53_471*normal*hielo*no
+53_700*sylvan*_53_700*normal*hada*no
+54_56*psykey*_54_56*agua*lucha*30=55_57
+54_58*psylithe*_54_58*agua*fuego*piedra fuego=55_59
+54_60*psywag*_54_60*agua*agua*29=55_61
+54_77*psynyta*_54_77*agua*fuego*36=55_78
+54_79*psypoke*_54_79*agua*psiquico*35=55_80,roca del rey=55_199
+54_83*psytch'd*_54_83*agua*volador*33=55_83
+54_86*psyel*_54_86*agua*agua*33=55_87
+54_111*psyhorn*_54_111*agua*tierra*37=55_112
+54_116*horduck*_54_116*agua*agua*32=55_117
+54_128*psyros*_54_128*agua*normal*33=55_128
+54_131*psypras*_54_131*agua*hielo*33=55_131
+54_133*eevduck*_54_133*agua*normal*piedra agua=55_134,piedra trueno=55_135,piedra fuego=55_136,piedra dia=55_196,piedra noche=55_197,piedra hoja=55_470,piedra hielo=55_471,29=55_700
+54_138*psynyte*_54_138*agua*roca*36=55_139
+54_140*psybuto*_54_140*agua*roca*36=55_141
+54_147*psyniti*_54_147*agua*dragon*31=55_148
+54_172*piduck*_54_172*agua*electrico*21=25_55
+55_57*golape*_55_57*agua*lucha*no
+55_59*golnine*_55_59*agua*fuego*no
+55_61*golwhirl*_55_61*agua*agua*piedra agua=55_62,roca del rey=55_186
+55_62*golwrath*_55_62*agua*lucha*no
+55_78*goldash*_55_78*agua*fuego*no
+55_80*golbro*_55_80*agua*psiquico*no
+55_83*goltch'd*_55_83*agua*volador*no
+55_87*golgong*_55_87*agua*hielo*no
+55_112*goldon*_55_112*agua*tierra*protector=55_464
+55_117*seaduck*_55_117*agua*agua*escama dragon=55_230
+55_128*golros*_55_128*agua*normal*no
+55_131*golpras*_55_131*agua*hielo*no
+55_134*vaporduck*_55_134*agua*agua*no
+55_135*joltduck*_55_135*agua*electrico*no
+55_136*flareduck*_55_136*agua*fuego*no
+55_139*golstar*_55_139*agua*roca*no
+55_141*goltops*_55_141*agua*roca*no
+55_148*golnair*_55_148*agua*dragon*55=55_149
+55_149*golnite*_55_149*agua*dragon*no
+55_186*goltoed*_55_186*agua*agua*no
+55_196*espeduck*_55_196*agua*psiquico*no
+55_197*umbreduck*_55_197*agua*siniestro*no
+55_199*golking*_55_199*agua*psiquico*no
+55_230*kingduck*_55_230*agua*dragon*no
+55_464*golperior*_55_464*agua*tierra*no
+55_470*leafduck*_55_470*agua*planta*no
+55_471*glaceduck*_55_471*agua*hielo*no
+55_700*sylveduck*_55_700*agua*hada*no
+56_58*manlithe*_56_58*lucha*fuego*piedra fuego=57_59
+56_77*manyta*_56_77*lucha*fuego*34=57_78
+56_83*mantch'd*_56_83*lucha*volador*28=57_83
+56_86*manel*_56_86*lucha*agua*31=57_87
+56_111*manhorn*_56_111*lucha*roca*35=57_112
+56_128*manros*_56_128*lucha*normal*28=57_128
+56_133*eevkey*_56_133*lucha*normal*piedra agua=57_134,piedra trueno=57_135,piedra fuego=57_136,piedra dia=57_196,piedra noche=57_197,piedra hoja=57_470,piedra hielo=57_471,29=57_700
+56_172*pikey*_56_172*lucha*electrico*19=25_57
+57_59*primenine*_57_59*lucha*fuego*no
+57_78*primedash*_57_78*lucha*fuego*no
+57_83*primetch'd*_57_83*lucha*volador*no
+57_87*primegong*_57_87*lucha*agua*no
+57_112*primedon*_57_112*lucha*roca*protector=57_464
+57_128*primeros*_57_128*lucha*normal*no
+57_134*vaporape*_57_134*lucha*agua*no
+57_135*joltape*_57_135*lucha*electrico*no
+57_136*flarape*_57_136*lucha*fuego*no
+57_196*espape*_57_196*lucha*psiquico*no
+57_197*umbrape*_57_197*lucha*siniestro*no
+57_464*primeperior*_57_464*lucha*roca*no
+57_470*leafape*_57_470*lucha*planta*no
+57_471*glacape*_57_471*lucha*hielo*no
+57_700*sylvape*_57_700*lucha*hada*no
+58_77*grownyta*_58_77*fuego*fuego*piedra fuego=59_78
+58_83*growtch'd*_58_83*fuego*volador*piedra fuego=59_83
+58_86*growel*_58_86*fuego*agua*piedra fuego=59_87
+58_111*growhorn*_58_111*fuego*tierra*piedra fuego=59_112
+58_128*growros*_58_128*fuego*normal*piedra fuego=59_128
+58_133*eevlithe*_58_133*fuego*normal*piedra agua=59_134,piedra trueno=59_135,piedra fuego=59_136,piedra dia=59_196,piedra noche=59_197,piedra hoja=59_470,piedra hielo=59_471,30=59_700
+58_172*pilithe*_58_172*fuego*electrico*piedra fuego=25_59
+59_78*arcadash*_59_78*fuego*fuego*no
+59_83*arcatch'd*_59_83*fuego*volador*no
+59_87*arcagong*_59_87*fuego*agua*no
+59_112*arcadon*_59_112*fuego*tierra*protector=59_464
+59_128*arcaros*_59_128*fuego*normal*no
+59_134*vapornine*_59_134*fuego*agua*no
+59_135*joltnine*_59_135*fuego*electrico*no
+59_136*flarenine*_59_136*fuego*fuego*no
+59_196*espenine*_59_196*fuego*psiquico*no
+59_197*umbrenine*_59_197*fuego*siniestro*no
+59_464*arcaperior*_59_464*fuego*tierra*no
+59_470*leafnine*_59_470*fuego*planta*no
+59_471*glacenine*_59_471*fuego*hielo*no
+59_700*slyvenine*_59_700*fuego*hada*no
+60_79*slowag*_60_79*agua*psiquico*31=61_80,roca del rey=61_199
+60_86*sewag*_60_86*agua*agua*29=61_80
+60_116*horwag*_60_116*agua*agua*28=61_117
+60_131*lawag*_60_131*agua*hielo*25=61_131
+60_138*omawag*_60_138*agua*roca*32=61_139
+60_140*kabuwag*_60_140*agua*roca*32=61_141
+60_147*dratiwag*_60_147*agua*dragon*27=61_148
+61_80*polibro*_61_80*agua*psiquico*piedra agua=62_80,roca del rey=80_185
+61_86*dewwhirl*_61_86*agua*hielo*piedra agua=62_86,roca del rey=86_185
+61_117*seawhirl*_61_117*agua*agua*escama dragon=62_230,roca del rey=185_230
+61_131*lawhirl*_61_131*agua*hielo*piedra agua=62_131,roca del rey=131_185
+61_139*omawhirl*_61_139*agua*roca*piedra agua=62_139,roca del rey=139_185
+61_141*kabuwhirl*_61_141*agua*roca*piedra agua=62_141,roca del rey=141_185
+61_148*dragowhirl*_61_148*agua*dragon*piedra agua=62_149,roca del rey=149_185
+61_199*poliking*_61_199*agua*psiquico*piedra agua=62_199,roca del rey=185_199
+62_80*polibrowrath*_62_80*agua*psiquico*no
+62_86*dewwrath*_62_86*agua*hielo*no
+62_131*lawrath*_62_131*agua*hielo*no
+62_139*omawrath*_62_139*agua*roca*no
+62_141*kabuwrath*_62_141*agua*roca*no
+62_149*dragowrath*_62_149*agua*dragon*no
+62_199*polikingwrath*_62_199*agua*psiquico*no
+62_230*kingwrath*_62_230*agua*dragon*no
+63_66*achop*_63_66*psiquico*lucha*22=64_67
+63_96*azee*_63_96*psiquico*psiquico*22=64_97
+63_236*ague*_63_236*psiquico*lucha*18=64_106=64_107=64_237
+63_238*achum*_63_238*psiquico*hielo*23=64_124
+63_239*akid*_63_239*psiquico*electrico*23=64_125
+63_240*aby*_63_240*psiquico*fuego*23=64_126
+63_439*abra jr.*_63_439*psiquico*hada*16=64_122
+64_67*kadachoke*_64_67*psiquico*lucha*40=65_68
+64_97*kadapno*_64_97*psiquico*psiquico*40=65_97
+64_106*kadalee*_64_106*psiquico*lucha*38=65_106
+64_107*kadachan*_64_107*psiquico*lucha*38=65_107
+64_122*mr. kadabra*_64_122*psiquico*hada*40=65_122
+64_124*kadanx*_64_124*psiquico*hielo*43=65_124
+64_125*kadabuzz*_64_125*psiquico*electrico*electrizador=65_466
+64_126*kadamar*_64_126*psiquico*fuego*magmatizador=65_467
+64_237*kadatop*_64_237*psiquico*lucha*38=65_237
+65_68*alachamp*_65_68*psiquico*lucha*no
+65_97*alapno*_65_97*psiquico*psiquico*no
+65_106*alalee*_65_106*psiquico*lucha*no
+65_107*alachan*_65_107*psiquico*lucha*no
+65_122*mr. alakazam*_65_122*psiquico*hada*no
+65_124*alanx*_65_124*psiquico*hielo*no
+65_237*alatop*_65_237*psiquico*lucha*no
+65_466*alavire*_65_466*psiquico*electrico*no
+65_467*alamortar*_65_467*psiquico*fuego*no
+66_236*machogue*_66_236*lucha*lucha*24=67_106=67_107=67_237
+66_96*machozee*_66_96*lucha*psiquico*27=67_97
+66_238*machochum*_66_236*lucha*hielo*29=67_124
+66_239*machokid*_66_239*lucha*electrico*29=67_125
+66_240*machoby*_66_240*lucha*fuego*29=67_126
+66_439*machop jr.*_66_439*lucha*psiquico*28=67_122
+67_97*machopno*_67_97*lucha*psiquico*40=68_97
+67_106*macholee*_67_106*lucha*lucha*40=68_106
+67_107*machochan*_67_107*lucha*lucha*40=68_107
+67_122*mr. machoke*_67_122*lucha*psiquico*40=68_122
+67_124*machony*_67_124*lucha*hielo*40=68_124
+67_125*machobuzz*_67_125*lucha*electrico*40=68_466
+67_126*machomar*_67_126*lucha*fuego*40=68_467
+67_237*machotop*_67_237*lucha*lucha*40=68_237
+68_106*machalee*_68_106*lucha*lucha*no
+68_97*machapno*_68_97*lucha*psiquico*no
+68_107*machachan*_68_107*lucha*lucha*no
+68_122*mr. machamp*_68_122*lucha*psiquico*no
+68_124*machany*_68_124*lucha*hielo*no
+68_237*machatop*_68_237*lucha*lucha*no
+68_466*machavire*_68_466*lucha*electrico*no
+68_467*machamortar*_68_467*lucha*fuego*no
+69_102*bellscute*_69_102*planta*psiquico*piedra hoja=70_103
+69_114*bellsgela*_69_114*planta*veneno*21=70_465
+70_103*weepintor*_70_103*planta*psiquico*piedra hoja=71_103
+70_465*weepingrowth*_70_465*planta*veneno*piedra hoja=71_465
+71_103*victreetor*_71_103*planta*psiquico*no
+71_182*bellotreebel*_71_182*planta*veneno*no
+71_465*victreegrowth*_71_465*planta*veneno*no
+72_90*shellcool*_72_90*agua*veneno*piedra agua=73_91
+72_98*kracool*_72_98*agua*veneno*29=73_99
+72_120*starcool*_72_120*agua*psiquico*piedra agua=73_121
+72_138*omancool*_72_138*agua*roca*35=73_139
+72_140*kabucool*_72_140*agua*roca*35=73_141
+73_91*cloycruel*_73_91*agua*hielo*no
+73_99*kincruel*_73_99*agua*veneno*no
+73_121*starcruel*_73_121*agua*psiquico*no
+73_139*omacruel*_73_139*agua*roca*no
+73_141*kabucruel*_73_141*agua*roca*no
+74_81*geomite*_74_81*roca*electrico*27=75_82
+74_95*geonix*_74_95*roca*tierra*revestimiento metalico=75_208
+74_100*geotorb*_74_100*roca*electrico*27=75_101
+74_137*geogon*_74_137*roca*normal*mejora=75_233
+75_82*graveton*_75_82*roca*electrico*piedra trueno=76_462
+75_101*gravetrode*_75_101*roca*electrico*40=76_101
+75_208*gravelix*_75_208*acero*tierra*40=76_208
+75_233*gravegon2*_75_233*roca*normal*disco extraño=76_474
+76_101*gotrode*_76_101*roca*electrico*no
+76_208*golix*_76_208*acero*tierra*no
+76_462*gozone*_76_462*roca*electrico*no
+76_474*gogon-z*_76_474*roca*normal*no
+77_83*ponytch'd*_77_83*fuego*volador*40=78_83
+77_86*ponyel*_77_86*fuego*agua*37=78_87
+77_111*ponyhorn*_77_111*fuego*tierra*41=78_112
+77_128*ponyros*_77_128*fuego*normal*40=78_128
+77_133*eevta*_77_133*fuego*normal*piedra agua=78_134,piedra trueno=78_135,piedra fuego=78_136,piedra dia=78_196,piedra noche=78_197,piedra hoja=78_470,piedra hielo=78_471,35=78_700
+77_172*pita*_77_172*fuego*electrico*25=25_78
+78_83*rapitch'd*_78_83*fuego*volador*no
+78_87*rapigong*_78_87*fuego*agua*no
+78_112*rapidon*_78_112*fuego*tierra*protectora=78_464
+78_128*rapiros*_78_128*fuego*tierra*no
+78_134*vapordash*_78_134*fuego*agua*no
+78_135*joltdash*_78_135*fuego*electrico*no
+78_136*flaredash*_78_136*fuego*fuego*no
+78_196*espedash*_78_196*fuego*psiquico*no
+78_197*umbredash*_78_197*fuego*siniestro*no
+78_464*rapiperior*_78_464*fuego*tierra*no
+78_470*leafdash*_78_470*fuego*planta*no
+78_471*glacedash*_78_471*fuego*hielo*no
+78_700*sylvedash*_78_700*fuego*hada*no
+79_86*slowel*_79_86*agua*psiquico*35=80_87,roca del rey=87_199
+79_104*cubopoke*_79_104*agua*tierra*32=80_105,roca del rey=105_199
+79_108*slowtung*_79_108*agua*normal*37=80_463,roca del rey=199_463
+79_111*slowhorn*_79_111*agua*tierra*39=80_112,roca del rey=112_199
+79_115*kangaspoke*_79_115*agua*normal*37=80_115,roca del rey=115_199
+79_116*horpoke*_79_116*agua*psiquico*34=80_117,roca del rey=117_199
+79_131*lapoke*_79_131*agua*psiquico*37=80_131,roca del rey=131_199
+79_138*omapoke*_79_138*agua*psiquico*38=80_139,roca del rey=139_199
+79_140*kabupoke*_79_140*agua*psiquico*38=80_141,roca del rey=141_199
+79_147*dratipoke*_79_147*agua*dragon*33=80_148,roca del rey=148_199
+79_446*munchpoke*_79_446*agua*normal*33=80_143,roca del rey=143_199
+80_87*slowgong*_80_87*agua*psiquico*no
+80_105*marobro*_80_105*agua*tierra*no
+80_112*slowdon*_80_112*agua*tierra*protector=80_464
+80_115*kangasbro*_80_115*agua*normal*no
+80_117*seabro*_80_117*agua*psiquico*escama dragon=80_230
+80_131*labro*_80_131*agua*psiquico*no
+80_139*omabro*_80_139*agua*psiquico*no
+80_141*kabubro*_80_141*agua*psiquico*no
+80_143*snoxbro*_80_143*agua*normal*no
+80_148*dragobro*_80_148*agua*dragon*55=80_149
+80_149*dragonibro*_80_149*agua*dragon*no
+80_185*polibrotoed*_80_185*agua*psiquico*no
+80_230*kingbro*_80_230*agua*dragon*no
+80_463*slowlicky*_80_463*agua*normal*no
+80_464*slowperior*_80_464*agua*tierra*no
+81_95*omite*_81_95*acero*tierra*revestimiento metalico=82_208
+81_100*voltmite*_81_100*acero*electrico*30=82_101
+81_137*magnegon*_81_137*acero*normal*mejora=82_233
+82_101*electon*_82_101*acero*electrico*piedra trueno=101_462
+82_208*steeton*_82_208*acero*tierra*piedra trueno=208_462
+82_233*magnegon2*_82_233*acero*normal*disco extraño=462_474
+83_111*farfehorn*_83_111*volador*tierra*42=83_112
+83_112*farfedon*_83_112*volador*tierra*protector=83_464
+83_128*farferos*_83_128*volador*normal*no
+83_133*eevtch'd*_83_133*volador*normal*piedra agua=83_134,piedra trueno=83_135,piedra fuego=83_136,piedra dia=83_196,piedra noche=83_197,piedra hoja=83_470,piedra hielo=83_471,30=83_700
+83_134*vaportch'd*_83_134*volador*agua*no
+83_135*joltch'd*_83_135*volador*electrico*no
+83_136*flaretch'd*_83_136*volador*fuego*no
+83_142*aerotch'd*_83_142*volador*roca*no
+83_169*crotch'd*_83_169*veneno*volador*no
+83_172*pitch'd*_83_172*volador*electrico*10=25_83
+83_196*espetch'd*_83_196*volador*psiquico*no
+83_197*umbretch'd*_83_197*volador*siniestro*no
+83_464*farfeperior*_83_464*volador*tierra*no
+83_470*leaftch'd*_83_470*volador*planta*no
+83_471*glacetch'd*_83_471*volador*hielo*no
+83_700*sylvetch'd*_83_700*volador*hada*no
+84_142*aeroduo*_84_142*volador*roca*31=84_142
+85_142*aerodrio*_85_142*volador*roca*no
+85_169*crodrio*_85_169*veneno*volador*no
+86_111*sehorn*_86_111*agua*tierra*38=87_112
+86_116*horel*_86_116*agua*agua*33=87_117
+86_128*tauel*_86_128*agua*normal*34=87_128
+86_131*lael*_86_131*agua*hielo*34=87_131
+86_133*eevel*_86_133*agua*normal*piedra agua=87_134,piedra trueno=87_135,piedra fuego=87_136,piedra dia=87_196,piedra noche=87_197,piedra hoja=87_470,piedra hielo=87_471,30=87_700
+86_138*omael*_86_138*agua*roca*37=87_139
+86_140*kabuel*_86_140*agua*roca*37=87_141
+86_147*setini*_86_147*agua*dragon*32=87_148
+86_172*piel*_86_172*agua*electrico*22=25_87
+87_112*dewdon*_87_112*agua*tierra*protector=87_464
+87_117*seagong*_87_117*agua*hielo*escama dragon=87_230
+87_128*taugong*_87_128*agua*normal*no
+87_131*lagong*_87_131*agua*hielo*no
+87_134*vaporgong*_87_134*agua*agua*no
+87_135*joltgong*_87_135*agua*electrico*no
+87_136*flaregong*_87_136*agua*fuego*no
+87_138*omagong*_87_138*agua*roca*no
+87_141*kabugong*_87_141*agua*roca*no
+87_148*dewgonair*_87_148*agua*dragon*55=87_149
+87_149*dewgonite*_87_149*agua*dragon*no
+87_185*dewtoed*_86_185*agua*hielo*no
+87_196*espegong*_87_196*agua*psiquico*no
+87_197*umbregong*_87_197*agua*siniestro*no
+87_199*dewking*_87_199*agua*psiquico*no
+87_230*kingong*_87_230*agua*dragon*no
+87_464*dewperior*_87_464*agua*tierra*no
+87_470*leafgong*_87_470*agua*planta*no
+87_471*glacegong*_87_471*agua*hielo*no
+87_700*sylvegong*_87_700*agua*hada*no
+88_92*gasmer*_88_92*veneno*fantasma*31=89_93
+88_109*griffing*_88_109*veneno*veneno*36=89_110
+89_93*haunmuk*_89_93*veneno*fantasma*40=89_94
+89_94*genmuk*_89_94*veneno*fantasma*no
+89_110*mukzing*_89_110*veneno*veneno*no
+90_98*shellbby*_90_98*agua*agua*piedra agua=91_99
+90_120*shellyu*_90_120*agua*psiquico*piedra agua=91_121
+90_138*shellnyte*_90_138*agua*roca*piedra agua=91_139
+90_140*shellto*_90_140*agua*roca*piedra agua=91_141
+91_99*cloyger*_91_99*agua*hielo*no
+91_121*cloymie*_91_121*agua*psiquico*no
+91_139*cloystar*_91_139*agua*roca*no
+91_141*cloytops*_91_141*agua*roca*no
+92_109*gasffing*_92_109*fantasma*veneno*30=93_110
+93_110*haunzing*_93_110*fantasma*veneno*40=94_110
+94_110*genzing*_94_110*fantasma*veneno*no
+95_100*volnix*_95_100*roca*electrico*revestimiento metalico=101_208
+95_137*onigon*_95_137*roca*normal*mejora=208_233
+96_236*drowgue*_96_236*psiquico*lucha*23=97_106=97_107=97_237
+96_238*drowchum*_96_238*psiquico*hielo*28=97_124
+96_239*drowkid*_96_239*psiquico*electrico*28=97_125
+96_240*drowby*_96_240*psiquico*fuego*28=97_126
+96_439*drowzee jr*_96_439*psiquico*hada*26=97_122
+97_106*hyplee*_97_106*psiquico*lucha*no
+97_107*hypchan*_97_107*psiquico*lucha*no
+97_122*mr. hypno*_97_122*psiquico*hada*no
+97_124*hypnx*_97_124*psiquico*hielo*no
+97_125*hypbuzz*_97_125*psiquico*electrico*electrizador=97_466
+97_126*hypmar*_97_126*psiquico*fuego*magmatizador=97_467
+97_237*hyptop*_97_237*psiquico*lucha*no
+97_466*hypvire*_97_466*psiquico*electrico*no
+97_467*hypmortar*_97_467*psiquico*fuego*no
+98_120*krayu*_98_120*agua*psiquico*piedra agua=99_121
+98_138*kranyte*_98_138*agua*roca*34=99_139
+98_140*krato*_98_140*agua*roca*34=99_141
+99_121*kinmie*_99_121*agua*psiquico*no
+99_139*kinstar*_99_139*agua*roca*no
+99_141*kintops*_99_141*agua*roca*no
+100_137*voltgon*_100_137*electrico*normal*mejora=101_233
+101_208*eleclix*_101_208*acero*electrico*no
+101_233*elecgon2*_101_233*electrico*normal*disco extraño=101_474
+101_462*eleczone*_101_462*acero*electrico*no
+101_474*elecgon-z*_101_474*electrico*normal*no
+102_114*tancute*_102_114*planta*psiquico*piedra hoja=103_465
+103_182*bellotor*_103_182*planta*psiquico*no
+103_465*tantor*_103_465*planta*psiquico*no
+104_108*cutung*_104_108*tierra*normal*28=105_463
+104_111*cuhorn*_104_111*tierra*roca*35=105_112
+104_115*cukhan*_104_115*tierra*normal*28=105_115
+104_131*cupras*_104_131*tierra*agua*28=105_131
+104_446*culax*_104_446*tierra*normal*28=105_143
+105_112*marodon*_105_112*tierra*roca*protector=105_464
+105_115*marokhan*_105_115*tierra*normal*no
+105_131*maropras*_105_131*tierra*agua*no
+105_143*marolax*_105_143*tierra*normal*no
+105_199*maroking*_105_199*agua*tierra*no
+105_463*marolicky*_105_463*tierra*normal*no
+105_464*maroperior*_105_464*tierra*roca*no
+106_122*mr. hitmonlee*_106_122*lucha*psiquico*no
+106_124*jylee*_106_124*lucha*hielo*no
+106_125*electalee*_106_125*lucha*electrico*electrizador=106_466
+106_126*maglee*_106_126*lucha*fuego*magmatizador=106_467
+106_466*electilee*_106_466*lucha*electrico*no
+106_467*magmorlee*_106_467*lucha*fuego*no
+106_467*magmorlee*_106_467*lucha*fuego*no
+107_122*mr. hitmonchan*_107_122*lucha*psiquico*no
+107_124*jychan*_107_124*lucha*hielo*no
+107_125*electachan*_107_125*lucha*electrico*electrizador=106_466
+107_126*magchan*_107_126*lucha*fuego*magmatizador=106_467
+107_466*electichan*_107_466*lucha*electrico*no
+107_467*magmorchan*_107_467*lucha*fuego*no
+108_111*lickihorn*_108_111*normal*tierra*42=112_463
+108_115*kangastung*_108_115*normal*normal*42=115_463
+108_131*latung*_108_131*normal*agua*42=131_463
+108_446*munchtung*_108_446*normal*normal*10=143_463
+111_115*kangashorn*_111_115*tierra*normal*42=112_115
+111_128*tauhorn*_111_128*tierra*normal*42=112_128
+111_131*lahorn*_111_131*tierra*agua*42=112_131
+111_133*eevhorn*_111_133*tierra*normal*piedra agua=111_134,piedra trueno=111_135,piedra fuego=111_136,piedra dia=111_196,piedra noche=111_197,piedra hoja=111_470,piedra hielo=111_471,30=111_700
+111_172*pihorn*_111_172*tierra*electico*26=25_112
+111_446*munchorn*_111_446*tierra*normal*26=112_143
+112_115*kangasdon*_112_115*tierra*normal*protector=115_464
+112_128*taudon*_112_128*tierra*normal*protector=128_464
+112_131*ladon*_112_131*tierra*agua*protector=131_464
+112_134*vapordon*_112_134*tierra*agua*protector=134_464
+112_135*joltdon*_112_135*tierra*electrico*protector=135_464
+112_136*flaredon*_112_136*tierra*fuego*protector=136_464
+112_143*snordon*_112_143*tierra*normal*protector=143_464
+112_196*espedon*_112_196*tierra*psiquico*protector=196_464
+112_197*umbredon*_112_197*tierra*siniestro*protector=197_464
+112_199*slowdonking*_112_199*agua*tierra*protector=199_464
+112_463*lickidon*_112_463*normal*tierra*protector=463_464
+112_470*leafdon*_112_470*tierra*planta*protector=464_470
+112_471*glacedon*_112_471*tierra*hielo*protector=464_471
+112_700*sylvedon*_112_700*tierra*hada*protector=464_700
+115_131*kangaspras*_115_131*normal*agua*no
+115_143*snorkhan*_115_143*normal*normal*no
+115_199*kangasking*_115_199*agua*normal*no
+115_446*munchkhan*_115_446*normal*normal*10=115_143
+115_463*kangaslicky*_115_463*normal*normal*no
+115_464*kangasperior*_115_464*tierra*normal*no
+116_129*horkarp*_116_129*agua*agua*26=117_130
+116_131*horpras*_116_131*agua*hielo*32=117_131
+116_138*hornyte*_116_138*agua*roca*36=117_139
+116_140*horto*_116_140*agua*roca*36=117_141
+116_147*hortine*_116_147*agua*dragon*31=117_148
+117_130*seados*_117_130*agua*volador*escama dragon=130_230
+117_131*seapras*_117_131*agua*hielo*escama dragon=131_230
+117_139*seastar*_117_139*agua*roca*escama dragon=139_230
+117_141*seatops*_117_141*agua*roca*escama dragon=141_230
+117_148*seanair*_117_148*agua*dragon*escama dragon=149_230
+117_199*seaking*_117_199*agua*psiquico*escama dragon=199_230
+118_129*golkarp*_118_129*agua*agua*26=119_130
+119_130*seakingdos*_119_130*agua*volador*no
+120_138*starnyte*_120_138*agua*psiquico*piedra agua=121_139
+120_140*starto*_120_140*agua*psiquico*piedra agua=121_141
+121_139*starstar*_121_139*agua*psiquico*no
+121_141*startops*_121_141*agua*psiquico*no
+122_124*mr. jynx*_122_124*psiquico*hielo*no
+122_125*mr. electabuzz*_122_125*psiquico*electrico*electrizador=122_466
+122_126*mr. magmar*_122_126*psiquico*fuego*magmatizador=122_467
+122_237*mr. hitmontop*_122_237*psiquico*lucha*no
+122_466*mr. electivire*_122_466*psiquico*electrico*no
+122_467*mr. magmortar*_122_467*psiquico*fuego*no
+123_127*pinther*_123_127*bicho*volador*revestimiento metalico=127_212
+124_125*jybuzz*_124_125*hielo*electico*electrizador=124_466
+124_126*jymar*_124_126*hielo*fuego*magmatizador=124_467
+124_237*jytop*_124_237*hielo*lucha*no
+124_466*jyvire*_124_466*hielo*electico*no
+124_467*jymortar*_124_467*hielo*fuego*no
+125_126*electamar*_125_126*electrico*fuego*electrizador=466_467
+125_237*electatop*_125_237*electrico*lucha*electrizador=237_466
+126_237*magtop*_126_237*fuego*lucha*magmatizador=237_467
+127_212*pinzor*_127_212*acero*bicho*no
+128_133*eevros*_128_133*normal*normal*piedra agua=128_134,piedra trueno=128_135,piedra fuego=128_136,piedra dia=128_196,piedra noche=128_197,piedra hoja=128_470,piedra hielo=128_471,30=128_700
+128_134*vaporos*_128_134*normal*agua*no
+128_135*joltros*_128_135*normal*electrico*no
+128_136*flaros*_128_136*normal*fuego*no
+128_172*piros*_128_172*normal*electrico*no
+128_196*esperos*_128_196*normal*psiquico*no
+128_197*umbreros*_128_197*normal*siniestro*no
+128_464*tauperior*_128_464*tierra*normal*no
+128_470*leafros*_128_470*normal*planta*no
+128_471*glaceros*_128_471*normal*hielo*no
+128_700*sylveros*_128_700*normal*hada*no
+130_230*kingdos*_130_230*agua*dragon*no
+131_138*lanyte*_131_138*agua*roca*40=131_139
+131_139*lastar*_131_139*agua*roca*no
+131_140*labuto*_131_140*agua*roca*40=131_141
+131_141*labutops*_131_141*agua*roca*no
+131_147*latini*_131_147*agua*dragon*30=131_148
+131_148*lanair*_131_148*agua*dragon*55=131_149
+131_149*lanite*_131_149*agua*dragon*no
+131_185*latoed*_131_185*agua*hielo*no
+131_199*laking*_131_199*agua*psiquico*no
+131_230*kingpras*_131_230*agua*dragon*no
+131_463*lalicky*_131_463*agua*normal*no
+131_464*laperior*_131_464*tierra*agua*no
+133_172*eevchu*_133_172*normal*electrico*no
+134_464*vaporperior*_134_464*tierra*agua*no
+135_464*joltperior*_135_464*tierra*electrico*no
+136_464*flareperior*_136_464*tierra*fuego*no
+138_140*omato*_138_140*agua*roca*40=139_141
+138_147*omatini*_138_147*agua*dragon*35=139_148
+139_141*omatops*_139_141*agua*roca*no
+139_148*omanair*_139_148*agua*dragon*55=139_149
+139_149*omanite*_139_149*agua*dragon*no
+139_185*omatoed*_139_185*agua*roca*no
+139_199*omaking*_139_199*agua*psiquico*no
+139_230*kingstar*_139_230*agua*dragon*no
+140_147*kabutini*_140_147*agua*dragon*35=141_148
+141_148*kabunair*_141_148*agua*dragon*55=141_149
+141_149*kabunite*_141_149*agua*dragon*no
+141_185*kabutoed*_141_185*agua*roca*no
+141_199*kabuking*_141_199*agua*psiquico*no
+141_230*kingtops*_141_230*agua*dragon*no
+142_169*crodactyl*_142_169*veneno*volador*no
+143_199*snoxking*_143_199*agua*normal*no
+143_463*snoxlicky*_143_463*normal*normal*no
+143_464*snoxperior*_143_464*tierra*normal*no
+144_145*artidos*_144_145*hielo*electrico*no
+144_146*artitres*_144_146*hielo*fuego*no
+144_150*artitwo*_144_150*hielo*psiquico*no
+144_151*artimew*_144_151*hielo*psiquico*no
+145_146*zaptres*_145_146*electrico*fuego*no
+145_150*zaptwo*_145_150*electrico*psiquico*no
+145_151*zapmew*_145_151*electrico*psiquico*no
+146_150*moltwo*_146_150*fuego*psiquico*no
+146_151*molmew*_146_151*fuego*psiquico*no
+148_199*dragoking*_148_199*agua*dragon*55=149_199
+149_185*dragotoed*_149_185*agua*dragon*no
+149_199*dragoniking*_149_199*agua*dragon*no
+149_230*kingnite*_149_230*agua*dragon*no
+150_151*mewtree*_150_151*psiquico*psiquico*no
+172_173*piffa*_172_173*electrico*hada*10=25_35
+172_174*pibuff*_172_174*electrico*hada*10=25_39
+172_400*pipiny*_172_400*electrico*normal*10=25_113
+173_174*clebuff*_173_174*hada*normal*10=35_39
+173_400*clepiny*_173_400*hada*normal*10=35_113
+174_400*igglypiny*_174_400*hada*normal*10=39_113
+182_465*bellogrowth*_182_465*planta*planta*no
+186_199*polikingtoed*_185_199*agua*psiquico*no
+186_230*kingtoed*_185_230*agua*dragon*no
+196_464*espeperior*_196_464*tierra*psiquico*no
+197_464*umbreperior*_197_464*tierra*siniestro*no
+199_230*kingking*_199_230*agua*dragon*no
+199_463*lickiking*_199_463*agua*normal*no
+199_464*slowperiorking*_199_464*agua*tierra*no
+208_233*steegon2*_208_233*acero*normal*disco extraño=208_474
+208_462*steezone*_208_462*acero*tierra*no
+208_474*steegon-z*_208_474*acero*normal*no
+236_238*tyrochum*_236_238*hielo*lucha*25=106_124=107_124=124_237
+236_239*tyrokid*_236_239*electrico*lucha*25=106_125=107_125=125_237
+236_240*tyroby*_236_240*fuego*lucha*25=106_126=107_126=126_237
+236_439*tyroge jr.*_236_439*psiquico*lucha*25=106_122=107_122=122_237
+237_466*electitop*_237_466*electrico*lucha*no
+237_467*magmortop*_237_467*fuego*lucha*no
+238_239*smookid*_238_239*hielo*electrico*30=124_125
+238_240*smooby*_238_240*hielo*fuego*30=124_126
+238_439*smoochum jr.*_238_439*hielo*psiquico*30=122_124
+239_240*eleby*_239_240*electrico*fuego*30=125_126
+239_439*elekid jr.*_239_439*electrico*psiquico*30=122_125
+240_439*magby jr.*_240_439*fuego*psiquico*30=122_126
+462_474*magnegon-z*_462_474*acero*normal*no
+463_464*lickiperior*_463_464*normal*tierra*no
+464_470*leafperior*_464_470*tierra*planta*no
+464_471*glaceperior*_464_471*tierra*hielo*no
+464_700*sylveperior*_464_700*tierra*hada*no
+466_467*electimortat*_466_467*electrico*fuego*no
