@@ -46,4 +46,34 @@ class PokemonServiceImpl(context: Context): PokemonService {
 
     }
 
+    override fun findByNoFusion(): ArrayList<String> {
+
+        val exit = ArrayList<String>()
+        val lista = listAll()
+
+        for (i in lista){
+
+            val char = i.id.toCharArray()
+            var fusion = false
+
+            for (j in char){
+                if (j == '_'){
+
+                    fusion = true
+
+                }
+            }
+
+            if (!fusion){
+
+                exit.add(i.id)
+
+            }
+
+        }
+
+        return exit
+
+    }
+
 }

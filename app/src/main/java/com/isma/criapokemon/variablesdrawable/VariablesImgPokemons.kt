@@ -7,6 +7,9 @@ class VariablesImgPokemons {
     fun img(numero: String): Int {
 
         when(numero){
+            "_0" -> {
+                return R.drawable._0
+            }
             "_1" -> {
                 return R.drawable._1
             }

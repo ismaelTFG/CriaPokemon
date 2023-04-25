@@ -318,6 +318,30 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     }
 
+    fun findByIdPokedex (id: String, db: SQLiteDatabase): Boolean{
+
+        val resultado = db.rawQuery("SELECT * FROM pokedex", null)
+
+        if (resultado!!.moveToFirst()){
+
+            while (!resultado.isAfterLast){
+
+                if (resultado.getString(0) == id){
+
+                    return resultado.getInt(1) != 0
+
+                }
+
+                resultado.moveToNext()
+
+            }
+
+        }
+
+        return false
+
+    }
+
     fun addObjetos (objeto: Objeto, db: SQLiteDatabase){
 
         val add = ContentValues()

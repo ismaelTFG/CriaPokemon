@@ -751,7 +751,6 @@
 42_83*goltch'd*_42_83*veneno*volador*32=83_169
 42_85*goldrio*_42_85*veneno*volador*36=85_169
 42_142*goldactyl*_42_142*veneno*volador*32=142_169
-42_142*goldactyl*_42_142*veneno*volador*32=142_169
 43_46*oddiras*_43_46*planta*bicho*22=44_47
 43_69*oddisprout*_43_69*planta*veneno*21=44_70
 43_102*oddicute*_43_102*planta*psiquico*piedra hoja=44_103
@@ -1187,7 +1186,6 @@
 106_125*electalee*_106_125*lucha*electrico*electrizador=106_466
 106_126*maglee*_106_126*lucha*fuego*magmatizador=106_467
 106_466*electilee*_106_466*lucha*electrico*no
-106_467*magmorlee*_106_467*lucha*fuego*no
 106_467*magmorlee*_106_467*lucha*fuego*no
 107_122*mr. hitmonchan*_107_122*lucha*psiquico*no
 107_124*jychan*_107_124*lucha*hielo*no
