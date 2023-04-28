@@ -314,7 +314,31 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
         add.put("visible", 1)
 
-        db.update("pokedex", add, "id=$id", null)
+        db.update("pokedex", add, "id='$id'", null)
+
+    }
+
+    fun findByIdPokedex (id: String, db: SQLiteDatabase): Boolean{
+
+        val resultado = db.rawQuery("SELECT * FROM pokedex", null)
+
+        if (resultado!!.moveToFirst()){
+
+            while (!resultado.isAfterLast){
+
+                if (resultado.getString(0) == id){
+
+                    return resultado.getInt(1) != 0
+
+                }
+
+                resultado.moveToNext()
+
+            }
+
+        }
+
+        return false
 
     }
 

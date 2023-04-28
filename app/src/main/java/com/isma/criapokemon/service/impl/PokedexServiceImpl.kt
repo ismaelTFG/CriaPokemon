@@ -26,4 +26,10 @@ class PokedexServiceImpl(context: Context): PokedexService {
 
     }
 
+    override fun findById(id: String): Boolean {
+
+        return db.findByIdPokedex(id, db.writableDatabase)
+
+    }
+
 }
