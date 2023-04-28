@@ -191,7 +191,17 @@ class CriarActivity : AppCompatActivity() {
                 if (primerTrue == segundoTrue){
 
                     val i = Intent(this, FusionActivity::class.java)
-                    val id = criasPokemons.crias(cajaUno.pokemon.id)+"_"+criasPokemons.crias(cajados.pokemon.id)
+                    var id = ""
+
+                    if (cajaUno.pokemon.id < cajados.pokemon.id){
+
+                        id = criasPokemons.crias(cajaUno.pokemon.id)+"_"+criasPokemons.crias(cajados.pokemon.id)
+
+                    }else{
+
+                        id = criasPokemons.crias(cajados.pokemon.id)+"_"+criasPokemons.crias(cajaUno.pokemon.id)
+
+                    }
 
                     i.putExtra("fusion", id)
 

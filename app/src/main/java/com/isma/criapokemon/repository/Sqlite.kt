@@ -314,7 +314,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
         add.put("visible", 1)
 
-        db.update("pokedex", add, "id=$id", null)
+        db.update("pokedex", add, "id='$id'", null)
 
     }
 
