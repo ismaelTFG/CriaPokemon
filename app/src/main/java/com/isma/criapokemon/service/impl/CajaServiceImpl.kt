@@ -95,75 +95,57 @@ class CajaServiceImpl(context: Context): CajaService {
                 when(i[0]){
                     "piedra trueno" -> {
                         evoConObjeto(1, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra lunar" -> {
                         evoConObjeto(2, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra fuego" -> {
                         evoConObjeto(3, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra hoja" -> {
                         evoConObjeto(4, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra solar" -> {
                         evoConObjeto(5, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra agua" -> {
                         evoConObjeto(6, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "roca del rey" -> {
                         evoConObjeto(7, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "revestimiento metalico" -> {
                         evoConObjeto(8, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "protector" -> {
                         evoConObjeto(9, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "escama dragon" -> {
                         evoConObjeto(10, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "electrizador" -> {
                         evoConObjeto(11, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "magmatizador" -> {
                         evoConObjeto(12, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra dia" -> {
                         evoConObjeto(13, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra noche" -> {
                         evoConObjeto(14, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra hielo" -> {
                         evoConObjeto(15, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "mejora" -> {
                         evoConObjeto(16, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "disco extraño" -> {
                         evoConObjeto(17, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     "piedra oval" -> {
                         evoConObjeto(18, caja, i[1])
-                        pokedexService.visible(i[1])
                     }
                     else -> {
                         if (i[0] != "no"){
@@ -265,6 +247,7 @@ class CajaServiceImpl(context: Context): CajaService {
             }
 
             caja.pokemon = pokemon
+            pokedexService.visible(evolucion)
             db.updateCaja(caja, db.writableDatabase)
             db.updateMochila(mochila, -1, db.writableDatabase)
 

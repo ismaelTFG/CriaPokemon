@@ -434,7 +434,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
             }
         }
 
-        return Mochila(0, Objeto(0, "", 0), 0)
+        return Mochila(-1, Objeto(0, "", 0), 0)
 
     }
 

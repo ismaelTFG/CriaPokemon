@@ -34,6 +34,7 @@ class CajaActivity : AppCompatActivity() {
         val siguiente = findViewById<ImageButton>(R.id.siguiente)
         val cajas = cajaService.findAll()
 
+        numero = intent.extras?.getInt("numero")!!
         mostrado = cajas[numero]
 
         if (cajaService.evoTrue(mostrado)){

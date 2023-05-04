@@ -168,7 +168,10 @@ class CriarActivity : AppCompatActivity() {
     private fun criarPokes(pokes: ArrayList<String>){
 
         if (cajaUno.id != cajados.id){
-            if (cajaUno.pokemon.id != cajados.pokemon.id){
+            val pokeuno = criasPokemons.crias(cajaUno.pokemon.id)
+            val pokedos = criasPokemons.crias(cajados.pokemon.id)
+
+            if (pokeuno != pokedos){
 
                 var primerTrue = false
                 var segundoTrue = false
@@ -193,13 +196,13 @@ class CriarActivity : AppCompatActivity() {
                     val i = Intent(this, FusionActivity::class.java)
                     var id = ""
 
-                    if (cajaUno.pokemon.id < cajados.pokemon.id){
+                    if (pokeuno.toInt() < pokedos.toInt()){
 
-                        id = criasPokemons.crias(cajaUno.pokemon.id)+"_"+criasPokemons.crias(cajados.pokemon.id)
+                        id = pokeuno+"_"+pokedos
 
                     }else{
 
-                        id = criasPokemons.crias(cajados.pokemon.id)+"_"+criasPokemons.crias(cajaUno.pokemon.id)
+                        id = pokedos+"_"+pokeuno
 
                     }
 
@@ -218,7 +221,7 @@ class CriarActivity : AppCompatActivity() {
 
                 val i = Intent(this, FusionActivity::class.java)
 
-                i.putExtra("fusion", criasPokemons.crias(cajaUno.pokemon.id))
+                i.putExtra("fusion", pokeuno)
 
                 finish()
                 startActivity(i)

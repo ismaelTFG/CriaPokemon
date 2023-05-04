@@ -32,7 +32,7 @@ class EquipoServiceImpl(context: Context): EquipoService {
         for (i in lista){
             if (i.getNivel() < 100){
 
-                i.setNivel(i.getNivel()+1)
+                i.setNivel(i.getNivel()+50)
                 db.updateCaja(i, db.writableDatabase)
 
             }
