@@ -60,7 +60,12 @@ class Caja(
         val exit = StringBuilder()
 
         exit.append("especie: ").append(pokemon.name).append("\n")
-        exit.append("tipos: ").append(pokemon.tipoUno).append(" ").append(pokemon.tipoDos).append("\n")
+        exit.append("tipos: ")
+        if (pokemon.tipoUno == pokemon.tipoDos){
+            exit.append(pokemon.tipoUno).append("\n")
+        }else{
+            exit.append(pokemon.tipoUno).append(" ").append(pokemon.tipoDos).append("\n")
+        }
         exit.append("genero: ")
         if (macho){
             exit.append("macho").append("\n")

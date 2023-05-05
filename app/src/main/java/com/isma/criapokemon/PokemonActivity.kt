@@ -14,12 +14,14 @@ import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.isma.criapokemon.service.impl.CajaServiceImpl
+import com.isma.criapokemon.variablesdrawable.ColoresTipos
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
 class PokemonActivity : AppCompatActivity() {
 
     private val cajaService = CajaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
+    private val coloresTipos = ColoresTipos()
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,12 +53,14 @@ class PokemonActivity : AppCompatActivity() {
             val nombre = img.findViewById<TextView>(R.id.nombrepokecaja)
             val poke = img.findViewById<ImageButton>(R.id.imgpokecaja)
 
-            nombre.setText(lista[i].apodo)
+            nombre.setText("\n\n"+lista[i].apodo)
+            poke.setBackgroundResource(coloresTipos.colores(lista[i].pokemon.tipoUno, lista[i].pokemon.tipoDos))
             poke.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(lista[i].pokemon.img)))
             poke.setOnClickListener {
 
                 intent.putExtra("numero", i)
 
+                finish()
                 startActivity(intent)
 
             }

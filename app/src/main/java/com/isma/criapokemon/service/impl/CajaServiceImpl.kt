@@ -151,7 +151,15 @@ class CajaServiceImpl(context: Context): CajaService {
                         if (i[0] != "no"){
                             if (i[0].toInt() <= caja.getNivel()){
 
-                                caja.pokemon = db.findByIdPokemon(i[1], db.writableDatabase)
+                                val evo = db.findByIdPokemon(i[1], db.writableDatabase)
+
+                                if (caja.apodo == caja.pokemon.name){
+
+                                    caja.apodo = evo.name
+
+                                }
+
+                                caja.pokemon = evo
                                 db.updateCaja(caja, db.writableDatabase)
                                 pokedexService.visible(i[1])
 
@@ -213,6 +221,12 @@ class CajaServiceImpl(context: Context): CajaService {
         }
 
         return lista
+
+    }
+
+    override fun delete(id: Int) {
+
+        db.deleteCaja(id, db.writableDatabase)
 
     }
 

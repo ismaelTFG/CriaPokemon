@@ -79,7 +79,9 @@ class RecompensasActivity : AppCompatActivity() {
             texto.setText(recompensa.pokemon.name+" tienes "+numero)
             recojer.setOnClickListener {
 
-                cajaService.add(Caja(cajaService.findAll().size+2, recompensa.pokemon.name, recompensa.pokemon))
+                val lista = cajaService.findAll()
+
+                cajaService.add(Caja(lista[lista.size-1].id+1, recompensa.pokemon.name, recompensa.pokemon))
                 pokedexService.visible(recompensa.pokemon.id)
                 Toast.makeText(this, "has guardado a "+recompensa.pokemon.name, Toast.LENGTH_SHORT).show()
                 fin(recompensas, img, texto)
