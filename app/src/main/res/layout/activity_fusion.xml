@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_fusion"
     tools:context=".FusionActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="68dp"
         android:text="nombre pokemon"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +35,10 @@
         android:id="@+id/button2"
         android:layout_width="263dp"
         android:layout_height="67dp"
+        android:background="@color/black"
         android:onClick="salir"
         android:text="salir"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

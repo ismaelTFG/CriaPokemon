@@ -28,8 +28,9 @@ class FusionActivity : AppCompatActivity() {
         val pokeimg = findViewById<ImageView>(R.id.poke)
         val id = intent.getStringExtra("fusion").toString()
         val pokemon = pokemonService.findById(id)
+        val lista = cajaService.findAll()
 
-        cajaService.add(Caja(cajaService.findAll().size+2, pokemon.name, pokemon))
+        cajaService.add(Caja(lista[lista.size-1].id+1, pokemon.name, pokemon))
         pokedexService.visible(pokemon.id)
 
         nombre.setText(pokemon.name)

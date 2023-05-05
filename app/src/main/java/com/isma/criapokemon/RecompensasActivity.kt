@@ -59,16 +59,29 @@ class RecompensasActivity : AppCompatActivity() {
 
         }else{
 
+            val caja = cajaService.findAll()
+            var numero = 0
+
             recompensa = recompensas[contador]
+
+            for (i in caja){
+                if (i.pokemon.id == recompensa.pokemon.id){
+
+                    numero++
+
+                }
+            }
 
             val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(recompensa.pokemon.img))
 
             equipoService.subidaNivel()
             img.setImageBitmap(bmp)
-            texto.setText(recompensa.pokemon.name)
+            texto.setText(recompensa.pokemon.name+" tienes "+numero)
             recojer.setOnClickListener {
 
-                cajaService.add(Caja(cajaService.findAll().size+2, recompensa.pokemon.name, recompensa.pokemon))
+                val lista = cajaService.findAll()
+
+                cajaService.add(Caja(lista[lista.size-1].id+1, recompensa.pokemon.name, recompensa.pokemon))
                 pokedexService.visible(recompensa.pokemon.id)
                 Toast.makeText(this, "has guardado a "+recompensa.pokemon.name, Toast.LENGTH_SHORT).show()
                 fin(recompensas, img, texto)
@@ -91,7 +104,7 @@ class RecompensasActivity : AppCompatActivity() {
         val actual = LocalDateTime.now()
         val iniciada = LocalDateTime.parse(busquedaService.hora())
         val diferencia = ChronoUnit.MINUTES.between(iniciada, actual)
-        val recompensasTotales = (diferencia / 10).toInt()
+        val recompensasTotales = (diferencia / 1).toInt()
         val lista = recompensasService.listAll()
 
         if (recompensasTotales > 0){
@@ -125,13 +138,24 @@ class RecompensasActivity : AppCompatActivity() {
 
         if (contador < recompensas.size-1){
 
+            val caja = cajaService.findAll()
+            var numero = 0
+
             contador++
             recompensa = recompensas[contador]
+
+            for (i in caja){
+                if (i.pokemon.id == recompensa.pokemon.id){
+
+                    numero++
+
+                }
+            }
 
             val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(recompensa.pokemon.img))
 
             img.setImageBitmap(bmp)
-            texto.setText(recompensa.pokemon.name)
+            texto.setText(recompensa.pokemon.name+" tienes "+numero)
 
         }else{
 

@@ -2,6 +2,7 @@ package com.isma.criapokemon
 
 import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
@@ -16,6 +17,7 @@ import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.service.impl.PokedexServiceImpl
 import com.isma.criapokemon.service.impl.PokemonServiceImpl
+import com.isma.criapokemon.variablesdrawable.ColoresTipos
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
 class PokedexActivity : AppCompatActivity() {
@@ -23,6 +25,7 @@ class PokedexActivity : AppCompatActivity() {
     private val pokedexService = PokedexServiceImpl(this)
     private val pokemonService = PokemonServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
+    private val coloresTipos = ColoresTipos()
     private var numero = 0
     private var mostrado = Pokemon("", "", "", "", "", "")
 
@@ -143,13 +146,17 @@ class PokedexActivity : AppCompatActivity() {
         if (visible[numero]){
 
             nombre.setText(mostrado.id+" "+mostrado.name)
+            nombre.setBackgroundResource(coloresTipos.colores(mostrado.tipoUno, mostrado.tipoDos))
             descripcion.setText(mostrado.toString(this, mostrado.id))
+            descripcion.setBackgroundResource(coloresTipos.colores(mostrado.tipoUno, mostrado.tipoDos))
             pokemon.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.img)))
 
         }else{
 
             nombre.setText(mostrado.id+" *****************")
+            nombre.setBackgroundResource(0)
             descripcion.setText("**********************************************************************************************************************************************************************************************************************************************")
+            descripcion.setBackgroundResource(0)
             pokemon.setImageBitmap(BitmapFactory.decodeResource(resources, R.drawable._0))
 
         }

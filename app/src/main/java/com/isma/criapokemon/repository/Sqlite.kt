@@ -153,6 +153,12 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     }
 
+    fun deleteCaja (id: Int, db: SQLiteDatabase){
+
+        db.delete("caja", "id=$id", null)
+
+    }
+
     fun findByIdCaja (id: Int, db: SQLiteDatabase): Caja{
 
         val lista = findAllCaja(db)
@@ -434,7 +440,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
             }
         }
 
-        return Mochila(0, Objeto(0, "", 0), 0)
+        return Mochila(-1, Objeto(0, "", 0), 0)
 
     }
 

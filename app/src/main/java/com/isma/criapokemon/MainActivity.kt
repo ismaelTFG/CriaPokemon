@@ -66,11 +66,19 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        if (cajaService.findAll().size == 1){
+
+            val criar = findViewById<Button>(R.id.criar)
+
+            criar.visibility = View.GONE
+
+        }
+
     }
 
     fun caja(view: View){
 
-        startActivity(Intent(this, CajaActivity::class.java))
+        startActivity(Intent(this, PokemonActivity::class.java))
 
     }
 

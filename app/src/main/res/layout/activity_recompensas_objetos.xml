@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo_recompensa_objetos"
     tools:context=".RecompensasObjetosActivity">
 
     <TextView
@@ -12,6 +13,7 @@
         android:layout_height="33dp"
         android:text="Objetos encontrados"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,6 +26,9 @@
         android:layout_width="349dp"
         android:layout_height="493dp"
         android:text="texto por defecto"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,14 +36,15 @@
 
     <Button
         android:id="@+id/exit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="319dp"
+        android:layout_height="52dp"
+        android:background="@color/black"
         android:onClick="salir"
         android:text="salir"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.938" />
 </android.support.constraint.ConstraintLayout>

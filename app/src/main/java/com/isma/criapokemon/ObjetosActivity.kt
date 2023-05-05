@@ -33,9 +33,11 @@ class ObjetosActivity : AppCompatActivity() {
         var exit = ""
 
         for (i in mochila){
+            if (i.cantidad > 0){
 
-            exit = exit + "nombre: ${i.objeto.nombre}, cantidad: ${i.cantidad}\n"
+                exit = exit + "nombre: ${i.objeto.nombre}, cantidad: ${i.cantidad}\n"
 
+            }
         }
 
         return exit

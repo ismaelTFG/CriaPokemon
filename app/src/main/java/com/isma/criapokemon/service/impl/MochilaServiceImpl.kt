@@ -14,7 +14,7 @@ class MochilaServiceImpl(context: Context): MochilaService {
 
         val mochila = db.findByObjetoMochila(objeto.id, db.writableDatabase)
 
-        if (mochila.id == 0){
+        if (mochila.id == -1){
 
             db.addMochila(Mochila(listAll().size, objeto, 1), db.writableDatabase)
 

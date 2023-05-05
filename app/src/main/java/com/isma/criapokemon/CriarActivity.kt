@@ -12,6 +12,7 @@ import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.service.impl.CajaServiceImpl
 import com.isma.criapokemon.service.impl.HuevoServiceImpl
+import com.isma.criapokemon.variablesdrawable.ColoresTipos
 import com.isma.criapokemon.variablesdrawable.CriasPokemons
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
@@ -21,6 +22,7 @@ class CriarActivity : AppCompatActivity() {
     private val huevoService = HuevoServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private val criasPokemons = CriasPokemons()
+    private val coloresTipos = ColoresTipos()
     private var mostrar = ArrayList<Caja>()
     private var cajaUno = Caja(0, "", Pokemon("", "", "_0", "", "", ""))
     private var cajados = Caja(0, "", Pokemon("", "", "_0", "", "", ""))
@@ -41,10 +43,14 @@ class CriarActivity : AppCompatActivity() {
         var criarTrue = false
 
         mostrar = lista
-        img(mostrar[0].pokemon, pokeuno)
-        img(mostrar[1].pokemon, pokedos)
+        cajaUno = mostrar[0]
+        cajados = mostrar[1]
+        img(cajaUno.pokemon, pokeuno)
+        img(cajados.pokemon, pokedos)
 
-        huevo.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, huevoService.viewHuevos(lista))
+        huevo.adapter = ArrayAdapter(this, R.layout.spinner_criar, huevoService.viewHuevos(lista))
+        pokeuno.setBackgroundResource(coloresTipos.colores(cajaUno.pokemon.tipoUno, cajaUno.pokemon.tipoDos))
+        pokedos.setBackgroundResource(coloresTipos.colores(cajados.pokemon.tipoUno, cajados.pokemon.tipoDos))
         buscar.setOnClickListener {
 
             val new = ArrayList<Caja>()
@@ -65,16 +71,19 @@ class CriarActivity : AppCompatActivity() {
             mostrar = new
             img(mostrar[0].pokemon, pokeuno)
             cajaUno = mostrar[0]
+            pokeuno.setBackgroundResource(coloresTipos.colores(cajaUno.pokemon.tipoUno, cajaUno.pokemon.tipoDos))
 
             if (mostrar.size > 1){
 
                 img(mostrar[1].pokemon, pokedos)
                 cajados = mostrar[1]
+                pokedos.setBackgroundResource(coloresTipos.colores(cajados.pokemon.tipoUno, cajados.pokemon.tipoDos))
 
             }else{
 
                 img(mostrar[0].pokemon, pokedos)
                 cajados = mostrar[0]
+                pokedos.setBackgroundResource(coloresTipos.colores(cajados.pokemon.tipoUno, cajados.pokemon.tipoDos))
 
             }
 
@@ -137,6 +146,7 @@ class CriarActivity : AppCompatActivity() {
                 cajaUno = seleccionado
                 Toast.makeText(this, "Seleccionaste a "+seleccionado.apodo, Toast.LENGTH_LONG).show()
                 img(cajaUno.pokemon, boton)
+                boton.setBackgroundResource(coloresTipos.colores(cajaUno.pokemon.tipoUno, cajaUno.pokemon.tipoDos))
                 dialogInterface.dismiss()
 
             }else{
@@ -144,6 +154,7 @@ class CriarActivity : AppCompatActivity() {
                 cajados = seleccionado
                 Toast.makeText(this, "Seleccionaste a "+seleccionado.apodo, Toast.LENGTH_LONG).show()
                 img(cajados.pokemon, boton)
+                boton.setBackgroundResource(coloresTipos.colores(cajados.pokemon.tipoUno, cajados.pokemon.tipoDos))
                 dialogInterface.dismiss()
 
             }
@@ -168,7 +179,10 @@ class CriarActivity : AppCompatActivity() {
     private fun criarPokes(pokes: ArrayList<String>){
 
         if (cajaUno.id != cajados.id){
-            if (cajaUno.pokemon.id != cajados.pokemon.id){
+            val pokeuno = criasPokemons.crias(cajaUno.pokemon.id)
+            val pokedos = criasPokemons.crias(cajados.pokemon.id)
+
+            if (pokeuno != pokedos){
 
                 var primerTrue = false
                 var segundoTrue = false
@@ -193,13 +207,13 @@ class CriarActivity : AppCompatActivity() {
                     val i = Intent(this, FusionActivity::class.java)
                     var id = ""
 
-                    if (cajaUno.pokemon.id < cajados.pokemon.id){
+                    if (pokeuno.toInt() < pokedos.toInt()){
 
-                        id = criasPokemons.crias(cajaUno.pokemon.id)+"_"+criasPokemons.crias(cajados.pokemon.id)
+                        id = pokeuno+"_"+pokedos
 
                     }else{
 
-                        id = criasPokemons.crias(cajados.pokemon.id)+"_"+criasPokemons.crias(cajaUno.pokemon.id)
+                        id = pokedos+"_"+pokeuno
 
                     }
 
@@ -218,7 +232,7 @@ class CriarActivity : AppCompatActivity() {
 
                 val i = Intent(this, FusionActivity::class.java)
 
-                i.putExtra("fusion", criasPokemons.crias(cajaUno.pokemon.id))
+                i.putExtra("fusion", pokeuno)
 
                 finish()
                 startActivity(i)

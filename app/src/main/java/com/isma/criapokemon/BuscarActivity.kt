@@ -15,6 +15,7 @@ import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.service.impl.BusquedaServiceImpl
 import com.isma.criapokemon.service.impl.CajaServiceImpl
 import com.isma.criapokemon.service.impl.EquipoServiceImpl
+import com.isma.criapokemon.variablesdrawable.ColoresTipos
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -26,6 +27,7 @@ class BuscarActivity : AppCompatActivity() {
     private val equipoService = EquipoServiceImpl(this)
     private val busquedaService = BusquedaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
+    private val coloresTipos = ColoresTipos()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -80,6 +82,23 @@ class BuscarActivity : AppCompatActivity() {
         }
 
     }
+    fun salir(view: View){
+
+        finish()
+
+    }
+
+    fun buscar(view: View){
+
+        val fecha = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+
+        busquedaService.update(fecha.toString(), true)
+
+        equipoService.update(equipo)
+        finish()
+        startActivity(Intent(this, RecompensasActivity::class.java))
+
+    }
 
     private fun ventana(boton: ImageButton, numero: Int){
 
@@ -123,29 +142,12 @@ class BuscarActivity : AppCompatActivity() {
 
     }
 
-    fun buscar(view: View){
-
-        val fecha = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
-
-        busquedaService.update(fecha.toString(), true)
-
-        equipoService.update(equipo)
-        finish()
-        startActivity(Intent(this, RecompensasActivity::class.java))
-
-    }
-
-    fun salir(view: View){
-
-        finish()
-
-    }
-
     private fun img(pokemon: Pokemon, boton: ImageButton){
 
         val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img))
 
         boton.setImageBitmap(bmp)
+        boton.setBackgroundResource(coloresTipos.colores(pokemon.tipoUno, pokemon.tipoDos))
 
     }
 

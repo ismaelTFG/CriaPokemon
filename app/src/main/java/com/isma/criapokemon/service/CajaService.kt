@@ -12,5 +12,6 @@ interface CajaService {
     fun evolucion(caja: Caja, tipo: Int)
     fun evoTrue(caja: Caja): Boolean
     fun viewEvoluciones(caja: Caja): ArrayList<String>
+    fun delete(id: Int)
 
 }

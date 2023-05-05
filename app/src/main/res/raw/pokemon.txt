@@ -369,7 +369,7 @@
 18_85*dogeot*_18_85*normal*volador*no
 18_142*aerogeot*_18_142*volador*roca*no
 18_169*crogeot*_18_169*volador*veneno*no
-19_23*rattans*_19_111*normal*veneno*21=20_24
+19_23*rattans*_19_23*normal*veneno*21=20_24
 19_27*rattashrew*_19_27*normal*tierra*21=20_28
 19_29*rattaran f*_19_29*normal*veneno*18=20_30
 19_32*rattaran m*_19_32*normal*veneno*18=20_33

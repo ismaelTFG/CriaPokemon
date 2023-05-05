@@ -227,7 +227,7 @@ class VariablesImgPokemons {
                 return R.drawable._72
             }
             "_73" -> {
-                return R.drawable._37
+                return R.drawable._73
             }
             "_74" -> {
                 return R.drawable._74
@@ -1969,6 +1969,9 @@ class VariablesImgPokemons {
             "_32_172" -> {
                 return R.drawable._32_172
             }
+            "_32_446" -> {
+                return R.drawable._32_446
+            }
             "_33_38" -> {
                 return R.drawable._33_38
             }
@@ -2322,6 +2325,9 @@ class VariablesImgPokemons {
             }
             "_47_127" -> {
                 return R.drawable._47_127
+            }
+            "_47_212" -> {
+                return R.drawable._47_212
             }
             "_48_123" -> {
                 return R.drawable._48_123
