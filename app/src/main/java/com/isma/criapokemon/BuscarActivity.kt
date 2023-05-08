@@ -90,13 +90,25 @@ class BuscarActivity : AppCompatActivity() {
 
     fun buscar(view: View){
 
-        val fecha = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+        var buscar = false
 
-        busquedaService.update(fecha.toString(), true)
+        for (i in equipo){
+            if (i.id > 0){
+                buscar = true
+            }
+        }
 
-        equipoService.update(equipo)
-        finish()
-        startActivity(Intent(this, RecompensasActivity::class.java))
+        if (buscar){
+
+            val fecha = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+
+            busquedaService.update(fecha.toString(), true)
+
+            equipoService.update(equipo)
+            finish()
+            startActivity(Intent(this, RecompensasActivity::class.java))
+
+        }
 
     }
 

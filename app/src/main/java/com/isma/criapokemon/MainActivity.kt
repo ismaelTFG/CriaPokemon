@@ -22,9 +22,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        val caja = cajaService.findAll()
+
         if (pokemonService.listAll().size == 0){
 
             pokemonService.add()
+
+        }else{
+
+            pokemonService.update()
 
         }
 
@@ -52,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        if (cajaService.findAll().size == 0){
+        if (caja.size == 0){
 
             val caja = findViewById<Button>(R.id.caja)
             val criar = findViewById<Button>(R.id.criar)
@@ -66,12 +72,20 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        if (cajaService.findAll().size == 1){
+        if (caja.size == 1){
 
             val criar = findViewById<Button>(R.id.criar)
 
             criar.visibility = View.GONE
 
+        }
+
+        for (i in caja){
+            if (i.pokemon.id == ""){
+
+                cajaService.delete(i.id)
+
+            }
         }
 
     }

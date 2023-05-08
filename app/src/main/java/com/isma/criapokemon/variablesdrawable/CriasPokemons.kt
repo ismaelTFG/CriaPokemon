@@ -156,7 +156,7 @@ class CriasPokemons {
                 return "50"
             }
             "51" -> {
-                return "51"
+                return "50"
             }
             "52" -> {
                 return "52"
@@ -165,6 +165,9 @@ class CriasPokemons {
                 return "52"
             }
             "54" -> {
+                return "54"
+            }
+            "55" -> {
                 return "54"
             }
             "56" -> {
