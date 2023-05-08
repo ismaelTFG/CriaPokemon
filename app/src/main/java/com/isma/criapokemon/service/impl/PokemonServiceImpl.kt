@@ -40,6 +40,27 @@ class PokemonServiceImpl(context: Context): PokemonService {
 
     }
 
+    override fun update() {
+
+        val isr = InputStreamReader(ventana.resources.openRawResource(R.raw.pokemon))
+        val br = BufferedReader(isr)
+        var line: String? = br.readLine()
+
+        while (line != null){
+
+            val text = line.split("*")
+
+            db.updatePokemon(Pokemon(text[0], text[1], text[2], text[3], text[4], text[5]), db.writableDatabase)
+
+            line = br.readLine()
+
+        }
+
+        br.close()
+        isr.close()
+
+    }
+
     override fun findById(id: String): Pokemon {
 
          return db.findByIdPokemon(id, db.writableDatabase)

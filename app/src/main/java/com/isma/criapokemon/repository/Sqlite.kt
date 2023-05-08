@@ -47,6 +47,20 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     }
 
+    fun updatePokemon (pokemon: Pokemon, db: SQLiteDatabase){
+
+        val add = ContentValues()
+
+        add.put("name", pokemon.name)
+        add.put("img", pokemon.img)
+        add.put("tipo1", pokemon.tipoUno)
+        add.put("tipo2", pokemon.tipoDos)
+        add.put("evolucion", pokemon.evolucion)
+
+        db.update("pokemon", add, "id='${pokemon.id}'", null)
+
+    }
+
     fun findAllPokemon (db: SQLiteDatabase): ArrayList<Pokemon>{
 
         val resultado = db.rawQuery("SELECT * FROM pokemon", null)

@@ -234,7 +234,7 @@ class CajaServiceImpl(context: Context): CajaService {
 
         val i = evolucion[tipo].split("=")
 
-        if (caja.apodo == apodo){
+        if (caja.apodo.replace("\\s".toRegex(), "") == apodo){
             if (caja.getNivel() >= i[0].toInt()){
 
                 caja.pokemon = db.findByIdPokemon(i[1], db.writableDatabase)

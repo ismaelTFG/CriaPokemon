@@ -36,7 +36,7 @@
 36*clefable*_36*hada*hada*no
 37*vulpix*_37*fuego*fuego*piedra fuego=38
 38*ninetales*_38*fuego*fuego*no
-39*jigglypuff*_39*normal*hada*piedra lunar=39
+39*jigglypuff*_39*normal*hada*piedra lunar=40
 40*wigglytuff*_40*normal*hada*no
 41*zubat*_41*veneno*volador*22=42
 42*golbat*_42*veneno*volador*32=169
@@ -416,7 +416,7 @@
 20_700*sylvecate*_20_700*normal*hada*no
 21_41*zurow*_21_41*volador*veneno*21=22_42
 21_83*speatch'd*_21_83*normal*volador*20=22_83
-21_85*speaduo*_21_84*normal*volador*25=22_84
+21_84*speaduo*_21_84*normal*volador*25=22_85
 21_142*speadactyl*_21_142*normal*volador*20=22_142
 22_42*golrow*_22_42*volador*veneno*31=22_169
 22_83*fearch'd*_22_83*normal*volador*no
@@ -538,7 +538,7 @@
 27_111*sandhorn*_27_111*tierra*roca*32=28_112
 27_128*taushrew*_27_128*tierra*normal*22=28_128
 27_133*eevshrew*_27_133*tierra*normal*piedra agua=28_134,piedra trueno=28_135,piedra fuego=28_136,piedra dia=28_196,piedra noche=28_197,piedra hoja=28_470,piedra hielo=28_471,26=28_700
-27_172*pishrew*_27_133*tierra*electrico*16=25_28
+27_172*pishrew*_27_172*tierra*electrico*16=25_28
 28_30*sandrina*_28_30*tierra*veneno*piedra lunar=28_31
 28_31*sandqueen*_28_31*tierra*veneno*no
 28_33*sandrino*_28_33*tierra*veneno*piedra lunar=28_34
@@ -569,7 +569,7 @@
 29_52*meowran f*_29_52*veneno*normal*22=30_53
 29_54*psyran f*_29_54*veneno*agua*24=30_55
 29_56*manran f*_29_56*veneno*lucha*22=30_57
-29_58*growran f*_29_56*veneno*fuego*piedra fuego=30_59
+29_58*growran f*_29_58*veneno*fuego*piedra fuego=30_59
 29_77*ponyran f*_29_77*veneno*fuego*28=30_78
 29_79*slowran f*_29_79*veneno*agua*26=30_80,roca del rey=30_199
 29_83*farferan f*_29_83*veneno*volador*16=30_83
@@ -642,7 +642,7 @@
 32_52*meowran m*_32_52*veneno*normal*22=33_53
 32_54*psyran m*_32_54*veneno*agua*24=33_55
 32_56*manran m*_32_56*veneno*lucha*22=33_57
-32_58*growran m*_32_56*veneno*fuego*piedra fuego=33_59
+32_58*growran m*_32_58*veneno*fuego*piedra fuego=33_59
 32_77*ponyran m*_32_77*veneno*fuego*28=33_78
 32_79*slowran m*_32_79*veneno*agua*26=33_80,roca del rey=33_199
 32_83*farferan m*_32_83*veneno*volador*16=33_83
@@ -708,7 +708,7 @@
 34_470*leafking*_34_470*veneno*planta*no
 34_471*glaceking*_34_471*veneno*hielo*no
 34_700*sylveking*_34_700*veneno*hada*no
-35_39*clefapuff*_35_113*normal*hada*piedra lunar=36_40
+35_39*clefapuff*_35_39*normal*hada*piedra lunar=36_40
 35_113*chanfairy*_35_113*normal*hada*piedra lunar=36_242
 36_40*clefatuff*_36_40*normal*hada*no
 36_242*blifable*_36_242*normal*hada*no
@@ -778,7 +778,7 @@
 47_212*parazor*_47_212*bicho*acero*no
 47_465*paragrowth*_47_465*bicho*planta*no
 48_123*venother*_48_123*bicho*veneno*revestimiento metalico=48_212
-48_127*pinat*_48_127*bicho*veneno*31=48_127
+48_127*pinat*_48_127*bicho*veneno*31=49_127
 49_127*pinmoth*_49_127*bicho*veneno*no
 49_212*venozor*_49_212*bicho*acero*no
 50_52*meowglett*_50_52*tierra*normal*27=51_53
@@ -1201,7 +1201,7 @@
 111_128*tauhorn*_111_128*tierra*normal*42=112_128
 111_131*lahorn*_111_131*tierra*agua*42=112_131
 111_133*eevhorn*_111_133*tierra*normal*piedra agua=111_134,piedra trueno=111_135,piedra fuego=111_136,piedra dia=111_196,piedra noche=111_197,piedra hoja=111_470,piedra hielo=111_471,30=111_700
-111_172*pihorn*_111_172*tierra*electico*26=25_112
+111_172*pihorn*_111_172*tierra*electrico*26=25_112
 111_446*munchorn*_111_446*tierra*normal*26=112_143
 112_115*kangasdon*_112_115*tierra*normal*protector=115_464
 112_128*taudon*_112_128*tierra*normal*protector=128_464
@@ -1260,7 +1260,7 @@
 128_134*vaporos*_128_134*normal*agua*no
 128_135*joltros*_128_135*normal*electrico*no
 128_136*flaros*_128_136*normal*fuego*no
-128_172*piros*_128_172*normal*electrico*no
+128_172*piros*_128_172*normal*electrico*10=25_128
 128_196*esperos*_128_196*normal*psiquico*no
 128_197*umbreros*_128_197*normal*siniestro*no
 128_464*tauperior*_128_464*tierra*normal*no
