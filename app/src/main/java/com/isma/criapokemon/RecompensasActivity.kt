@@ -104,7 +104,7 @@ class RecompensasActivity : AppCompatActivity() {
         val actual = LocalDateTime.now()
         val iniciada = LocalDateTime.parse(busquedaService.hora())
         val diferencia = ChronoUnit.MINUTES.between(iniciada, actual)
-        val recompensasTotales = (diferencia / 1).toInt()
+        val recompensasTotales = (diferencia / 10).toInt()
         val lista = recompensasService.listAll()
 
         if (recompensasTotales > 0){
@@ -124,6 +124,12 @@ class RecompensasActivity : AppCompatActivity() {
                         salida = false
 
                     }
+
+                }
+
+                if (recompensas.size == 50){
+
+                    return recompensas
 
                 }
 

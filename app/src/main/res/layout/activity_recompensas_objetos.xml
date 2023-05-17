@@ -38,7 +38,7 @@
         android:id="@+id/exit"
         android:layout_width="319dp"
         android:layout_height="52dp"
-        android:background="@color/black"
+        android:background="@drawable/negro"
         android:onClick="salir"
         android:text="salir"
         android:textColor="@color/white"

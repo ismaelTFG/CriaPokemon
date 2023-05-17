@@ -10,7 +10,7 @@ class ColoresTipos {
             "acero" -> {
                 when(tipodos){
                     "acero" -> {
-                        return R.color.acero
+                        return R.drawable.acero
                     }
                     "agua" -> {
                         return R.drawable.acero_agua
@@ -71,7 +71,7 @@ class ColoresTipos {
                         return R.drawable.acero_agua
                     }
                     "agua" -> {
-                        return R.color.agua
+                        return R.drawable.agua
                     }
                     "bicho" -> {
                         return R.drawable.agua_bicho
@@ -132,7 +132,7 @@ class ColoresTipos {
                         return R.drawable.agua_bicho
                     }
                     "bicho" -> {
-                        return R.color.bicho
+                        return R.drawable.bicho
                     }
                     "dragon" -> {
                         return R.drawable.bicho_dragon
@@ -193,7 +193,7 @@ class ColoresTipos {
                         return R.drawable.bicho_dragon
                     }
                     "dragon" -> {
-                        return R.color.dragon
+                        return R.drawable.dragon
                     }
                     "electrico" -> {
                         return R.drawable.dragon_electrico
@@ -254,7 +254,7 @@ class ColoresTipos {
                         return R.drawable.dragon_electrico
                     }
                     "electrico" -> {
-                        return R.color.electrico
+                        return R.drawable.electrico
                     }
                     "fantasma" -> {
                         return R.drawable.electrico_fantasma
@@ -315,7 +315,7 @@ class ColoresTipos {
                         return R.drawable.electrico_fantasma
                     }
                     "fantasma" -> {
-                        return R.color.fantasma
+                        return R.drawable.fantasma
                     }
                     "fuego" -> {
                         return R.drawable.fantasma_fuego
@@ -376,7 +376,7 @@ class ColoresTipos {
                         return R.drawable.fantasma_fuego
                     }
                     "fuego" -> {
-                        return R.color.fuego
+                        return R.drawable.fuego
                     }
                     "hada" -> {
                         return R.drawable.fuego_hada
@@ -437,7 +437,7 @@ class ColoresTipos {
                         return R.drawable.fuego_hada
                     }
                     "hada" -> {
-                        return R.color.hada
+                        return R.drawable.hada
                     }
                     "hielo" -> {
                         return R.drawable.hada_hielo
@@ -498,7 +498,7 @@ class ColoresTipos {
                         return R.drawable.hada_hielo
                     }
                     "hielo" -> {
-                        return R.color.hielo
+                        return R.drawable.hielo
                     }
                     "lucha" -> {
                         return R.drawable.hielo_lucha
@@ -559,7 +559,7 @@ class ColoresTipos {
                         return R.drawable.hielo_lucha
                     }
                     "lucha" -> {
-                        return R.color.lucha
+                        return R.drawable.lucha
                     }
                     "normal" -> {
                         return R.drawable.lucha_normal
@@ -620,7 +620,7 @@ class ColoresTipos {
                         return R.drawable.lucha_normal
                     }
                     "normal" -> {
-                        return R.color.normal
+                        return R.drawable.normal
                     }
                     "planta" -> {
                         return R.drawable.normal_planta
@@ -681,7 +681,7 @@ class ColoresTipos {
                         return R.drawable.normal_planta
                     }
                     "planta" -> {
-                        return R.color.planta
+                        return R.drawable.planta
                     }
                     "psiquico" -> {
                         return R.drawable.planta_psiquico
@@ -742,7 +742,7 @@ class ColoresTipos {
                         return R.drawable.planta_psiquico
                     }
                     "psiquico" -> {
-                        return R.color.psiquico
+                        return R.drawable.psiquico
                     }
                     "roca" -> {
                         return R.drawable.psiquico_roca
@@ -803,7 +803,7 @@ class ColoresTipos {
                         return R.drawable.psiquico_roca
                     }
                     "roca" -> {
-                        return R.color.roca
+                        return R.drawable.roca
                     }
                     "siniestro" -> {
                         return R.drawable.roca_siniestro
@@ -864,7 +864,7 @@ class ColoresTipos {
                         return R.drawable.roca_siniestro
                     }
                     "siniestro" -> {
-                        return R.color.siniestro
+                        return R.drawable.siniestro
                     }
                     "tierra" -> {
                         return R.drawable.siniestro_tierra
@@ -925,7 +925,7 @@ class ColoresTipos {
                         return R.drawable.siniestro_tierra
                     }
                     "tierra" -> {
-                        return R.color.tierra
+                        return R.drawable.tierra
                     }
                     "veneno" -> {
                         return R.drawable.tierra_veneno
@@ -986,7 +986,7 @@ class ColoresTipos {
                         return R.drawable.tierra_veneno
                     }
                     "veneno" -> {
-                        return R.color.veneno
+                        return R.drawable.veneno
                     }
                     "volador" -> {
                         return R.drawable.veneno_volador
@@ -1047,13 +1047,13 @@ class ColoresTipos {
                         return R.drawable.veneno_volador
                     }
                     "volador" -> {
-                        return R.color.volador
+                        return R.drawable.volador
                     }
                 }
             }
         }
 
-        return R.color.black
+        return R.drawable.negro
 
     }
 

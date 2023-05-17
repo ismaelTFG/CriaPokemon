@@ -2,6 +2,7 @@ package com.isma.criapokemon.service.impl
 
 import android.content.Context
 import com.isma.criapokemon.R
+import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Objeto
 import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.ObjetoService
@@ -11,9 +12,10 @@ import java.io.InputStreamReader
 class ObjetoServiceImpl(context: Context): ObjetoService {
 
     private val ventana = context
-    private val db = Sqlite(ventana)
 
-    override fun add() {
+    override fun listAll(): ArrayList<Objeto> {
+
+        val lista = ArrayList<Objeto>()
 
         val isr = InputStreamReader(ventana.resources.openRawResource(R.raw.objeto))
         val br = BufferedReader(isr)
@@ -23,20 +25,34 @@ class ObjetoServiceImpl(context: Context): ObjetoService {
 
             val text = line.split("*")
 
-            db.addObjetos(Objeto(text[0].toInt(), text[1], text[2].toInt()), db.writableDatabase)
+            lista.add(Objeto(text[0].toInt(), text[1], text[2].toInt()))
 
             line = br.readLine()
 
         }
 
-        br.close()
         isr.close()
+        br.close()
+
+        return lista
+
+        //return db.findAllObjetos(db.writableDatabase)
 
     }
 
-    override fun listAll(): ArrayList<Objeto> {
+    override fun findById(id: Int): Objeto {
 
-        return db.findAllObjetos(db.writableDatabase)
+        val lista = listAll()
+
+        lista.forEach {
+            if (it.id == id){
+
+                return it
+
+            }
+        }
+
+        return Objeto(0, "", 0)
 
     }
 

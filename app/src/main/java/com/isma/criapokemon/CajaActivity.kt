@@ -18,6 +18,7 @@ import java.util.zip.Inflater
 
 class CajaActivity : AppCompatActivity() {
 
+    private val mainActivity = MainActivity()
     private val cajaService = CajaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private val coloresTipos = ColoresTipos()
@@ -179,7 +180,7 @@ class CajaActivity : AppCompatActivity() {
 
                 val selecionado = spinner.selectedItemPosition
 
-                cajaService.evolucion(mostrado, selecionado)
+                cajaService.evolucion(mostrado, selecionado, mainActivity)
                 mostrado = cajas[numero]
 
                 if (cajaService.evoTrue(mostrado)){

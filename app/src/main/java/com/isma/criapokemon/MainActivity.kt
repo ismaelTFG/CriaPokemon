@@ -5,60 +5,34 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
+import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.service.impl.*
+import java.io.OutputStreamWriter
 
 
 class MainActivity : AppCompatActivity() {
 
-    private val pokemonService = PokemonServiceImpl(this)
     private val cajaService = CajaServiceImpl(this)
     private val busquedaService = BusquedaServiceImpl(this)
-    private val recompensasService = RecompensasServiceImpl(this)
     private val pokedexService = PokedexServiceImpl(this)
-    private val objetoService = ObjetoServiceImpl(this)
+    private var lista = ArrayList<Caja>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        setTheme(android.support.constraint.R.style.Theme_AppCompat_NoActionBar)
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val caja = cajaService.findAll()
-
-        if (pokemonService.listAll().size == 0){
-
-            pokemonService.add()
-
-        }else{
-
-            pokemonService.update()
-
-        }
+        lista = cajaService.findAll()
 
         if (pokedexService.findAll().size == 0){
 
-            val pokemon = pokemonService.listAll()
-
-            for (i in pokemon){
-
-                pokedexService.add(i.id)
-
-            }
+            pokedexService.add()
 
         }
 
-        if (recompensasService.listAll().size == 0){
-
-            recompensasService.add()
-
-        }
-
-        if (objetoService.listAll().size == 0){
-
-            objetoService.add()
-
-        }
-
-        if (caja.size == 0){
+        if (lista.size == 0){
 
             val caja = findViewById<Button>(R.id.caja)
             val criar = findViewById<Button>(R.id.criar)
@@ -72,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        if (caja.size == 1){
+        if (lista.size == 1){
 
             val criar = findViewById<Button>(R.id.criar)
 
@@ -80,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        for (i in caja){
+        for (i in lista){
             if (i.pokemon.id == ""){
 
                 cajaService.delete(i.id)
@@ -104,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
     fun buscar(view: View){
 
-        if (cajaService.findAll().size == 0){
+        if (lista.size == 0){
 
             finish()
             startActivity(Intent(this, InicialesActivity::class.java))
@@ -130,6 +104,12 @@ class MainActivity : AppCompatActivity() {
     fun objeto(view: View){
 
         startActivity(Intent(this, ObjetosActivity::class.java))
+
+    }
+
+    fun regalo(view: View){
+
+        startActivity(Intent(this, RegaloActivity::class.java))
 
     }
 

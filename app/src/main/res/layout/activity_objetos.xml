@@ -39,7 +39,7 @@
         android:id="@+id/button"
         android:layout_width="309dp"
         android:layout_height="63dp"
-        android:background="@color/black"
+        android:background="@drawable/negro"
         android:onClick="salir"
         android:text="salir"
         android:textColor="@color/white"

@@ -3,4 +3,5 @@
     <gradient
         android:startColor="@color/electrico"
         android:endColor="@color/planta"/>
+    <stroke android:width="3dip" android:color="#ffffff" />
 </shape>

@@ -1,16 +1,29 @@
 package com.isma.criapokemon.service.impl
 
+import android.app.Activity
 import android.content.Context
+import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.PokedexService
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
 
 class PokedexServiceImpl(context: Context): PokedexService {
 
-    private val db = Sqlite(context)
+    private val ventana = context
+    private val db = Sqlite(ventana)
+    private val pokemonService = PokemonServiceImpl(ventana)
 
-    override fun add(id: String) {
+    override fun add() {
 
-        return db.addPokedex(id, db.writableDatabase)
+        val lista = pokemonService.listAll()
+
+        lista.forEach{
+
+            db.addPokedex(it.id, db.writableDatabase)
+
+        }
 
     }
 
@@ -29,6 +42,21 @@ class PokedexServiceImpl(context: Context): PokedexService {
     override fun findById(id: String): Boolean {
 
         return db.findByIdPokedex(id, db.writableDatabase)
+
+    }
+
+    override fun especies(): Int {
+
+        val lista = findAll()
+        var contador = 0
+
+        lista.forEach {
+            if (it){
+                contador++
+            }
+        }
+
+        return contador
 
     }
 

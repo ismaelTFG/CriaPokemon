@@ -1771,6 +1771,9 @@ class VariablesImgPokemons {
             "_30_51" -> {
                 return R.drawable._30_51
             }
+            "_30_53" -> {
+                return R.drawable._30_53
+            }
             "_30_55" -> {
                 return R.drawable._30_55
             }
@@ -2331,6 +2334,9 @@ class VariablesImgPokemons {
             }
             "_47_212" -> {
                 return R.drawable._47_212
+            }
+            "_47_465" -> {
+                return R.drawable._47_465
             }
             "_48_123" -> {
                 return R.drawable._48_123
@@ -2914,6 +2920,12 @@ class VariablesImgPokemons {
             "_65_237" -> {
                 return R.drawable._65_237
             }
+            "_65_466" -> {
+                return R.drawable._65_466
+            }
+            "_65_467" -> {
+                return R.drawable._65_467
+            }
             "_66_96" -> {
                 return R.drawable._66_96
             }
@@ -3219,6 +3231,18 @@ class VariablesImgPokemons {
             }
             "_82_233" -> {
                 return R.drawable._82_233
+            }
+            "_83_84" -> {
+                return R.drawable._83_84
+            }
+            "_83_85" -> {
+                return R.drawable._83_85
+            }
+            "_83_86" -> {
+                return R.drawable._83_86
+            }
+            "_83_87" -> {
+                return R.drawable._83_87
             }
             "_83_111" -> {
                 return R.drawable._83_111
@@ -3796,6 +3820,15 @@ class VariablesImgPokemons {
             "_128_700" -> {
                 return R.drawable._128_700
             }
+            "_129_147" -> {
+                return R.drawable._129_147
+            }
+            "_130_148" -> {
+                return R.drawable._130_148
+            }
+            "_130_149" -> {
+                return R.drawable._130_149
+            }
             "_130_230" -> {
                 return R.drawable._130_230
             }
@@ -3810,6 +3843,9 @@ class VariablesImgPokemons {
             }
             "_131_141" -> {
                 return R.drawable._131_141
+            }
+            "_131_143" -> {
+                return R.drawable._131_143
             }
             "_131_147" -> {
                 return R.drawable._131_147
@@ -3828,6 +3864,9 @@ class VariablesImgPokemons {
             }
             "_131_230" -> {
                 return R.drawable._131_230
+            }
+            "_131_446" -> {
+                return R.drawable._131_446
             }
             "_131_463" -> {
                 return R.drawable._131_463

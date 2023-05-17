@@ -5,18 +5,20 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import com.isma.criapokemon.entity.*
+import com.isma.criapokemon.service.impl.ObjetoServiceImpl
+import com.isma.criapokemon.service.impl.PokemonServiceImpl
 
 class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1) {
 
+    private val pokemonService = PokemonServiceImpl(context)
+    private val objetoService = ObjetoServiceImpl(context)
+
     override fun onCreate(db: SQLiteDatabase) {
 
-        db.execSQL("CREATE TABLE pokemon (id TEXT PRIMARY KEY, name TEXT, img TEXT, tipo1 TEXT, tipo2 TEXT, evolucion TEXT)")
-        db.execSQL("CREATE TABLE caja (id INTEGER PRIMARY KEY, apodo TEXT, id_pokemon TEXT, nivel INTEGER, genero INTEGER, FOREIGN KEY (id_pokemon) REFERENCES pokemon(id))")
+        db.execSQL("CREATE TABLE caja (id INTEGER PRIMARY KEY, apodo TEXT, id_pokemon TEXT, nivel INTEGER, FOREIGN KEY (id_pokemon) REFERENCES pokemon(id))")
         db.execSQL("CREATE TABLE equipo (id INTEGER PRIMARY KEY, id_caja INTEGER)")
         db.execSQL("CREATE TABLE busqueda (id INTEGER PRIMARY KEY, hora TEXT, buscando INTEGER)")
-        db.execSQL("CREATE TABLE recompensas (id INTEGER PRIMARY KEY, porcentaje INTEGER)")
         db.execSQL("CREATE TABLE pokedex (id TEXT PRIMARY KEY, visible INTEGER)")
-        db.execSQL("CREATE TABLE objetos (id INTEGER PRIMARY KEY, nombre TEXT, porcentaje INTEGER)")
         db.execSQL("CREATE TABLE mochila (id INTEGER PRIMARY KEY, id_objeto INTEGER, cantidad INTEGER)")
 
         addBusqueda(db)
@@ -32,74 +34,6 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         TODO("Not yet implemented")
     }
 
-    fun addPokemon (pokemon: Pokemon, db: SQLiteDatabase){
-
-        val add = ContentValues()
-
-        add.put("id", pokemon.id)
-        add.put("name", pokemon.name)
-        add.put("img", pokemon.img)
-        add.put("tipo1", pokemon.tipoUno)
-        add.put("tipo2", pokemon.tipoDos)
-        add.put("evolucion", pokemon.evolucion)
-
-        db.insert("pokemon", null, add)
-
-    }
-
-    fun updatePokemon (pokemon: Pokemon, db: SQLiteDatabase){
-
-        val add = ContentValues()
-
-        add.put("name", pokemon.name)
-        add.put("img", pokemon.img)
-        add.put("tipo1", pokemon.tipoUno)
-        add.put("tipo2", pokemon.tipoDos)
-        add.put("evolucion", pokemon.evolucion)
-
-        db.update("pokemon", add, "id='${pokemon.id}'", null)
-
-    }
-
-    fun findAllPokemon (db: SQLiteDatabase): ArrayList<Pokemon>{
-
-        val resultado = db.rawQuery("SELECT * FROM pokemon", null)
-        val lista = ArrayList<Pokemon>()
-
-        if (resultado!!.moveToFirst()){
-
-            while (!resultado.isAfterLast){
-
-                val pokemon = Pokemon(resultado.getString(0), resultado.getString(1), resultado.getString(2), resultado.getString(3), resultado.getString(4), resultado.getString(5))
-
-                lista.add(pokemon)
-                resultado.moveToNext()
-
-            }
-
-        }
-
-        return lista;
-
-    }
-
-    fun findByIdPokemon (id: String, db: SQLiteDatabase): Pokemon{
-
-        val lista = findAllPokemon(db)
-        var pokemon = Pokemon("", "", "", "", "", "")
-
-        for(i in lista){
-            if(i.id == id){
-
-                pokemon = i
-
-            }
-        }
-
-        return pokemon
-
-    }
-
     fun findAllCaja (db: SQLiteDatabase): ArrayList<Caja>{
 
         val resultado = db.rawQuery("SELECT * FROM caja", null)
@@ -109,10 +43,9 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
             while (!resultado.isAfterLast){
 
-                val caja = Caja(resultado.getInt(0), resultado.getString(1), findByIdPokemon(resultado.getString(2), db))
+                val caja = Caja(resultado.getInt(0), resultado.getString(1), pokemonService.findById(resultado.getString(2)))
 
                 caja.setNivel(resultado.getInt(3))
-                caja.setMacho(resultado.getInt(4))
 
                 lista.add(caja)
                 resultado.moveToNext()
@@ -149,7 +82,6 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
         add.put("apodo", caja.apodo)
         add.put("id_pokemon", caja.pokemon.id)
         add.put("nivel", caja.getNivel())
-        add.put("genero", caja.getGenero())
 
         db.insert("caja", null, add)
 
@@ -258,37 +190,6 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     }
 
-    fun addRecompensas (id: Int, porcentaje: Int, db: SQLiteDatabase){
-
-        val add = ContentValues()
-
-        add.put("id", id)
-        add.put("porcentaje", porcentaje)
-
-        db.insert("recompensas", null, add)
-
-    }
-
-    fun findAllRecompensas (db: SQLiteDatabase): ArrayList<Recompensas>{
-
-        val resultado = db.rawQuery("SELECT * FROM recompensas", null)
-        val lista = ArrayList<Recompensas>()
-
-        if (resultado!!.moveToFirst()){
-
-            while (!resultado.isAfterLast){
-
-                lista.add(Recompensas(findByIdPokemon(""+resultado.getInt(0), db), resultado.getInt(1)))
-                resultado.moveToNext()
-
-            }
-
-        }
-
-        return lista
-
-    }
-
     fun addPokedex (id: String, db: SQLiteDatabase){
 
         val add = ContentValues()
@@ -362,54 +263,6 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     }
 
-    fun addObjetos (objeto: Objeto, db: SQLiteDatabase){
-
-        val add = ContentValues()
-
-        add.put("id", objeto.id)
-        add.put("nombre", objeto.nombre)
-        add.put("porcentaje", objeto.porcentaje)
-
-        db.insert("objetos", null, add)
-
-    }
-
-    fun findAllObjetos (db: SQLiteDatabase): ArrayList<Objeto>{
-
-        val resultado = db.rawQuery("SELECT * FROM objetos", null)
-        val lista = ArrayList<Objeto>()
-
-        if (resultado!!.moveToFirst()){
-
-            while (!resultado.isAfterLast){
-
-                lista.add(Objeto(resultado.getInt(0), resultado.getString(1), resultado.getInt(2)))
-                resultado.moveToNext()
-
-            }
-
-        }
-
-        return lista
-
-    }
-
-    fun findByIdObjetos (id: Int, db: SQLiteDatabase): Objeto{
-
-        val lista = findAllObjetos(db)
-
-        for (i in lista){
-            if (i.id == id){
-
-                return i
-
-            }
-        }
-
-        return Objeto(0, "", 0)
-
-    }
-
     fun addMochila (mochila: Mochila, db: SQLiteDatabase){
 
         val add = ContentValues()
@@ -431,7 +284,7 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
             while (!resultado.isAfterLast){
 
-                lista.add(Mochila(resultado.getInt(0), findByIdObjetos(resultado.getInt(1), db), resultado.getInt(2)))
+                lista.add(Mochila(resultado.getInt(0), objetoService.findById(resultado.getInt(1)), resultado.getInt(2)))
                 resultado.moveToNext()
 
             }

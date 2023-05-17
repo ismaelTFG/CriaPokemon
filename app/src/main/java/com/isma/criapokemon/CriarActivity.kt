@@ -18,6 +18,7 @@ import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
 class CriarActivity : AppCompatActivity() {
 
+    private val mainActivity = MainActivity()
     private val cajaService = CajaServiceImpl(this)
     private val huevoService = HuevoServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()

@@ -1,13 +1,21 @@
 package com.isma.criapokemon.service.impl
 
+import android.app.Activity
 import android.content.Context
+import android.os.Environment
+import com.isma.criapokemon.MainActivity
 import com.isma.criapokemon.entity.Caja
+import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.CajaService
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
 
 class CajaServiceImpl(context: Context): CajaService {
 
     private val db = Sqlite(context)
+    private val pokemonService = PokemonServiceImpl(context)
     private val pokedexService = PokedexServiceImpl(context)
 
     override fun findAll(): ArrayList<Caja> {
@@ -48,7 +56,7 @@ class CajaServiceImpl(context: Context): CajaService {
 
     }
 
-    override fun evolucion(caja: Caja, tipo: Int) {
+    override fun evolucion(caja: Caja, tipo: Int, context: Context) {
 
         val evolucion = caja.pokemon.evolucion.split(",")
 
@@ -57,31 +65,31 @@ class CajaServiceImpl(context: Context): CajaService {
                 evoConApodo("desenrollar", evolucion, caja, tipo)
             }
             "tangela" -> {
-                evoConApodo("poder pasado", evolucion, caja, tipo)
+                evoConApodo("poderpasado", evolucion, caja, tipo)
             }
-            "tyrogue" -> {
+            "tyrogue", "ague", "machogue", "drowgue", "tyrochum", "tyrokid", "tyroby", "tyroge jr." -> {
                 val i = evolucion[tipo].split("=")
 
                 if (caja.getNivel() >= i[0].toInt()){
-                    if (caja.apodo == "lee"){
+                    if (caja.apodo.replace("\\s".toRegex(), "") == "lee"){
 
-                        caja.pokemon = db.findByIdPokemon(i[1], db.writableDatabase)
-                        db.updateCaja(caja, db.writableDatabase)
+                        caja.pokemon = pokemonService.findById(i[1])
+                        update(caja)
                         pokedexService.visible(i[1])
 
                     }
-                    if (caja.apodo == "chan"){
+                    if (caja.apodo.replace("\\s".toRegex(), "") == "chan"){
 
-                        caja.pokemon = db.findByIdPokemon(i[2], db.writableDatabase)
-                        db.updateCaja(caja, db.writableDatabase)
-                        pokedexService.visible(i[1])
+                        caja.pokemon = pokemonService.findById(i[2])
+                        update(caja)
+                        pokedexService.visible(i[2])
 
                     }
-                    if (caja.apodo == "top"){
+                    if (caja.apodo.replace("\\s".toRegex(), "") == "top"){
 
-                        caja.pokemon = db.findByIdPokemon(i[3], db.writableDatabase)
-                        db.updateCaja(caja, db.writableDatabase)
-                        pokedexService.visible(i[1])
+                        caja.pokemon = pokemonService.findById(i[3])
+                        update(caja)
+                        pokedexService.visible(i[3])
 
                     }
                 }
@@ -151,7 +159,7 @@ class CajaServiceImpl(context: Context): CajaService {
                         if (i[0] != "no"){
                             if (i[0].toInt() <= caja.getNivel()){
 
-                                val evo = db.findByIdPokemon(i[1], db.writableDatabase)
+                                val evo = pokemonService.findById(i[1])
 
                                 if (caja.apodo == caja.pokemon.name){
 
@@ -160,7 +168,7 @@ class CajaServiceImpl(context: Context): CajaService {
                                 }
 
                                 caja.pokemon = evo
-                                db.updateCaja(caja, db.writableDatabase)
+                                update(caja)
                                 pokedexService.visible(i[1])
 
                             }
@@ -230,6 +238,38 @@ class CajaServiceImpl(context: Context): CajaService {
 
     }
 
+    override fun findByid(id: Int): Caja {
+
+        val lista = findAll()
+
+        lista.forEach {
+            if (it.id == id){
+
+                return it
+
+            }
+        }
+
+        return Caja(0, "", Pokemon("", "", "", "", "", ""))
+
+    }
+
+    override fun findByidPokemon(id: String): Caja {
+
+        val lista = findAll()
+
+        lista.forEach {
+            if (it.pokemon.id == id){
+
+                return it
+
+            }
+        }
+
+        return Caja(0, "", Pokemon("", "", "", "", "", ""))
+
+    }
+
     private fun evoConApodo(apodo: String, evolucion: List<String>, caja: Caja, tipo: Int){
 
         val i = evolucion[tipo].split("=")
@@ -237,8 +277,8 @@ class CajaServiceImpl(context: Context): CajaService {
         if (caja.apodo.replace("\\s".toRegex(), "") == apodo){
             if (caja.getNivel() >= i[0].toInt()){
 
-                caja.pokemon = db.findByIdPokemon(i[1], db.writableDatabase)
-                db.updateCaja(caja, db.writableDatabase)
+                caja.pokemon = pokemonService.findById(i[1])
+                update(caja)
                 pokedexService.visible(i[1])
 
             }
@@ -252,7 +292,7 @@ class CajaServiceImpl(context: Context): CajaService {
 
         if (mochila.cantidad > 0){
 
-            val pokemon = db.findByIdPokemon(evolucion, db.writableDatabase)
+            val pokemon = pokemonService.findById(evolucion)
 
             if (caja.apodo == caja.pokemon.name){
 
@@ -262,7 +302,7 @@ class CajaServiceImpl(context: Context): CajaService {
 
             caja.pokemon = pokemon
             pokedexService.visible(evolucion)
-            db.updateCaja(caja, db.writableDatabase)
+            update(caja)
             db.updateMochila(mochila, -1, db.writableDatabase)
 
         }
