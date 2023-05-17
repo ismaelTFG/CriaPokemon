@@ -3,4 +3,5 @@
     <gradient
         android:startColor="@color/lucha"
         android:endColor="@color/normal"/>
+    <stroke android:width="3dip" android:color="#ffffff" />
 </shape>

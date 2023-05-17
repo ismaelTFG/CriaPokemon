@@ -7,20 +7,10 @@ class Caja(
 
 
     private var nivel = 1
-    private var macho = genero()
 
     fun setNivel(nivel: Int){
 
         this.nivel = nivel
-
-    }
-    fun setMacho(genero: Int){
-
-        if (genero == 0){
-
-            macho = false
-
-        }
 
     }
 
@@ -29,29 +19,14 @@ class Caja(
         return nivel
 
     }
-    fun getGenero(): Int{
 
-        if (macho){
+    fun guardar(): String{
 
-            return 1
+        val exit = StringBuilder()
 
-        }else{
+        exit.append(id).append("*").append(apodo).append("*").append(pokemon.id).append("*").append(nivel).append("\n")
 
-            return 0
-
-        }
-
-    }
-
-    private fun genero(): Boolean{
-
-        val genero = (Math.random() * 2).toInt()
-
-        if (genero == 0){
-            return false
-        }
-
-        return true
+        return exit.toString()
 
     }
 
@@ -65,12 +40,6 @@ class Caja(
             exit.append(pokemon.tipoUno).append("\n")
         }else{
             exit.append(pokemon.tipoUno).append(" ").append(pokemon.tipoDos).append("\n")
-        }
-        exit.append("genero: ")
-        if (macho){
-            exit.append("macho").append("\n")
-        }else{
-            exit.append("Hembra").append("\n")
         }
         exit.append("nivel: ").append(nivel).append("\n")
 

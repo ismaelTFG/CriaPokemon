@@ -4,7 +4,7 @@ import com.isma.criapokemon.entity.Objeto
 
 interface ObjetoService {
 
-    fun add()
     fun listAll(): ArrayList<Objeto>
+    fun findById(id: Int): Objeto
 
 }

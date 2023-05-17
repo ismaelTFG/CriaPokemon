@@ -22,6 +22,7 @@ import java.time.format.DateTimeFormatter
 
 class BuscarActivity : AppCompatActivity() {
 
+    private val mainActivity = MainActivity()
     private var equipo = ArrayList<Caja>()
     private val cajaService = CajaServiceImpl(this)
     private val equipoService = EquipoServiceImpl(this)
@@ -82,6 +83,7 @@ class BuscarActivity : AppCompatActivity() {
         }
 
     }
+
     fun salir(view: View){
 
         finish()

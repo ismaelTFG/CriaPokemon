@@ -11,25 +11,20 @@ import java.io.InputStreamReader
 class RecompensasServiceImpl(context: Context): RecompensasService {
 
     private val ventana = context
-    private val db = Sqlite(ventana)
+    private val pokemonService = PokemonServiceImpl(ventana)
 
     override fun listAll(): ArrayList<Recompensas> {
 
-        return db.findAllRecompensas(db.writableDatabase)
-
-    }
-
-    override fun add() {
-
         val isr = InputStreamReader(ventana.resources.openRawResource(R.raw.recompensas))
         val br = BufferedReader(isr)
+        val lista = ArrayList<Recompensas>()
         var line: String? = br.readLine()
 
         while (line != null){
 
             val text = line.split("*")
 
-            db.addRecompensas(text[0].toInt(), text[1].toInt(), db.writableDatabase)
+            lista.add(Recompensas(pokemonService.findById(text[0]), text[1].toInt()))
 
             line = br.readLine()
 
@@ -38,8 +33,8 @@ class RecompensasServiceImpl(context: Context): RecompensasService {
         br.close()
         isr.close()
 
+        return lista
+
     }
-
-
 
 }

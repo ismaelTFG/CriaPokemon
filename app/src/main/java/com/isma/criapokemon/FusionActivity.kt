@@ -10,6 +10,7 @@ import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.service.impl.CajaServiceImpl
 import com.isma.criapokemon.service.impl.PokedexServiceImpl
 import com.isma.criapokemon.service.impl.PokemonServiceImpl
+import com.isma.criapokemon.variablesdrawable.ColoresTipos
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
 class FusionActivity : AppCompatActivity() {
@@ -17,6 +18,7 @@ class FusionActivity : AppCompatActivity() {
     private val pokemonService = PokemonServiceImpl(this)
     private val cajaService = CajaServiceImpl(this)
     private val pokedexService = PokedexServiceImpl(this)
+    private val coloresTipos = ColoresTipos()
     private val variablesImgPokemons = VariablesImgPokemons()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +36,7 @@ class FusionActivity : AppCompatActivity() {
         pokedexService.visible(pokemon.id)
 
         nombre.setText(pokemon.name)
+        nombre.setBackgroundResource(coloresTipos.colores(pokemon.tipoUno, pokemon.tipoDos))
         pokeimg.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
 
     }

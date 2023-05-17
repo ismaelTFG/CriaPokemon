@@ -153,7 +153,7 @@ class PokedexActivity : AppCompatActivity() {
 
         }else{
 
-            nombre.setText(mostrado.id+" *****************")
+            nombre.setText(mostrado.id)
             nombre.setBackgroundResource(0)
             descripcion.setText("**********************************************************************************************************************************************************************************************************************************************")
             descripcion.setBackgroundResource(0)

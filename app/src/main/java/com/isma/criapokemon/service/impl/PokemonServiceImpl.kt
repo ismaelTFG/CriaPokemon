@@ -11,16 +11,10 @@ import java.io.InputStreamReader
 class PokemonServiceImpl(context: Context): PokemonService {
 
     private val ventana = context
-    private val db = Sqlite(ventana)
 
     override fun listAll(): ArrayList<Pokemon> {
 
-        return db.findAllPokemon(db.writableDatabase)
-
-    }
-
-    override fun add() {
-
+        val lista = ArrayList<Pokemon>()
         val isr = InputStreamReader(ventana.resources.openRawResource(R.raw.pokemon))
         val br = BufferedReader(isr)
         var line: String? = br.readLine()
@@ -29,7 +23,7 @@ class PokemonServiceImpl(context: Context): PokemonService {
 
             val text = line.split("*")
 
-            db.addPokemon(Pokemon(text[0], text[1], text[2], text[3], text[4], text[5]), db.writableDatabase)
+            lista.add(Pokemon(text[0], text[1], text[2], text[3], text[4], text[5]))
 
             line = br.readLine()
 
@@ -38,32 +32,27 @@ class PokemonServiceImpl(context: Context): PokemonService {
         br.close()
         isr.close()
 
-    }
+        return lista
 
-    override fun update() {
-
-        val isr = InputStreamReader(ventana.resources.openRawResource(R.raw.pokemon))
-        val br = BufferedReader(isr)
-        var line: String? = br.readLine()
-
-        while (line != null){
-
-            val text = line.split("*")
-
-            db.updatePokemon(Pokemon(text[0], text[1], text[2], text[3], text[4], text[5]), db.writableDatabase)
-
-            line = br.readLine()
-
-        }
-
-        br.close()
-        isr.close()
+        //return db.findAllPokemon(db.writableDatabase)
 
     }
 
     override fun findById(id: String): Pokemon {
 
-         return db.findByIdPokemon(id, db.writableDatabase)
+        val lista = listAll()
+
+        lista.forEach {
+            if (it.id == id){
+
+                return it
+
+            }
+        }
+
+        return Pokemon("", "", "", "", "", "")
+
+         //return db.findByIdPokemon(id, db.writableDatabase)
 
     }
 

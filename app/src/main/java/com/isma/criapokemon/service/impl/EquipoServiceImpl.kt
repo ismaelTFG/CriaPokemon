@@ -1,9 +1,14 @@
 package com.isma.criapokemon.service.impl
 
+import android.app.Activity
 import android.content.Context
+import com.isma.criapokemon.MainActivity
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.EquipoService
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
 
 class EquipoServiceImpl(context: Context): EquipoService {
 
@@ -32,7 +37,7 @@ class EquipoServiceImpl(context: Context): EquipoService {
         for (i in lista){
             if (i.getNivel() < 100){
 
-                i.setNivel(i.getNivel()+50)
+                i.setNivel(i.getNivel()+1)
                 db.updateCaja(i, db.writableDatabase)
 
             }
