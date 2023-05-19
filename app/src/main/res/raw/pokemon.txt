@@ -26,10 +26,10 @@
 26*raichu*_26*electrico*electrico*no
 27*sandshrew*_27*tierra*tierra*22=28
 28*sandslash*_28*tierra*tierra*no
-29*nidoran f*_29*veneno*veneno*16=30
+29*nidoran♀*_29*veneno*veneno*16=30
 30*nidorina*_30*veneno*veneno*piedra lunar=31
 31*nidoqueen*_31*veneno*tierra*no
-32*nidoran m*_32*veneno*veneno*16=33
+32*nidoran♂*_32*veneno*veneno*16=33
 33*nidorino*_33*veneno*veneno*piedra lunar=34
 34*nidoking*_34*veneno*tierra*no
 35*clefairy*_35*hada*hada*piedra lunar=36
@@ -181,10 +181,10 @@
 471*glaceon*_471*hielo*hielo*no
 474*porygon-z*_474*normal*normal*no
 700*sylveon*_700*hada*hada*no
-1_4*bulbander f*_1_4*planta*fuego*16=2_5
-1_7*bulbartle f*_1_7*planta*agua*16=2_8
-1_29*bulbaran f*_1_29*planta*veneno*16=2_30
-1_32*bulbaran m*_1_32*planta*veneno*16=2_33
+1_4*bulbande*_1_4*planta*fuego*16=2_5
+1_7*bulbartle*_1_7*planta*agua*16=2_8
+1_29*bulbaran♀*_1_29*planta*veneno*16=2_30
+1_32*bulbaran♂*_1_32*planta*veneno*16=2_33
 1_43*bulbaish*_1_43*planta*veneno*18=2_44
 1_46*bulbaras*_1_46*planta*bicho*20=2_47
 1_69*bulbasprout*_1_69*planta*veneno*18=2_70
@@ -234,8 +234,8 @@
 3_465*venugrowth*_3_465*planta*veneno*no
 4_7*charmantle*_4_7*fuego*agua*16=5_8
 4_23*charmanans*_4_23*fuego*veneno*19=5_24
-4_29*charmanran f*_4_29*fuego*veneno*16=5_30
-4_32*charmanran m*_4_32*fuego*veneno*16=5_33
+4_29*charmanran♀*_4_29*fuego*veneno*16=5_30
+4_32*charmanran♂*_4_32*fuego*veneno*16=5_33
 4_79*charmanpoke*_4_79*fuego*agua*26=5_80,roca del rey=5_199
 4_104*charmane*_4_104*fuego*tierra*22=5_105
 4_108*charmantung*_4_108*fuego*normal*16=5_463
@@ -276,8 +276,8 @@
 6_230*charidra*_6_230*fuego*dragon*no
 6_463*charilicky*_6_463*fuego*normal*no
 6_464*chariperior*_6_464*fuego*tierra*no
-7_29*squiran f*_7_29*agua*veneno*16=8_30
-7_32*squiran m*_7_32*agua*veneno*16=8_33
+7_29*squiran♀*_7_29*agua*veneno*16=8_30
+7_32*squiran♂*_7_32*agua*veneno*16=8_33
 7_54*squirduck*_7_54*agua*agua*24=8_55
 7_60*squirwag*_7_60*agua*agua*20=8_61
 7_79*squirpoke*_7_79*agua*psiquico*26=8_80,roca del rey=8_199
@@ -371,8 +371,8 @@
 18_169*crogeot*_18_169*volador*veneno*no
 19_23*rattans*_19_23*normal*veneno*21=20_24
 19_27*rattashrew*_19_27*normal*tierra*21=20_28
-19_29*rattaran f*_19_29*normal*veneno*18=20_30
-19_32*rattaran m*_19_32*normal*veneno*18=20_33
+19_29*rattaran♀*_19_29*normal*veneno*18=20_30
+19_32*rattaran♂*_19_32*normal*veneno*18=20_33
 19_37*rattapix*_19_37*normal*fuego*piedra fuego=20_38
 19_50*rattaglett*_19_50*normal*tierra*23=20_51
 19_52*rattawth*_19_52*normal*normal*23=20_53
@@ -424,8 +424,8 @@
 22_142*feadactyl*_22_142*normal*volador*no
 22_169*crorow*_22_169*volador*veneno*no
 23_27*ekashrew*_23_27*veneno*tierra*22=24_28
-23_29*ekaran f*_23_29*veneno*tierra*19=24_30
-23_32*ekaran m*_23_32*veneno*tierra*19=24_33
+23_29*ekaran♀*_23_29*veneno*tierra*19=24_30
+23_32*ekaran♂*_23_32*veneno*tierra*19=24_33
 23_37*ekapix*_23_37*veneno*fuego*piedra fuego=24_38
 23_50*ekaglett*_23_50*veneno*tierra*24=24_51
 23_52*moewans*_23_52*veneno*normal*25=24_53
@@ -524,8 +524,8 @@
 26_470*raileaf*_26_470*electrico*planta*no
 26_471*raiglace*_26_471*electrico*hielo*no
 26_700*raisylve*_26_700*electrico*hada*no
-27_29*sandran f*_27_29*tierra*veneno*19=28_30
-27_32*sandran m*_27_32*tierra*veneno*19=28_33
+27_29*sandran♀*_27_29*tierra*veneno*19=28_30
+27_32*sandran♂*_27_32*tierra*veneno*19=28_33
 27_37*sandpix*_27_37*tierra*fuego*piedra fuego=28_38
 27_50*sandglett*_27_50*tierra*tierra*24=28_51
 27_52*sandwth*_27_52*tierra*normal*25=28_53
@@ -564,25 +564,25 @@
 28_471*glacelash*_28_471*tierra*hielo*no
 28_700*sylvelash*_28_700*tierra*hada*no
 29_32*nidoran*_29_32*veneno*veneno*16=30_33
-29_37*vulran f*_29_37*veneno*fuego*piedra fuego=30_38
-29_50*diran f*_29_50*veneno*tierra*21=30_51
-29_52*meowran f*_29_52*veneno*normal*22=30_53
-29_54*psyran f*_29_54*veneno*agua*24=30_55
-29_56*manran f*_29_56*veneno*lucha*22=30_57
-29_58*growran f*_29_58*veneno*fuego*piedra fuego=30_59
-29_77*ponyran f*_29_77*veneno*fuego*28=30_78
-29_79*slowran f*_29_79*veneno*agua*26=30_80,roca del rey=30_199
-29_83*farferan f*_29_83*veneno*volador*16=30_83
-29_86*seran f*_29_86*veneno*agua*25=30_87
-29_104*cuboran f*_29_104*veneno*tierra*22=30_105
-29_108*lickiran f*_29_108*veneno*normal*16=30_463
-29_111*rhyran f*_29_111*veneno*roca*29=30_112
-29_115*kangasran f*_29_115*veneno*normal*16=30_115
-29_128*tauran f*_29_128*veneno*normal*16=30_128
-29_131*laran f*_29_131*veneno*agua*16=30_131
-29_133*eevran f*_29_133*veneno*normal*piedra agua=30_134,piedra trueno=30_135,piedra fuego=30_136,piedra dia=30_196,piedra noche=30_197,piedra hoja=30_470,piedra hielo=30_471,23=30_700
-29_172*piran f*_29_172*veneno*electrico*13=25_30
-29_446*munchran f*_29_446*veneno*normal*13=30_143
+29_37*vulran♀*_29_37*veneno*fuego*piedra fuego=30_38
+29_50*diran♀*_29_50*veneno*tierra*21=30_51
+29_52*meowran♀*_29_52*veneno*normal*22=30_53
+29_54*psyran♀*_29_54*veneno*agua*24=30_55
+29_56*manran♀*_29_56*veneno*lucha*22=30_57
+29_58*growran♀*_29_58*veneno*fuego*piedra fuego=30_59
+29_77*ponyran♀*_29_77*veneno*fuego*28=30_78
+29_79*slowran♀*_29_79*veneno*agua*26=30_80,roca del rey=30_199
+29_83*farferan♀*_29_83*veneno*volador*16=30_83
+29_86*seran♀*_29_86*veneno*agua*25=30_87
+29_104*cuboran♀*_29_104*veneno*tierra*22=30_105
+29_108*lickiran♀*_29_108*veneno*normal*16=30_463
+29_111*rhyran♀*_29_111*veneno*roca*29=30_112
+29_115*kangasran♀*_29_115*veneno*normal*16=30_115
+29_128*tauran♀*_29_128*veneno*normal*16=30_128
+29_131*laran♀*_29_131*veneno*agua*16=30_131
+29_133*eevran♀*_29_133*veneno*normal*piedra agua=30_134,piedra trueno=30_135,piedra fuego=30_136,piedra dia=30_196,piedra noche=30_197,piedra hoja=30_470,piedra hielo=30_471,23=30_700
+29_172*piran♀*_29_172*veneno*electrico*13=25_30
+29_446*munchran♀*_29_446*veneno*normal*13=30_143
 30_33*nidorine*_30_33*veneno*veneno*piedra lunar=31_34
 30_38*ninerina*_30_38*veneno*fuego*piedra lunar=31_38
 30_51*dugrina*_30_51*veneno*tierra*piedra lunar=31_51
@@ -637,25 +637,25 @@
 31_470*leafqueen*_31_470*veneno*planta*no
 31_471*glacequeen*_31_471*veneno*hielo*no
 31_700*sylvequeen*_31_700*veneno*hada*no
-32_37*vulran m*_32_37*veneno*fuego*piedra fuego=33_38
-32_50*diran m*_32_50*veneno*tierra*21=33_51
-32_52*meowran m*_32_52*veneno*normal*22=33_53
-32_54*psyran m*_32_54*veneno*agua*24=33_55
-32_56*manran m*_32_56*veneno*lucha*22=33_57
-32_58*growran m*_32_58*veneno*fuego*piedra fuego=33_59
-32_77*ponyran m*_32_77*veneno*fuego*28=33_78
-32_79*slowran m*_32_79*veneno*agua*26=33_80,roca del rey=33_199
-32_83*farferan m*_32_83*veneno*volador*16=33_83
-32_86*seran m*_32_86*veneno*agua*25=33_87
-32_104*cuboran m*_32_104*veneno*tierra*22=33_105
-32_108*lickiran m*_32_108*veneno*normal*16=33_463
-32_111*rhyran m*_32_111*veneno*roca*29=33_112
-32_115*kangasran m*_32_115*veneno*normal*16=33_115
-32_128*tauran m*_32_128*veneno*normal*16=33_128
-32_131*laran m*_32_131*veneno*agua*16=33_131
-32_133*eevran m*_32_133*veneno*normal*piedra agua=33_134,piedra trueno=33_135,piedra fuego=33_136,piedra dia=33_196,piedra noche=33_197,piedra hoja=33_470,piedra hielo=33_471,23=33_700
-32_172*piran m*_32_172*veneno*electrico*13=25_33
-32_446*munchran m*_32_446*veneno*normal*13=33_143
+32_37*vulran♂*_32_37*veneno*fuego*piedra fuego=33_38
+32_50*diran♂*_32_50*veneno*tierra*21=33_51
+32_52*meowran♂*_32_52*veneno*normal*22=33_53
+32_54*psyran♂*_32_54*veneno*agua*24=33_55
+32_56*manran♂*_32_56*veneno*lucha*22=33_57
+32_58*growran♂*_32_58*veneno*fuego*piedra fuego=33_59
+32_77*ponyran♂*_32_77*veneno*fuego*28=33_78
+32_79*slowran♂*_32_79*veneno*agua*26=33_80,roca del rey=33_199
+32_83*farferan♂*_32_83*veneno*volador*16=33_83
+32_86*seran♂*_32_86*veneno*agua*25=33_87
+32_104*cuboran♂*_32_104*veneno*tierra*22=33_105
+32_108*lickiran♂*_32_108*veneno*normal*16=33_463
+32_111*rhyran♂*_32_111*veneno*roca*29=33_112
+32_115*kangasran♂*_32_115*veneno*normal*16=33_115
+32_128*tauran♂*_32_128*veneno*normal*16=33_128
+32_131*laran♂*_32_131*veneno*agua*16=33_131
+32_133*eevran♂*_32_133*veneno*normal*piedra agua=33_134,piedra trueno=33_135,piedra fuego=33_136,piedra dia=33_196,piedra noche=33_197,piedra hoja=33_470,piedra hielo=33_471,23=33_700
+32_172*piran♂*_32_172*veneno*electrico*13=25_33
+32_446*munchran♂*_32_446*veneno*normal*13=33_143
 33_38*ninerino*_33_38*veneno*fuego*piedra lunar=34_38
 33_51*dugrino*_33_51*veneno*tierra*piedra lunar=34_51
 33_53*persirino*_33_53*veneno*normal*piedra lunar=34_53

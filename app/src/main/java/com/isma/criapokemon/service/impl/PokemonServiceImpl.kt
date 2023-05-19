@@ -3,7 +3,6 @@ package com.isma.criapokemon.service.impl
 import android.content.Context
 import com.isma.criapokemon.R
 import com.isma.criapokemon.entity.Pokemon
-import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.PokemonService
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -34,8 +33,6 @@ class PokemonServiceImpl(context: Context): PokemonService {
 
         return lista
 
-        //return db.findAllPokemon(db.writableDatabase)
-
     }
 
     override fun findById(id: String): Pokemon {
@@ -51,8 +48,6 @@ class PokemonServiceImpl(context: Context): PokemonService {
         }
 
         return Pokemon("", "", "", "", "", "")
-
-         //return db.findByIdPokemon(id, db.writableDatabase)
 
     }
 

@@ -13,12 +13,17 @@ class Pokemon(
     val tipoDos: String,
     val evolucion: String) {
 
-    fun toString(context: Context, id: String): String {
+    fun toString(context: Context): String {
 
         val exit = StringBuilder()
 
         exit.append("especie: ").append(name).append("\n")
-        exit.append("tipos: ").append(tipoUno).append(" ").append(tipoDos).append("\n")
+        exit.append("tipos: ")
+        if (tipoUno == tipoDos){
+            exit.append(tipoUno).append("\n")
+        }else{
+            exit.append(tipoUno).append(" ").append(tipoDos).append("\n")
+        }
         exit.append("descripcion: ").append(descripcion(context, id))
 
         return exit.toString()
@@ -47,13 +52,13 @@ class Pokemon(
 
         for (i in numero){
 
-            contador++
-
             if (i == id){
 
                 return descripcion[contador]
 
             }
+
+            contador++
         }
 
         br.close()

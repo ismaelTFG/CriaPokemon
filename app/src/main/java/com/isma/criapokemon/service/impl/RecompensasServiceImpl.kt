@@ -3,7 +3,6 @@ package com.isma.criapokemon.service.impl
 import android.content.Context
 import com.isma.criapokemon.R
 import com.isma.criapokemon.entity.Recompensas
-import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.RecompensasService
 import java.io.BufferedReader
 import java.io.InputStreamReader

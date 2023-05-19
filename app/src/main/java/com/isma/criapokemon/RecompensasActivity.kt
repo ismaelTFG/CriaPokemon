@@ -12,7 +12,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.isma.criapokemon.entity.Caja
-import com.isma.criapokemon.entity.Objeto
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.entity.Recompensas
 import com.isma.criapokemon.service.impl.*
@@ -30,6 +29,7 @@ class RecompensasActivity : AppCompatActivity() {
     val variablesImgPokemons = VariablesImgPokemons()
     var recompensa = Recompensas(Pokemon("", "", "", "", "", ""), 0)
     var contador = 0
+    var caja = ArrayList<Caja>()
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +43,8 @@ class RecompensasActivity : AppCompatActivity() {
         val rechazar = findViewById<Button>(R.id.rechazar)
         val recompensas = calcula()
 
+        caja = cajaService.descodificar(intent.getStringExtra("caja").toString())
+
         if (recompensas.size == 0){
 
             val bmp = BitmapFactory.decodeResource(resources, variablesImgPokemons.img(recompensa.pokemon.img))
@@ -54,12 +56,12 @@ class RecompensasActivity : AppCompatActivity() {
             rechazar.setOnClickListener{
 
                 finish()
+                startActivity(Intent(this, MainActivity::class.java))
 
             }
 
         }else{
 
-            val caja = cajaService.findAll()
             var numero = 0
 
             recompensa = recompensas[contador]
@@ -79,9 +81,7 @@ class RecompensasActivity : AppCompatActivity() {
             texto.setText(recompensa.pokemon.name+" tienes "+numero)
             recojer.setOnClickListener {
 
-                val lista = cajaService.findAll()
-
-                cajaService.add(Caja(lista[lista.size-1].id+1, recompensa.pokemon.name, recompensa.pokemon))
+                cajaService.add(Caja(caja[caja.size-1].id+1, recompensa.pokemon.name, recompensa.pokemon))
                 pokedexService.visible(recompensa.pokemon.id)
                 Toast.makeText(this, "has guardado a "+recompensa.pokemon.name, Toast.LENGTH_SHORT).show()
                 fin(recompensas, img, texto)
@@ -144,7 +144,6 @@ class RecompensasActivity : AppCompatActivity() {
 
         if (contador < recompensas.size-1){
 
-            val caja = cajaService.findAll()
             var numero = 0
 
             contador++

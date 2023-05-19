@@ -1,7 +1,5 @@
 package com.isma.criapokemon.service
 
-import android.content.Context
-
 interface PokedexService {
 
     fun add()

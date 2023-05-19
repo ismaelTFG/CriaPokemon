@@ -7,8 +7,6 @@ import android.view.View
 import android.widget.Button
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.service.impl.*
-import java.io.OutputStreamWriter
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -66,32 +64,47 @@ class MainActivity : AppCompatActivity() {
 
     fun caja(view: View){
 
-        startActivity(Intent(this, PokemonActivity::class.java))
+        val i = Intent(this, PokemonActivity::class.java)
+
+        i.putExtra("caja", cajaService.codificar(lista))
+
+        startActivity(i)
 
     }
 
     fun criar(view: View){
 
-        startActivity(Intent(this, CriarActivity::class.java))
+        val i = Intent(this, CriarActivity::class.java)
+
+        i.putExtra("caja", cajaService.codificar(lista))
+
+        finish()
+        startActivity(i)
 
     }
 
     fun buscar(view: View){
 
+        val i: Intent
+
         if (lista.size == 0){
 
-            finish()
-            startActivity(Intent(this, InicialesActivity::class.java))
+            i = Intent(this, InicialesActivity::class.java)
 
         }else if (busquedaService.buscando()){
 
-            startActivity(Intent(this, RecompensasActivity::class.java))
+            i = Intent(this, RecompensasActivity::class.java)
+            i.putExtra("caja", cajaService.codificar(lista))
 
         }else{
 
-            startActivity(Intent(this, BuscarActivity::class.java))
+            i = Intent(this, BuscarActivity::class.java)
+            i.putExtra("caja", cajaService.codificar(lista))
 
         }
+
+        finish()
+        startActivity(i)
 
     }
 
@@ -109,7 +122,12 @@ class MainActivity : AppCompatActivity() {
 
     fun regalo(view: View){
 
-        startActivity(Intent(this, RegaloActivity::class.java))
+        val i = Intent(this, RegaloActivity::class.java)
+
+        i.putExtra("caja", cajaService.codificar(lista))
+
+        finish()
+        startActivity(i)
 
     }
 

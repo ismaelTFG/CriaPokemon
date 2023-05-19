@@ -22,13 +22,13 @@ import java.time.format.DateTimeFormatter
 
 class BuscarActivity : AppCompatActivity() {
 
-    private val mainActivity = MainActivity()
     private var equipo = ArrayList<Caja>()
     private val cajaService = CajaServiceImpl(this)
     private val equipoService = EquipoServiceImpl(this)
     private val busquedaService = BusquedaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private val coloresTipos = ColoresTipos()
+    private var caja = ArrayList<Caja>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -43,6 +43,7 @@ class BuscarActivity : AppCompatActivity() {
         val buscar6 = findViewById<ImageButton>(R.id.buscar6)
 
         equipo = equipoService.findAll()
+        caja = cajaService.descodificar(intent.getStringExtra("caja").toString())
 
         img(equipo[0].pokemon, buscar1)
         img(equipo[1].pokemon, buscar2)
@@ -87,6 +88,7 @@ class BuscarActivity : AppCompatActivity() {
     fun salir(view: View){
 
         finish()
+        startActivity(Intent(this, MainActivity::class.java))
 
     }
 
@@ -103,12 +105,14 @@ class BuscarActivity : AppCompatActivity() {
         if (buscar){
 
             val fecha = LocalDateTime.now().format(DateTimeFormatter.ISO_LOCAL_DATE_TIME)
+            val i = Intent(this, RecompensasActivity::class.java)
 
+            i.putExtra("caja", cajaService.codificar(caja))
             busquedaService.update(fecha.toString(), true)
 
             equipoService.update(equipo)
             finish()
-            startActivity(Intent(this, RecompensasActivity::class.java))
+            startActivity(i)
 
         }
 
@@ -121,7 +125,7 @@ class BuscarActivity : AppCompatActivity() {
         val dialogLayout = inflater.inflate(R.layout.spinner_pokemons, null)
         val spinner = dialogLayout.findViewById<Spinner>(R.id.spinnerpokemons)
 
-        spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, cajaService.viewPokemon())
+        spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, cajaService.viewPokemon(caja))
         builder.setTitle("Elige un pokemon")
         builder.setView(dialogLayout)
         builder.setPositiveButton("Seleccionar"){ dialogInterface, i ->

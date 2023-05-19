@@ -1,5 +1,6 @@
 package com.isma.criapokemon
 
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -18,6 +19,7 @@ class RegaloActivity : AppCompatActivity() {
     val pokemonService = PokemonServiceImpl(this)
     val cajaService = CajaServiceImpl(this)
     val variablesImgPokemons = VariablesImgPokemons()
+    var caja = ArrayList<Caja>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -41,6 +43,8 @@ class RegaloActivity : AppCompatActivity() {
         val mewthree = findViewById<ImageButton>(R.id.mewthree)
         val ditto = findViewById<ImageButton>(R.id.ditto)
 
+        caja = cajaService.descodificar(intent.getStringExtra("caja").toString())
+
         mostrar(articuno, pokemonService.findById("144"))
         mostrar(zapdos, pokemonService.findById("145"))
         mostrar(moltres, pokemonService.findById("146"))
@@ -63,6 +67,7 @@ class RegaloActivity : AppCompatActivity() {
     fun salir(view: View){
 
         finish()
+        startActivity(Intent(this, MainActivity::class.java))
 
     }
 
@@ -74,15 +79,16 @@ class RegaloActivity : AppCompatActivity() {
             "132" -> {
 
                 if (especies >= 1361){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -101,15 +107,16 @@ class RegaloActivity : AppCompatActivity() {
             "144" -> {
 
                 if (especies >= 29){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -128,15 +135,16 @@ class RegaloActivity : AppCompatActivity() {
             "145" -> {
 
                 if (especies >= 58){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -155,15 +163,16 @@ class RegaloActivity : AppCompatActivity() {
             "146" -> {
 
                 if (especies >= 87){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -182,15 +191,16 @@ class RegaloActivity : AppCompatActivity() {
             "150" -> {
 
                 if (especies >= 116){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -209,15 +219,16 @@ class RegaloActivity : AppCompatActivity() {
             "151" -> {
 
                 if (especies >= 145){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -236,15 +247,16 @@ class RegaloActivity : AppCompatActivity() {
             "144_145" -> {
 
                 if (especies >= 134){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -261,15 +273,16 @@ class RegaloActivity : AppCompatActivity() {
             "144_146" -> {
 
                 if (especies >= 269){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -288,15 +301,16 @@ class RegaloActivity : AppCompatActivity() {
             "144_150" -> {
 
                 if (especies >= 403){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -315,15 +329,16 @@ class RegaloActivity : AppCompatActivity() {
             "144_151" -> {
 
                 if (especies >= 538){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -342,15 +357,16 @@ class RegaloActivity : AppCompatActivity() {
             "145_146" -> {
 
                 if (especies >= 673){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -369,15 +385,16 @@ class RegaloActivity : AppCompatActivity() {
             "145_150" -> {
 
                 if (especies >= 807){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -396,15 +413,16 @@ class RegaloActivity : AppCompatActivity() {
             "145_151" -> {
 
                 if (especies >= 942){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -423,15 +441,16 @@ class RegaloActivity : AppCompatActivity() {
             "146_150" -> {
 
                 if (especies >= 1076){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -450,15 +469,16 @@ class RegaloActivity : AppCompatActivity() {
             "146_151" -> {
 
                 if (especies >= 1211){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 
@@ -477,15 +497,16 @@ class RegaloActivity : AppCompatActivity() {
             "150_151" -> {
 
                 if (especies >= 1346){
-                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id).pokemon.id){
+                    if (pokemon.id != cajaService.findByidPokemon(pokemon.id)[0].pokemon.id){
 
                         boton.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(pokemon.img)))
                         boton.setBackgroundResource(R.drawable.electrico)
                         boton.setOnClickListener {
 
-                            cajaService.add(Caja(cajaService.findAll().size+1, pokemon.name, pokemon))
+                            cajaService.add(Caja(caja[caja.size-1].id+1, pokemon.name, pokemon))
                             pokedexService.visible(pokemon.id)
                             finish()
+                            startActivity(Intent(this, MainActivity::class.java))
 
                         }
 

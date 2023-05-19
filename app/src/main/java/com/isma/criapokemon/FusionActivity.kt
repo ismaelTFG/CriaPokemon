@@ -1,5 +1,6 @@
 package com.isma.criapokemon
 
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -30,7 +31,7 @@ class FusionActivity : AppCompatActivity() {
         val pokeimg = findViewById<ImageView>(R.id.poke)
         val id = intent.getStringExtra("fusion").toString()
         val pokemon = pokemonService.findById(id)
-        val lista = cajaService.findAll()
+        val lista = cajaService.descodificar(intent.getStringExtra("caja").toString())
 
         cajaService.add(Caja(lista[lista.size-1].id+1, pokemon.name, pokemon))
         pokedexService.visible(pokemon.id)
@@ -44,6 +45,7 @@ class FusionActivity : AppCompatActivity() {
     fun salir(view: View){
 
         finish()
+        startActivity(Intent(this, MainActivity::class.java))
 
     }
 
