@@ -1,5 +1,6 @@
 package com.isma.criapokemon
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -39,6 +40,7 @@ class RecompensasObjetosActivity : AppCompatActivity() {
     fun salir(view: View){
 
         finish()
+        startActivity(Intent(this, MainActivity::class.java))
 
     }
 

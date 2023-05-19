@@ -107,17 +107,47 @@ class Sqlite(context: Context): SQLiteOpenHelper(context, "criapokemon", null, 1
 
     fun findByIdCaja (id: Int, db: SQLiteDatabase): Caja{
 
-        val lista = findAllCaja(db)
+        val resultado = db.rawQuery("SELECT * FROM caja WHERE id=$id", null)
 
-        for (i in lista){
-            if (i.id == id){
+        if (resultado!!.moveToFirst()){
 
-                return i
+            while (!resultado.isAfterLast){
+
+                val caja = Caja(resultado.getInt(0), resultado.getString(1), pokemonService.findById(resultado.getString(2)))
+
+                caja.setNivel(resultado.getInt(3))
+
+                return caja
 
             }
+
         }
 
         return Caja(0, "", Pokemon("", "", "", "", "", ""))
+
+    }
+
+    fun findByIdPokemonCaja (id: String, db: SQLiteDatabase): ArrayList<Caja>{
+
+        val resultado = db.rawQuery("SELECT * FROM caja WHERE id_pokemon='$id'", null)
+        val lista = ArrayList<Caja>()
+
+        if (resultado!!.moveToFirst()){
+
+            while (!resultado.isAfterLast){
+
+                val caja = Caja(resultado.getInt(0), resultado.getString(1), pokemonService.findById(resultado.getString(2)))
+
+                caja.setNivel(resultado.getInt(3))
+
+                lista.add(caja)
+                resultado.moveToNext()
+
+            }
+
+        }
+
+        return lista
 
     }
 

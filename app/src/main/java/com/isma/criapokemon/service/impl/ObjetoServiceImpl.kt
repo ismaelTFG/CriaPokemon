@@ -2,9 +2,7 @@ package com.isma.criapokemon.service.impl
 
 import android.content.Context
 import com.isma.criapokemon.R
-import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Objeto
-import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.ObjetoService
 import java.io.BufferedReader
 import java.io.InputStreamReader
@@ -35,8 +33,6 @@ class ObjetoServiceImpl(context: Context): ObjetoService {
         br.close()
 
         return lista
-
-        //return db.findAllObjetos(db.writableDatabase)
 
     }
 

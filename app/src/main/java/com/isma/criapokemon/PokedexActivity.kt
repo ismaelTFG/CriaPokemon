@@ -2,7 +2,6 @@ package com.isma.criapokemon
 
 import android.annotation.SuppressLint
 import android.graphics.BitmapFactory
-import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.app.AlertDialog
@@ -13,7 +12,6 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Spinner
 import android.widget.TextView
-import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.service.impl.PokedexServiceImpl
 import com.isma.criapokemon.service.impl.PokemonServiceImpl
@@ -147,7 +145,7 @@ class PokedexActivity : AppCompatActivity() {
 
             nombre.setText(mostrado.id+" "+mostrado.name)
             nombre.setBackgroundResource(coloresTipos.colores(mostrado.tipoUno, mostrado.tipoDos))
-            descripcion.setText(mostrado.toString(this, mostrado.id))
+            descripcion.setText(mostrado.toString(this))
             descripcion.setBackgroundResource(coloresTipos.colores(mostrado.tipoUno, mostrado.tipoDos))
             pokemon.setImageBitmap(BitmapFactory.decodeResource(resources, variablesImgPokemons.img(mostrado.img)))
 

@@ -20,16 +20,6 @@ class Caja(
 
     }
 
-    fun guardar(): String{
-
-        val exit = StringBuilder()
-
-        exit.append(id).append("*").append(apodo).append("*").append(pokemon.id).append("*").append(nivel).append("\n")
-
-        return exit.toString()
-
-    }
-
     override fun toString(): String {
 
         val exit = StringBuilder()

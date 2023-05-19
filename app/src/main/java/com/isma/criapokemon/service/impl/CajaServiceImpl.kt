@@ -1,16 +1,11 @@
 package com.isma.criapokemon.service.impl
 
-import android.app.Activity
+
 import android.content.Context
-import android.os.Environment
-import com.isma.criapokemon.MainActivity
 import com.isma.criapokemon.entity.Caja
 import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.repository.Sqlite
 import com.isma.criapokemon.service.CajaService
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.io.OutputStreamWriter
 
 class CajaServiceImpl(context: Context): CajaService {
 
@@ -30,11 +25,11 @@ class CajaServiceImpl(context: Context): CajaService {
 
     }
 
-    override fun viewPokemon(): ArrayList<String> {
+    override fun viewPokemon(caja: ArrayList<Caja>): ArrayList<String> {
 
         val exit = ArrayList<String>()
 
-        for (i in findAll()){
+        for (i in caja){
 
             exit.add(i.apodo)
 
@@ -56,7 +51,7 @@ class CajaServiceImpl(context: Context): CajaService {
 
     }
 
-    override fun evolucion(caja: Caja, tipo: Int, context: Context) {
+    override fun evolucion(caja: Caja, tipo: Int) {
 
         val evolucion = caja.pokemon.evolucion.split(",")
 
@@ -240,33 +235,51 @@ class CajaServiceImpl(context: Context): CajaService {
 
     override fun findByid(id: Int): Caja {
 
-        val lista = findAll()
-
-        lista.forEach {
-            if (it.id == id){
-
-                return it
-
-            }
-        }
-
-        return Caja(0, "", Pokemon("", "", "", "", "", ""))
+        return db.findByIdCaja(id, db.writableDatabase)
 
     }
 
-    override fun findByidPokemon(id: String): Caja {
+    override fun findByidPokemon(id: String): ArrayList<Caja> {
 
-        val lista = findAll()
+        return db.findByIdPokemonCaja(id, db.writableDatabase)
 
-        lista.forEach {
-            if (it.pokemon.id == id){
+    }
 
-                return it
+    override fun codificar(cajas: ArrayList<Caja>): String {
+
+        val exit = StringBuilder()
+
+        for (i in cajas){
+
+            exit.append(i.id).append("*").append(i.apodo).append("*").append(i.pokemon.id).append("*")
+            exit.append(i.pokemon.name).append("*").append(i.pokemon.img).append("*").append(i.pokemon.tipoUno)
+            exit.append("*").append(i.pokemon.tipoDos).append("*").append(i.pokemon.evolucion).append("*").append(i.getNivel()).append("/")
+
+        }
+
+        return exit.toString()
+
+    }
+
+    override fun descodificar(string: String): ArrayList<Caja> {
+
+        val exit = ArrayList<Caja>()
+        val lineas = string.split("/")
+
+        for (i in lineas){
+            if (i != ""){
+
+                val datos = i.split("*")
+                val caja = Caja(datos[0].toInt(), datos[1], Pokemon(datos[2], datos[3], datos[4], datos[5], datos[6], datos[7]))
+
+                caja.setNivel(datos[8].toInt())
+
+                exit.add(caja)
 
             }
         }
 
-        return Caja(0, "", Pokemon("", "", "", "", "", ""))
+        return exit
 
     }
 

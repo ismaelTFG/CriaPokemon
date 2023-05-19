@@ -14,14 +14,13 @@ import com.isma.criapokemon.entity.Pokemon
 import com.isma.criapokemon.service.impl.CajaServiceImpl
 import com.isma.criapokemon.variablesdrawable.ColoresTipos
 import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
-import java.util.zip.Inflater
 
 class CajaActivity : AppCompatActivity() {
 
-    private val mainActivity = MainActivity()
     private val cajaService = CajaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private val coloresTipos = ColoresTipos()
+    private var cajas = ArrayList<Caja>()
     private var numero = 0
     private var mostrado = Caja(0, "", Pokemon("", "", "", "", "", ""))
 
@@ -38,8 +37,8 @@ class CajaActivity : AppCompatActivity() {
         val evolucion = findViewById<Button>(R.id.evolucion)
         val anterior = findViewById<ImageButton>(R.id.anterior)
         val siguiente = findViewById<ImageButton>(R.id.siguiente)
-        val cajas = cajaService.findAll()
 
+        cajas = cajaService.descodificar(intent.getStringExtra("caja").toString())
         numero = intent.extras?.getInt("numero")!!
         mostrado = cajas[numero]
 
@@ -66,7 +65,7 @@ class CajaActivity : AppCompatActivity() {
             val liberar = dialogLayout.findViewById<Button>(R.id.liberar)
 
             cambiarApodo.setOnClickListener {
-                cambioApodo(cajas, apodoView, descripcion, img)
+                cambioApodo(apodoView, descripcion, img)
             }
             liberar.setOnClickListener {
                 liberar()
@@ -180,7 +179,7 @@ class CajaActivity : AppCompatActivity() {
 
                 val selecionado = spinner.selectedItemPosition
 
-                cajaService.evolucion(mostrado, selecionado, mainActivity)
+                cajaService.evolucion(mostrado, selecionado)
                 mostrado = cajas[numero]
 
                 if (cajaService.evoTrue(mostrado)){
@@ -209,12 +208,16 @@ class CajaActivity : AppCompatActivity() {
 
     fun salir(view: View){
 
+        val i = Intent(this, PokemonActivity::class.java)
+
+        i.putExtra("caja", cajaService.codificar(cajas))
+
         finish()
-        startActivity(Intent(this, PokemonActivity::class.java))
+        startActivity(i)
 
     }
 
-    private fun cambioApodo(cajas: ArrayList<Caja>, apodoView: TextView, descripcion: TextView, img: ImageView){
+    private fun cambioApodo(apodoView: TextView, descripcion: TextView, img: ImageView){
 
         val builder = AlertDialog.Builder(this)
         val inflater = layoutInflater
@@ -234,8 +237,6 @@ class CajaActivity : AppCompatActivity() {
 
                 caja.apodo = mostrado.pokemon.name
                 cajaService.update(caja)
-
-                val cajas = cajaService.findAll()
 
                 mostrado = cajas[numero]
 
@@ -262,8 +263,6 @@ class CajaActivity : AppCompatActivity() {
                     caja.apodo = texto
                     cajaService.update(caja)
 
-                    val cajas = cajaService.findAll()
-
                     mostrado = cajas[numero]
 
                     apodoView.setText(mostrado.apodo)
@@ -287,10 +286,13 @@ class CajaActivity : AppCompatActivity() {
     private fun liberar(){
 
         val dialog = AlertDialog.Builder(this).setPositiveButton("si", DialogInterface.OnClickListener{ dialogInterface, i ->
+            val intent = Intent(this, PokemonActivity::class.java)
             cajaService.delete(mostrado.id)
+            cajas.remove(mostrado)
+            intent.putExtra("caja", cajaService.codificar(cajas))
             Toast.makeText(this, "El pokemon a vuelto a la naturaleza", Toast.LENGTH_SHORT).show()
             finish()
-            startActivity(Intent(this, PokemonActivity::class.java))
+            startActivity(intent)
             dialogInterface.dismiss()
         }).setNegativeButton("no", DialogInterface.OnClickListener { dialogInterface, i ->
             dialogInterface.dismiss()

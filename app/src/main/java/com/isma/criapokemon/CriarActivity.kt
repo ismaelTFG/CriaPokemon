@@ -18,7 +18,6 @@ import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
 class CriarActivity : AppCompatActivity() {
 
-    private val mainActivity = MainActivity()
     private val cajaService = CajaServiceImpl(this)
     private val huevoService = HuevoServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
@@ -39,7 +38,7 @@ class CriarActivity : AppCompatActivity() {
         val criar = findViewById<Button>(R.id.criarcriar)
         val pokeuno = findViewById<ImageButton>(R.id.primer)
         val pokedos = findViewById<ImageButton>(R.id.segundo)
-        val lista = cajaService.findAll()
+        val lista = cajaService.descodificar(intent.getStringExtra("caja").toString())
         var pokes = ArrayList<String>()
         var criarTrue = false
 
@@ -219,6 +218,7 @@ class CriarActivity : AppCompatActivity() {
                     }
 
                     i.putExtra("fusion", id)
+                    i.putExtra("caja", intent.getStringExtra("caja").toString())
 
                     finish()
                     startActivity(i)
@@ -234,6 +234,7 @@ class CriarActivity : AppCompatActivity() {
                 val i = Intent(this, FusionActivity::class.java)
 
                 i.putExtra("fusion", pokeuno)
+                i.putExtra("caja", intent.getStringExtra("caja").toString())
 
                 finish()
                 startActivity(i)

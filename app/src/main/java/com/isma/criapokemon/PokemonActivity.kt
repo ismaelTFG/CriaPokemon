@@ -3,12 +3,8 @@ package com.isma.criapokemon
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.BitmapFactory
-import android.graphics.Color
-import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.widget.TextViewCompat
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageButton
 import android.widget.LinearLayout
@@ -19,7 +15,6 @@ import com.isma.criapokemon.variablesdrawable.VariablesImgPokemons
 
 class PokemonActivity : AppCompatActivity() {
 
-    private val mainActivity = MainActivity()
     private val cajaService = CajaServiceImpl(this)
     private val variablesImgPokemons = VariablesImgPokemons()
     private val coloresTipos = ColoresTipos()
@@ -30,9 +25,10 @@ class PokemonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pokemon)
 
-        val intent = Intent(this, CajaActivity::class.java)
+        val i = Intent(this, CajaActivity::class.java)
         val layout = findViewById<LinearLayout>(R.id.pokemon)
-        mostrar(layout, intent)
+        val datos = intent.getStringExtra("caja").toString()
+        mostrar(layout, i, datos)
 
     }
 
@@ -42,9 +38,9 @@ class PokemonActivity : AppCompatActivity() {
 
     }
 
-    private fun mostrar(layout: LinearLayout, intent: Intent){
+    private fun mostrar(layout: LinearLayout, intent: Intent, datos: String){
 
-        val lista = cajaService.findAll()
+        val lista = cajaService.descodificar(datos)
 
         for (i in lista.indices){
 
@@ -60,6 +56,7 @@ class PokemonActivity : AppCompatActivity() {
             poke.setOnClickListener {
 
                 intent.putExtra("numero", i)
+                intent.putExtra("caja", datos)
 
                 finish()
                 startActivity(intent)
