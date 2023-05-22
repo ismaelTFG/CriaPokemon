@@ -117,6 +117,7 @@ class CriarActivity : AppCompatActivity() {
     fun salir(view: View){
 
         finish()
+        startActivity(Intent(this, MainActivity::class.java))
 
     }
 
