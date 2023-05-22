@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
 
         i.putExtra("caja", cajaService.codificar(lista))
 
+        finish()
         startActivity(i)
 
     }
